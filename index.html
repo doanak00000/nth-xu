@@ -55,9 +55,9 @@ fetch("xu.json?t=" + Date.now()).then(r => r.json()).then(data => {
     for (const h of ["Nhân vật", ...days.map(d => d.split("-").reverse().slice(0, 2).join("/"))]) {
       const th = document.createElement("th"); th.textContent = h; hr.appendChild(th);
     }
-    for (const k of Object.keys(nvs).sort((a, b) => parseInt(a.slice(2)) - parseInt(b.slice(2)))) {
+    for (const k of Object.keys(nvs).sort((a, b) => a.localeCompare(b, "vi"))) {
       const nv = nvs[k], tr = tbl.insertRow();
-      tr.insertCell().textContent = k.toUpperCase() + (nv.ten ? " · " + nv.ten : "");
+      tr.insertCell().textContent = k;
       for (const d of days) {
         const td = tr.insertCell(), v = nv.ngay[d];
         if (!v) { td.textContent = "—"; td.className = "empty"; continue; }
