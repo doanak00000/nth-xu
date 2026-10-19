@@ -38,9 +38,12 @@ fetch("xu.json?t=" + Date.now()).then(r => r.json()).then(data => {
   const list = document.getElementById("list");
   const accs = Object.keys(data).sort();
   let last = "";
+  // 3 cột cố định theo ngày của người xem: 2 hôm trước / hôm qua / hôm nay
+  const ngay = k => { const d = new Date(); d.setDate(d.getDate() - k);
+    return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); };
+  const days = [ngay(2), ngay(1), ngay(0)], nhan = ["2 hôm trước", "Hôm qua", "Hôm nay"];
   for (const acc of accs) {
     const nvs = data[acc];
-    const days = [...new Set(Object.values(nvs).flatMap(n => Object.keys(n.ngay)))].sort().reverse().slice(0, 3);
     const det = document.createElement("details");
     const sum = document.createElement("summary");
     sum.textContent = acc;
@@ -52,9 +55,12 @@ fetch("xu.json?t=" + Date.now()).then(r => r.json()).then(data => {
     wrap.className = "wrap";
     const tbl = document.createElement("table");
     const hr = tbl.insertRow();
-    for (const h of ["Nhân vật", ...days.map(d => d.split("-").reverse().slice(0, 2).join("/"))]) {
-      const th = document.createElement("th"); th.textContent = h; hr.appendChild(th);
-    }
+    const th0 = document.createElement("th"); th0.textContent = "Nhân vật"; hr.appendChild(th0);
+    days.forEach((d, i) => {
+      const th = document.createElement("th"); th.textContent = nhan[i];
+      const s = document.createElement("span"); s.className = "cr"; s.textContent = d.split("-").reverse().slice(0, 2).join("/");
+      th.appendChild(s); hr.appendChild(th);
+    });
     for (const k of Object.keys(nvs).sort((a, b) => a.localeCompare(b, "vi"))) {
       const nv = nvs[k], tr = tbl.insertRow();
       tr.insertCell().textContent = k;
