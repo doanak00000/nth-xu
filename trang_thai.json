@@ -1,263 +1,51 @@
 {
  "maianh0000001": {
-  "st": "xong",
-  "nv": 6,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-10-20 14:53",
-  "nhan_vat": [
-   {
-    "ten": "HuưToàn",
-    "luc": "11:03",
-    "loi": []
-   },
-   {
-    "ten": "LaiXuân",
-    "luc": "11:11",
-    "loi": []
-   },
-   {
-    "ten": "DiêmBảoKỳ",
-    "luc": "11:17",
-    "loi": []
-   },
-   {
-    "ten": "TiêuHân",
-    "luc": "11:23",
-    "loi": []
-   },
-   {
-    "ten": "LộcXuânNam",
-    "luc": "15:10",
-    "loi": []
-   },
-   {
-    "ten": "ThànhVững",
-    "luc": "15:21",
-    "loi": []
-   }
-  ]
+  "nhan_vat": []
  },
  "mytre1608": {
-  "st": "xong",
-  "nv": 6,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-10-20 15:23",
-  "nhan_vat": [
-   {
-    "ten": "BILLOW",
-    "luc": "10:13",
-    "loi": []
-   },
-   {
-    "ten": "HELEN",
-    "luc": "10:25",
-    "loi": []
-   },
-   {
-    "ten": "KRIXI",
-    "luc": "10:38",
-    "loi": []
-   },
-   {
-    "ten": "IGGY",
-    "luc": "10:51",
-    "loi": []
-   },
-   {
-    "ten": "Enzo",
-    "luc": "15:36",
-    "loi": []
-   },
-   {
-    "ten": "TRiệu Vâĩ",
-    "luc": "15:48",
-    "loi": []
-   }
-  ]
+  "nhan_vat": []
  },
  "doanmy1608": {
-  "st": "xong",
-  "nv": 6,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-10-20 12:51",
-  "nhan_vat": [
-   {
-    "ten": "Miêu Lan",
-    "luc": "11:41",
-    "loi": []
-   },
-   {
-    "ten": "WHITE",
-    "luc": "11:52",
-    "loi": []
-   },
-   {
-    "ten": "Stylist Mỹ",
-    "luc": "12:05",
-    "loi": []
-   },
-   {
-    "ten": "TKế Tiểu Thư",
-    "luc": "13:01",
-    "loi": []
-   },
-   {
-    "ten": "LADY",
-    "luc": "13:14",
-    "loi": []
-   }
-  ]
+  "nhan_vat": []
  },
  "doangia1608": {
-  "st": "xong",
-  "nv": 6,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-10-20 16:00",
-  "nhan_vat": [
-   {
-    "ten": "NhiếpUyển",
-    "luc": "16:06",
-    "loi": []
-   },
-   {
-    "ten": "TrânCẩm",
-    "luc": "16:15",
-    "loi": []
-   },
-   {
-    "ten": "TràChiHy",
-    "luc": "16:22",
-    "loi": []
-   },
-   {
-    "ten": "DoanMyy",
-    "luc": "16:32",
-    "loi": []
-   },
-   {
-    "ten": "NhữDïnhY",
-    "luc": "16:37",
-    "loi": []
-   },
-   {
-    "ten": "MiêuMy",
-    "luc": "16:46",
-    "loi": []
-   }
-  ]
+  "nhan_vat": []
  },
  "doangia1011": {
-  "st": "xong",
-  "nv": 6,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-10-20 16:47",
-  "nhan_vat": [
-   {
-    "ten": "ChumChum",
-    "luc": "16:58",
-    "loi": []
-   },
-   {
-    "ten": "SócAva",
-    "luc": "17:09",
-    "loi": []
-   },
-   {
-    "ten": "DoRy",
-    "luc": "17:21",
-    "loi": []
-   },
-   {
-    "ten": "Nemo",
-    "luc": "17:27",
-    "loi": []
-   },
-   {
-    "ten": "Dotlia Babie",
-    "luc": "17:33",
-    "loi": []
-   },
-   {
-    "ten": "MARLIN",
-    "luc": "17:38",
-    "loi": []
-   }
-  ]
+  "nhan_vat": []
  },
  "myxinh1608": {
-  "st": "xong",
-  "nv": 6,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-10-20 17:39",
-  "nhan_vat": [
-   {
-    "ten": "MissU",
-    "luc": "17:45",
-    "loi": []
-   },
-   {
-    "ten": "With U",
-    "luc": "17:51",
-    "loi": []
-   },
-   {
-    "ten": "MamwU",
-    "luc": "17:57",
-    "loi": []
-   },
-   {
-    "ten": "Need U",
-    "luc": "18:05",
-    "loi": []
-   },
-   {
-    "ten": "LoeU",
-    "luc": "18:10",
-    "loi": []
-   },
-   {
-    "ten": "Kiss U",
-    "luc": "18:15",
-    "loi": []
-   }
-  ]
+  "nhan_vat": []
  },
  "myxinh1011": {
-  "st": "xong",
-  "nv": 6,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-10-20 18:17",
-  "nhan_vat": [
-   {
-    "ten": "Chân Hoàn",
-    "luc": "18:27",
-    "loi": []
-   },
-   {
-    "ten": "Hoàngg Hậu",
-    "luc": "18:39",
-    "loi": []
-   },
-   {
-    "ten": "TùHy TháiHậu",
-    "luc": "18:46",
-    "loi": []
-   },
-   {
-    "ten": "Ngưy AnhLạc",
-    "luc": "18:52",
-    "loi": []
-   },
-   {
-    "ten": "Võ Tắcc Thiên ˆ",
-    "luc": "18:58",
-    "loi": []
-   },
-   {
-    "ten": "Hoa Phii",
-    "luc": "19:04",
-    "loi": []
-   }
-  ]
+  "nhan_vat": []
  }
 }
