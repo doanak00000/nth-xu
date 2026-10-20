@@ -61,7 +61,7 @@ Promise.all([lay("xu.json"), lay("trang_thai.json").catch(() => ({}))]).then(([d
   const accs = [...new Set([...Object.keys(data), ...Object.keys(tt)])].sort();
   // giống cột Trạng thái trên UI bot
   const nhanSt = t => ({ chay: `▶ đang chạy ${Math.min(t.nv + 1, 6)}/6`, do: `⏸ dở ${t.nv}/6`,
-                         xong: "✓ xong", loi: "✗ lỗi" })[t.st] || "chưa chạy";
+                         xong: t.nv > 0 && t.nv < 6 ? `⚠ xong ${t.nv}/6` : "✓ xong", loi: "✗ lỗi" })[t.st] || "chưa chạy";
   const nhanBd = s => { const [d, h] = s.split(" ");
     return "bắt đầu " + h + (d === ngay(0) ? "" : " " + d.split("-").reverse().slice(0, 2).join("/")); };
   let last = "";
@@ -78,7 +78,7 @@ Promise.all([lay("xu.json"), lay("trang_thai.json").catch(() => ({}))]).then(([d
     st.className = "st";
     const t = tt[acc] || { st: "", nv: 0, bat_dau: "" };
     const b = document.createElement("span");
-    b.className = "badge " + t.st; b.textContent = nhanSt(t); st.appendChild(b);
+    b.className = "badge " + (t.st === "xong" && t.nv > 0 && t.nv < 6 ? "loi" : t.st); b.textContent = nhanSt(t); st.appendChild(b);
     if (t.bat_dau) { const bd = document.createElement("span"); bd.className = "bd"; bd.textContent = nhanBd(t.bat_dau); st.appendChild(bd); }
     sum.appendChild(st);
     const sp = document.createElement("span");
