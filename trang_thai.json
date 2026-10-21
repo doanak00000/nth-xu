@@ -191,10 +191,16 @@
  },
  "myxinh1608": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[0] LD",
   "bat_dau": "2026-10-21 18:23",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "Mam U",
+    "luc": "18:32",
+    "loi": []
+   }
+  ]
  },
  "myxinh1011": {
   "st": "",
