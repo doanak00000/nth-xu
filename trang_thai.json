@@ -77,13 +77,18 @@
  },
  "doanmy1608": {
   "st": "chay",
-  "nv": 1,
+  "nv": 2,
   "may": "[0] LD",
   "bat_dau": "2026-10-21 12:30",
   "nhan_vat": [
    {
     "ten": "Miêu Lan",
     "luc": "12:44",
+    "loi": []
+   },
+   {
+    "ten": "WH",
+    "luc": "12:55",
     "loi": []
    }
   ]
