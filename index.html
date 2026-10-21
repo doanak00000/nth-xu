@@ -88,7 +88,7 @@ Promise.all([lay("xu.json"), lay("trang_thai.json").catch(() => ({}))]).then(([d
   }
   if (soNv) document.getElementById("tong").innerHTML =
     `Tổng xu <b>${(tong / 1e6).toLocaleString("vi-VN", { maximumFractionDigits: 3 })}M</b>` +
-    `<span class="cr">${soNv} nhân vật · ${Object.keys(data).length} acc public · số mới nhất mỗi nhân vật</span>`;
+    `<span class="cr">${soNv} nhân vật · ${Object.keys(data).length} tài khoản ·số mới nhất mỗi nhân vật</span>`;
   for (const acc of accs) {
     const nvs = data[acc] || {};
     const det = document.createElement("details");
