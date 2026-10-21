@@ -114,9 +114,9 @@
   ]
  },
  "doangia1608": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[0] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-10-21 16:16",
   "nhan_vat": [
    {
@@ -142,6 +142,11 @@
    {
     "ten": "Doan MyV",
     "luc": "17:06",
+    "loi": []
+   },
+   {
+    "ten": "NhữDinhY",
+    "luc": "17:14",
     "loi": []
    }
   ]
