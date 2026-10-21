@@ -7,9 +7,9 @@
   "nhan_vat": []
  },
  "mytre1608": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[0] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-10-21 10:23",
   "nhan_vat": [
    {
@@ -35,6 +35,11 @@
    {
     "ten": "Enzo",
     "luc": "11:18",
+    "loi": []
+   },
+   {
+    "ten": "TRiệu Vânñ",
+    "luc": "11:24",
     "loi": []
    }
   ]
