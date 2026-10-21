@@ -153,13 +153,18 @@
  },
  "doangia1011": {
   "st": "chay",
-  "nv": 1,
+  "nv": 2,
   "may": "[0] LD",
   "bat_dau": "2026-10-21 17:16",
   "nhan_vat": [
    {
     "ten": "SócAva",
     "luc": "17:28",
+    "loi": []
+   },
+   {
+    "ten": "DoRy",
+    "luc": "17:41",
     "loi": []
    }
   ]
