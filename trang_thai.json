@@ -153,7 +153,7 @@
  },
  "doangia1011": {
   "st": "chay",
-  "nv": 4,
+  "nv": 5,
   "may": "[0] LD",
   "bat_dau": "2026-10-21 17:16",
   "nhan_vat": [
@@ -175,6 +175,11 @@
    {
     "ten": "Dolia Babie",
     "luc": "18:00",
+    "loi": []
+   },
+   {
+    "ten": "ChumChuffr",
+    "luc": "18:11",
     "loi": []
    }
   ]
