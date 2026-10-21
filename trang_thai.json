@@ -77,7 +77,7 @@
  },
  "doanmy1608": {
   "st": "chay",
-  "nv": 3,
+  "nv": 4,
   "may": "[0] LD",
   "bat_dau": "2026-10-21 12:30",
   "nhan_vat": [
@@ -94,6 +94,11 @@
    {
     "ten": "Stylist My",
     "luc": "13:08",
+    "loi": []
+   },
+   {
+    "ten": "Chỉ Hồng",
+    "luc": "13:21",
     "loi": []
    }
   ]
