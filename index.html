@@ -52,12 +52,18 @@
   .homnay .ok { color:#22783a; }
   .homnay .sai { color:#b03a2e; }
   @media (prefers-color-scheme: dark) { .homnay .ok { color:#7fd394; } .homnay .sai { color:#f0948a; } }
+  .tong { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px 14px; margin-bottom:12px;
+          display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; }
+  .tong:empty { display:none; }
+  .tong b { font-size:24px; color:var(--accent); font-variant-numeric:tabular-nums; }
+  .tong .cr { display:inline; font-size:13px; }
 </style>
 </head>
 <body>
 <main>
   <h1>Xu nhân vật NTH</h1>
   <div class="sub" id="sub">Đang tải…</div>
+  <div class="tong" id="tong"></div>
   <div id="list"></div>
 </main>
 <script>
@@ -73,6 +79,16 @@ Promise.all([lay("xu.json"), lay("trang_thai.json").catch(() => ({}))]).then(([d
   const ngay = k => { const d = new Date(); d.setDate(d.getDate() - k);
     return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); };
   const days = [ngay(2), ngay(1), ngay(0)], nhan = ["2 hôm trước", "Hôm qua", "Hôm nay"];
+  // tổng xu = số xu GẦN NHẤT của mọi nhân vật, mọi acc (xu.json chỉ có acc public). "1.049M" / "159.2K" / "46413"
+  const soXu = s => { const m = /^([\d.]+)\s*([MK]?)$/i.exec(s || ""); return m ? +m[1] * ({ M: 1e6, K: 1e3 }[m[2].toUpperCase()] || 1) : 0; };
+  let tong = 0, soNv = 0;
+  for (const acc of Object.keys(data)) for (const nv of Object.values(data[acc])) {
+    const d = Object.keys(nv.ngay || {}).sort().pop();
+    if (d) { tong += soXu(nv.ngay[d].xu); soNv++; }
+  }
+  if (soNv) document.getElementById("tong").innerHTML =
+    `Tổng xu <b>${(tong / 1e6).toLocaleString("vi-VN", { maximumFractionDigits: 3 })}M</b>` +
+    `<span class="cr">${soNv} nhân vật · ${Object.keys(data).length} acc public · số mới nhất mỗi nhân vật</span>`;
   for (const acc of accs) {
     const nvs = data[acc] || {};
     const det = document.createElement("details");
