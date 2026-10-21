@@ -153,10 +153,16 @@
  },
  "doangia1011": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[0] LD",
   "bat_dau": "2026-10-21 17:16",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "SócAva",
+    "luc": "17:28",
+    "loi": []
+   }
+  ]
  },
  "myxinh1608": {
   "st": "",
