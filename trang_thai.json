@@ -152,9 +152,9 @@
   ]
  },
  "doangia1011": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[0] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-10-21 17:16",
   "nhan_vat": [
    {
@@ -180,6 +180,11 @@
    {
     "ten": "ChumChuffr",
     "luc": "18:11",
+    "loi": []
+   },
+   {
+    "ten": "MARLIN",
+    "luc": "18:21",
     "loi": []
    }
   ]
