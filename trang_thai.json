@@ -191,7 +191,7 @@
  },
  "myxinh1608": {
   "st": "chay",
-  "nv": 1,
+  "nv": 2,
   "may": "[0] LD",
   "bat_dau": "2026-10-21 18:23",
   "nhan_vat": [
@@ -199,6 +199,15 @@
     "ten": "Mam U",
     "luc": "18:32",
     "loi": []
+   },
+   {
+    "ten": "Need U",
+    "luc": "18:45",
+    "loi": [
+     "mộng hoa lục: failed",
+     "roll: 3/4",
+     "mốc: 3/4"
+    ]
    }
   ]
  },
