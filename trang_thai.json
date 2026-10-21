@@ -1,13 +1,18 @@
 {
  "maianh0000001": {
   "st": "chay",
-  "nv": 1,
+  "nv": 2,
   "may": "[0] LD",
   "bat_dau": "2026-10-21 11:26",
   "nhan_vat": [
    {
     "ten": "HưToàn",
     "luc": "11:39",
+    "loi": []
+   },
+   {
+    "ten": "DiêmBảoKỳ",
+    "luc": "11:51",
     "loi": []
    }
   ]
