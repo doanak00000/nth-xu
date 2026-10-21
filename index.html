@@ -56,9 +56,13 @@
   .tong { position:relative; background:linear-gradient(135deg, var(--accent2), var(--accent)); color:#fff; border-radius:24px;
           padding:18px 20px 16px; margin:6px 0 16px; display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;
           box-shadow:0 10px 24px rgba(232,80,138,.28); }
-  .tong::after { content:""; position:absolute; top:-14px; right:18px; width:52px; height:33px; background:var(--bow) center/contain no-repeat;
-                 transform:rotate(12deg); filter:drop-shadow(0 2px 2px rgba(0,0,0,.12)); }
   .tong:empty { display:none; }
+  /* công chúa tựa lên ô tổng xu: y=100 của svg = mép trên ô, tay (y 97-109) đè lên ô */
+  .tongbox { position:relative; margin-top:96px; }
+  .tongbox .tong { margin-top:0; padding-top:26px; }
+  .cc { position:absolute; right:22px; top:-100px; width:140px; height:120px; pointer-events:none;
+        filter:drop-shadow(0 3px 4px rgba(232,80,138,.25)); }
+  .tong:empty + .cc { display:none; }
   @media (max-width:480px) { summary .st + span { display:none; } th, td { padding:9px 10px; } .tong b { font-size:26px; } }
   .tong b { font-size:30px; font-weight:700; font-variant-numeric:tabular-nums; color:#fff; }
   .tong .cr { display:inline; font-size:13px; color:rgba(255,255,255,.88); flex-basis:100%; }
@@ -68,7 +72,30 @@
 <main>
   <h1>Xu của My thúi</h1>
   <div class="sub" id="sub">Đang tải…</div>
-  <div class="tong" id="tong"></div>
+  <div class="tongbox">
+    <div class="tong" id="tong"></div>
+    <div class="cc" aria-hidden="true"><svg viewBox="0 0 140 120" width="140" height="120">
+    <path d="M30 62C26 22 114 22 110 62L116 100H24Z" fill="#f2c063"/>
+    <path d="M44 100C46 84 56 80 70 80S94 84 96 100Z" fill="#ff8fb8"/>
+    <rect x="64" y="72" width="12" height="10" fill="#ffe3d3"/>
+    <path d="M60 81Q70 90 80 81" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="70" cy="56" r="24" fill="#ffe3d3"/>
+    <path d="M46 54C44 30 96 30 94 54C88 43 80 41 76 47C72 38 62 40 58 48C54 43 50 46 46 54Z" fill="#f2c063"/>
+    <path d="M46 52C40 66 42 80 37 94M94 52C100 66 98 80 103 94" stroke="#f2c063" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M56 33L58 20L64 27L70 15L76 27L82 20L84 33Z" fill="#ffd34d" stroke="#e6a817" stroke-width="1.5" stroke-linejoin="round"/>
+    <circle cx="70" cy="25" r="2.2" fill="#ff6fa3"/><circle cx="60" cy="28" r="1.4" fill="#8fd3ff"/><circle cx="80" cy="28" r="1.4" fill="#8fd3ff"/>
+    <g transform="translate(95 40) rotate(20)"><path d="M0 0C-6-8-14-6-12 0S-6 8 0 0ZM0 0C6-8 14-6 12 0S6 8 0 0Z" fill="#ff8fb8"/><circle r="3" fill="#e8508a"/></g>
+    <ellipse cx="61" cy="58" rx="3.2" ry="4" fill="#5a2a3f"/><ellipse cx="79" cy="58" rx="3.2" ry="4" fill="#5a2a3f"/>
+    <circle cx="62.2" cy="56.4" r="1.2" fill="#fff"/><circle cx="80.2" cy="56.4" r="1.2" fill="#fff"/>
+    <ellipse cx="55" cy="65" rx="4.5" ry="2.5" fill="#ff9fbf" opacity=".75"/><ellipse cx="85" cy="65" rx="4.5" ry="2.5" fill="#ff9fbf" opacity=".75"/>
+    <path d="M66 66Q70 70 74 66" stroke="#d6406a" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <circle cx="46" cy="93" r="9" fill="#ffb3cf"/><circle cx="94" cy="93" r="9" fill="#ffb3cf"/>
+    <rect x="34" y="97" width="34" height="11" rx="5.5" fill="#ffe3d3" stroke="#f0b9a3"/>
+    <rect x="72" y="97" width="34" height="11" rx="5.5" fill="#ffe3d3" stroke="#f0b9a3"/>
+    <circle cx="65" cy="102.5" r="6.5" fill="#ffe3d3" stroke="#f0b9a3"/><circle cx="75" cy="102.5" r="6.5" fill="#ffe3d3" stroke="#f0b9a3"/>
+    <path d="M118 30l2 5 5 2-5 2-2 5-2-5-5-2 5-2z" fill="#fff" opacity=".9"/><path d="M22 44l1.5 3.5 3.5 1.5-3.5 1.5-1.5 3.5-1.5-3.5-3.5-1.5 3.5-1.5z" fill="#ffd34d"/>
+  </svg></div>
+  </div>
   <div id="list"></div>
 </main>
 <script>
