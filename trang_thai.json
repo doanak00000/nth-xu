@@ -115,13 +115,18 @@
  },
  "doangia1608": {
   "st": "chay",
-  "nv": 1,
+  "nv": 2,
   "may": "[0] LD",
   "bat_dau": "2026-10-21 16:16",
   "nhan_vat": [
    {
     "ten": "NhiếpUyển",
     "luc": "16:28",
+    "loi": []
+   },
+   {
+    "ten": "TrânCẩm",
+    "luc": "16:37",
     "loi": []
    }
   ]
