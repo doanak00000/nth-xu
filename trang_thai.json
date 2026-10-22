@@ -4,13 +4,15 @@
   "nv": 0,
   "may": "",
   "bat_dau": "2026-10-21 11:26",
+  "ket_thuc": "",
   "nhan_vat": []
  },
  "mytre1608": {
-  "st": "chay",
+  "st": "do",
   "nv": 3,
-  "may": "[0] LD",
+  "may": "",
   "bat_dau": "2026-10-22 10:56",
+  "ket_thuc": "",
   "nhan_vat": [
    {
     "ten": "BILLOW",
@@ -34,6 +36,7 @@
   "nv": 0,
   "may": "",
   "bat_dau": "2026-10-21 12:30",
+  "ket_thuc": "",
   "nhan_vat": []
  },
  "doangia1608": {
@@ -41,6 +44,7 @@
   "nv": 0,
   "may": "",
   "bat_dau": "2026-10-21 16:16",
+  "ket_thuc": "",
   "nhan_vat": []
  },
  "doangia1011": {
@@ -48,6 +52,7 @@
   "nv": 0,
   "may": "",
   "bat_dau": "2026-10-21 17:16",
+  "ket_thuc": "",
   "nhan_vat": []
  },
  "myxinh1608": {
@@ -55,6 +60,7 @@
   "nv": 0,
   "may": "",
   "bat_dau": "2026-10-21 18:23",
+  "ket_thuc": "",
   "nhan_vat": []
  },
  "myxinh1011": {
@@ -62,6 +68,7 @@
   "nv": 0,
   "may": "",
   "bat_dau": "2026-10-21 19:25",
+  "ket_thuc": "",
   "nhan_vat": []
  }
 }
