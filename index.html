@@ -146,7 +146,8 @@ Promise.all([lay("xu.json"), lay("trang_thai.json").catch(() => ({}))]).then(([d
         const r = document.createElement("div");
         const k = document.createElement("span"); k.className = n.loi.length ? "sai" : "ok";
         k.textContent = (n.loi.length ? "⚠ " : "✓ ") + n.ten; r.appendChild(k);
-        const g = document.createElement("span"); g.className = "gio"; g.textContent = n.luc; r.appendChild(g);
+        const g = document.createElement("span"); g.className = "gio";
+        g.textContent = n.luc + (n.treo != null ? ` · treo ${n.treo}/8 ô` : ""); r.appendChild(g);
         if (n.loi.length) r.appendChild(document.createTextNode(" — " + n.loi.join(", ")));
         box.appendChild(r);
       }
