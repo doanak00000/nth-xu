@@ -99,7 +99,11 @@
   <div class="chinh" id="chinh"></div>
 </main>
 <script>
-const lay = f => fetch(f + "?t=" + Date.now()).then(r => r.ok ? r.json() : {});
+// đọc thẳng file trong repo (raw) -> không chờ GitHub Pages phát bản (có lúc kẹt hàng chờ cả chục phút); ?t= bỏ qua cache.
+// raw lỗi thì đọc bản trên Pages
+const RAW = "https://raw.githubusercontent.com/doanak00000/nth-xu/main/";
+const lay = f => fetch(RAW + f + "?t=" + Date.now()).then(r => { if (!r.ok) throw 0; return r.json(); })
+  .catch(() => fetch(f + "?t=" + Date.now()).then(r => r.ok ? r.json() : {}));
 // tự tải lại dữ liệu mỗi phút (tool push lên GitHub Pages), giữ nguyên acc đang mở; dữ liệu không đổi thì khỏi vẽ lại
 let cu = "";
 // chỉnh giờ chạy acc public: web ghi lenh.json lên repo bằng GitHub token (chỉ lưu ở trình duyệt này);
