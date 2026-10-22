@@ -67,6 +67,11 @@
   @media (max-width:480px) { summary .st + span { display:none; } th, td { padding:9px 10px; } .tong b { font-size:26px; } }
   .tong b { font-size:30px; font-weight:700; font-variant-numeric:tabular-nums; color:#fff; }
   .tong .cr { display:inline; font-size:13px; color:rgba(255,255,255,.88); flex-basis:100%; }
+  /* hoa rơi: nằm sau thẻ, thưa, chậm để không rối mắt */
+  main { position:relative; z-index:1; }
+  .hoa { position:fixed; top:-24px; z-index:0; pointer-events:none; color:var(--accent2); opacity:.55; line-height:1;
+         animation:roi linear forwards; }
+  @keyframes roi { to { transform:translate(var(--dx), 110vh) rotate(var(--rot)); } }
 </style>
 </head>
 <body>
@@ -165,6 +170,19 @@ Promise.all([lay("xu.json"), lay("trang_thai.json").catch(() => ({}))]).then(([d
     ? "Bấm vào tài khoản để xem nhân vật · 3 ngày gần nhất · cập nhật lần cuối " + last
     : "Chưa có dữ liệu.";
 }).catch(() => { document.getElementById("sub").textContent = "Không tải được dữ liệu."; });
+// hoa rơi thưa: tối đa 6 bông cùng lúc, mỗi ~1.8s một bông; tắt nếu người xem bật giảm chuyển động
+if (!matchMedia("(prefers-reduced-motion: reduce)").matches) setInterval(() => {
+  if (document.hidden || document.querySelectorAll(".hoa").length >= 6) return;
+  const h = document.createElement("span"), r = Math.random;
+  h.className = "hoa"; h.textContent = "✿";
+  h.style.left = r() * 100 + "vw";
+  h.style.fontSize = 10 + r() * 8 + "px";
+  h.style.animationDuration = 9 + r() * 6 + "s";
+  h.style.setProperty("--dx", (r() - .5) * 120 + "px");
+  h.style.setProperty("--rot", (r() - .5) * 540 + "deg");
+  h.onanimationend = () => h.remove();
+  document.body.appendChild(h);
+}, 1800);
 </script>
 </body>
 </html>
