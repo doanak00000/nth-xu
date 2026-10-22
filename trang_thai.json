@@ -235,10 +235,16 @@
  },
  "myxinh1011": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[0] LD",
   "bat_dau": "2026-10-22 20:10",
   "ket_thuc": "",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "Chân Hoàn",
+    "luc": "20:22",
+    "loi": []
+   }
+  ]
  }
 }
