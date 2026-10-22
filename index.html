@@ -106,9 +106,6 @@ let cu = "";
 const API = "https://api.github.com/repos/doanak00000/nth-xu/contents/lenh.json";
 const doc = k => { try { return localStorage.getItem(k) || ""; } catch { return ""; } };
 const ghi = (k, v) => { try { v ? localStorage.setItem(k, v) : localStorage.removeItem(k); } catch {} };
-// link 1 lần "…/nth-xu/#t=<token>": lưu token vào trình duyệt rồi xoá khỏi thanh địa chỉ (phần # không gửi lên server)
-const tLink = new URLSearchParams(location.hash.slice(1)).get("t");
-if (tLink) { ghi("nth_gh_token", tLink.trim()); history.replaceState(null, "", location.pathname + location.search); }
 let tok = doc("nth_gh_token"), lenhMoi = {};
 const b64 = s => btoa(unescape(encodeURIComponent(s))), tuB64 = s => decodeURIComponent(escape(atob(s.replace(/\s/g, ""))));
 async function luuGio(acc, gio) {
@@ -126,9 +123,17 @@ function veChinh() {
   const c = document.getElementById("chinh"), b = document.createElement("button");
   c.textContent = tok ? "Đang ở chế độ chỉnh giờ chạy · " : "";
   b.textContent = tok ? "Thoát" : "🔑 Chỉnh giờ chạy";
-  b.onclick = () => {
+  b.onclick = async () => {
     if (tok) tok = "";
-    else tok = (prompt("Dán GitHub token (fine-grained, chỉ repo nth-xu, quyền Contents: Read and write):") || "").trim();
+    else {
+      const t = (prompt("Nhập GitHub token (chỉ cần 1 lần, trình duyệt này sẽ nhớ):") || "").trim();
+      if (!t) return;
+      // thử token ngay: phải ghi được repo nth-xu, sai thì báo luôn thay vì tới lúc bấm Lưu
+      const r = await fetch(API.replace("/contents/lenh.json", ""), { headers: { Authorization: "Bearer " + t } })
+        .then(r => r.ok ? r.json() : null).catch(() => null);
+      if (!r?.permissions?.push) { alert("Token sai, hết hạn hoặc không có quyền ghi repo nth-xu."); return; }
+      tok = t;
+    }
     ghi("nth_gh_token", tok); veChinh(); cu = ""; tai();
   };
   c.appendChild(b);
