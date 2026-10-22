@@ -234,11 +234,11 @@
   ]
  },
  "myxinh1011": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[0] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-10-22 20:10",
-  "ket_thuc": "",
+  "ket_thuc": "2026-10-22 21:27",
   "nhan_vat": [
    {
     "ten": "Chân Hoàn",
@@ -263,6 +263,11 @@
    {
     "ten": "Hoàngg Hậu",
     "luc": "21:14",
+    "loi": []
+   },
+   {
+    "ten": "TháiHậu",
+    "luc": "21:27",
     "loi": []
    }
   ]
