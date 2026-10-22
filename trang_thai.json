@@ -1,10 +1,10 @@
 {
  "maianh0000001": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[0] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-10-22 12:32",
-  "ket_thuc": "",
+  "ket_thuc": "2026-10-22 13:49",
   "nhan_vat": [
    {
     "ten": "HưToàn",
@@ -29,6 +29,11 @@
    {
     "ten": "LộcXuânNam",
     "luc": "13:37",
+    "loi": []
+   },
+   {
+    "ten": "ThànhVững",
+    "luc": "13:49",
     "loi": []
    }
   ]
