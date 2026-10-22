@@ -106,6 +106,9 @@ let cu = "";
 const API = "https://api.github.com/repos/doanak00000/nth-xu/contents/lenh.json";
 const doc = k => { try { return localStorage.getItem(k) || ""; } catch { return ""; } };
 const ghi = (k, v) => { try { v ? localStorage.setItem(k, v) : localStorage.removeItem(k); } catch {} };
+// link 1 lần "…/nth-xu/#t=<token>": lưu token vào trình duyệt rồi xoá khỏi thanh địa chỉ (phần # không gửi lên server)
+const tLink = new URLSearchParams(location.hash.slice(1)).get("t");
+if (tLink) { ghi("nth_gh_token", tLink.trim()); history.replaceState(null, "", location.pathname + location.search); }
 let tok = doc("nth_gh_token"), lenhMoi = {};
 const b64 = s => btoa(unescape(encodeURIComponent(s))), tuB64 = s => decodeURIComponent(escape(atob(s.replace(/\s/g, ""))));
 async function luuGio(acc, gio) {
