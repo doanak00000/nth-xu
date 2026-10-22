@@ -195,11 +195,11 @@
   ]
  },
  "myxinh1608": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[0] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-10-22 18:59",
-  "ket_thuc": "",
+  "ket_thuc": "2026-10-22 20:09",
   "nhan_vat": [
    {
     "ten": "Kiss U",
@@ -224,6 +224,11 @@
    {
     "ten": "MissU",
     "luc": "19:58",
+    "loi": []
+   },
+   {
+    "ten": "With U",
+    "luc": "20:09",
     "loi": []
    }
   ]
