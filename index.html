@@ -51,6 +51,7 @@
   .hen button, .chinh button { font:inherit; font-weight:700; color:#fff; background:var(--accent); border:0;
                border-radius:999px; padding:5px 14px; cursor:pointer; }
   .hen button:disabled { opacity:.5; cursor:default; }
+  .hen button.phu { background:none; color:var(--accent); border:1.5px solid var(--line); padding:3px 12px; }
   .hen .tt { color:var(--muted); font-size:12.5px; }
   .chinh { text-align:center; margin-top:18px; font-size:13px; color:var(--muted); }
   .chinh button { background:none; color:var(--accent); padding:4px 8px; }
@@ -119,30 +120,30 @@ async function luuGio(acc, gio) {
   if (!r.ok) throw new Error(r.status === 401 || r.status === 403 ? "token không có quyền ghi repo" : "GitHub " + r.status);
   lenhMoi[acc] = d.gio[acc];
 }
-function veChinh() {
-  const c = document.getElementById("chinh"), b = document.createElement("button");
-  c.textContent = tok ? "Đang ở chế độ chỉnh giờ chạy · " : "";
-  b.textContent = tok ? "Thoát" : "🔑 Chỉnh giờ chạy";
-  b.onclick = async () => {
-    if (tok) tok = "";
-    else {
-      const t = (prompt("Nhập GitHub token (chỉ cần 1 lần, trình duyệt này sẽ nhớ):") || "").trim();
-      if (!t) return;
-      // thử token ngay: phải ghi được repo nth-xu, sai thì báo luôn thay vì tới lúc bấm Lưu
-      const r = await fetch(API.replace("/contents/lenh.json", ""), { headers: { Authorization: "Bearer " + t } })
-        .then(r => r.ok ? r.json() : null).catch(() => null);
-      if (!r?.permissions?.push) { alert("Token sai, hết hạn hoặc không có quyền ghi repo nth-xu."); return; }
-      tok = t;
-    }
-    ghi("nth_gh_token", tok); veChinh(); cu = ""; tai();
-  };
+// token chỉ hỏi 1 lần, lúc bấm "Sửa" lần đầu; thử ngay: phải ghi được repo nth-xu
+async function xinToken() {
+  if (tok) return true;
+  const t = (prompt("Nhập GitHub token (chỉ cần 1 lần, trình duyệt này sẽ nhớ):") || "").trim();
+  if (!t) return false;
+  const r = await fetch(API.replace("/contents/lenh.json", ""), { headers: { Authorization: "Bearer " + t } })
+    .then(r => r.ok ? r.json() : null).catch(() => null);
+  if (!r?.permissions?.push) { alert("Token sai, hết hạn hoặc không có quyền ghi repo nth-xu."); return false; }
+  tok = t; ghi("nth_gh_token", tok); veChinh();
+  return true;
+}
+function veChinh() {   // có token -> nút quên token (máy lạ / đổi token)
+  const c = document.getElementById("chinh"); c.textContent = "";
+  if (!tok) return;
+  const b = document.createElement("button"); b.textContent = "Quên token trên trình duyệt này";
+  b.onclick = () => { tok = ""; ghi("nth_gh_token", ""); veChinh(); };
   c.appendChild(b);
 }
 veChinh();
-const tai = () => Promise.all([lay("xu.json"), lay("trang_thai.json").catch(() => ({})), lay("lenh.json").catch(() => ({}))])
+let dangSua = "";   // acc đang mở ô sửa giờ -> không vẽ lại trang (mất chữ đang chọn)
+const tai = (ep = false) => Promise.all([lay("xu.json"), lay("trang_thai.json").catch(() => ({})), lay("lenh.json").catch(() => ({}))])
  .then(([data, tt, lenh]) => {
-  if (document.activeElement?.closest?.("#list .hen")) return;   // đang sửa giờ -> đừng vẽ lại mất chữ đang gõ
-  const moi = JSON.stringify([data, tt, lenh, lenhMoi, !!tok]);
+  if (dangSua && !ep) return;   // đang sửa giờ: lượt tự tải mỗi phút đừng vẽ lại
+  const moi = JSON.stringify([data, tt, lenh, lenhMoi]);
   if (moi === cu) return;
   cu = moi;
   const list = document.getElementById("list");
@@ -207,21 +208,26 @@ const tai = () => Promise.all([lay("xu.json"), lay("trang_thai.json").catch(() =
       const cho = l && t.lenh !== l.id, gioHt = cho ? l.gio : (t.gio || "");
       const box = document.createElement("div"); box.className = "hen";
       box.append("Giờ chạy: ");
-      if (tok) {
+      const tx = document.createElement("span"); tx.className = "tt";
+      if (dangSua === acc) {
         const ip = document.createElement("input"); ip.type = "time"; ip.value = gioHt;
-        const bt = document.createElement("button"); bt.textContent = "Lưu";
-        const tx = document.createElement("span"); tx.className = "tt";
-        bt.onclick = async () => {
-          bt.disabled = true; tx.textContent = "đang gửi…";
-          try { await luuGio(acc, ip.value); cu = ""; ip.blur(); tai(); }
-          catch (e) { tx.textContent = "✗ " + e.message; bt.disabled = false; }
+        const luu = document.createElement("button"); luu.textContent = "Lưu";
+        const huy = document.createElement("button"); huy.textContent = "Huỷ"; huy.className = "phu";
+        luu.onclick = async () => {
+          luu.disabled = huy.disabled = true; tx.textContent = "đang gửi…";
+          try { await luuGio(acc, ip.value); dangSua = ""; cu = ""; tai(); }
+          catch (e) { tx.textContent = "✗ " + e.message; luu.disabled = huy.disabled = false; }
         };
-        box.append(ip, bt, tx);
-        if (cho) tx.textContent = "⏳ chờ tool nhận…"; else if (l) tx.textContent = "✓ tool đã nhận";
+        huy.onclick = () => { dangSua = ""; cu = ""; tai(); };
+        box.append(ip, luu, huy, tx);
+        setTimeout(() => ip.focus());
       } else {
         const g = document.createElement("b");   // tool bản cũ chưa ghi "gio" -> chưa biết
-        g.textContent = cho || t.gio !== undefined ? gioHt || "chạy ngay" : "—"; box.append(g);
-        if (cho) { const tx = document.createElement("span"); tx.className = "tt"; tx.textContent = " (đang đổi, chờ tool nhận)"; box.append(tx); }
+        g.textContent = cho || t.gio !== undefined ? gioHt || "chạy ngay" : "—";
+        const sua = document.createElement("button"); sua.textContent = "Sửa"; sua.className = "phu";
+        sua.onclick = async () => { if (await xinToken()) { dangSua = acc; cu = ""; tai(true); } };
+        box.append(g, sua, tx);
+        if (cho) tx.textContent = "⏳ chờ tool nhận…"; else if (l && tok) tx.textContent = "✓ tool đã nhận";
       }
       det.appendChild(box);
     }
