@@ -87,8 +87,15 @@
 </main>
 <script>
 const lay = f => fetch(f + "?t=" + Date.now()).then(r => r.ok ? r.json() : {});
-Promise.all([lay("xu.json"), lay("trang_thai.json").catch(() => ({}))]).then(([data, tt]) => {
+// tự tải lại dữ liệu mỗi phút (tool push lên GitHub Pages), giữ nguyên acc đang mở; dữ liệu không đổi thì khỏi vẽ lại
+let cu = "";
+const tai = () => Promise.all([lay("xu.json"), lay("trang_thai.json").catch(() => ({}))]).then(([data, tt]) => {
+  const moi = JSON.stringify([data, tt]);
+  if (moi === cu) return;
+  cu = moi;
   const list = document.getElementById("list");
+  const mo = new Set([...list.querySelectorAll("details[open]")].map(d => d.dataset.acc));
+  list.textContent = "";
   const accs = [...new Set([...Object.keys(tt), ...Object.keys(data)])];   // trang_thai.json giữ thứ tự kho acc
   // giống cột Trạng thái trên UI bot
   const nhanSt = t => ({ chay: `▶ đang chạy ${Math.min(t.nv + 1, 6)}/6`, do: `⏸ dở ${t.nv}/6`,
@@ -114,6 +121,7 @@ Promise.all([lay("xu.json"), lay("trang_thai.json").catch(() => ({}))]).then(([d
   for (const acc of accs) {
     const nvs = data[acc] || {};
     const det = document.createElement("details");
+    det.dataset.acc = acc; det.open = mo.has(acc);
     const sum = document.createElement("summary");
     sum.textContent = acc;
     const st = document.createElement("div");
@@ -185,7 +193,10 @@ Promise.all([lay("xu.json"), lay("trang_thai.json").catch(() => ({}))]).then(([d
   document.getElementById("sub").textContent = accs.length
     ? "Bấm vào tài khoản để xem nhân vật · 3 ngày gần nhất · cập nhật lần cuối " + last
     : "Chưa có dữ liệu.";
-}).catch(() => { document.getElementById("sub").textContent = "Không tải được dữ liệu."; });
+}).catch(() => { if (!cu) document.getElementById("sub").textContent = "Không tải được dữ liệu."; });
+tai();
+setInterval(() => { if (!document.hidden) tai(); }, 60000);
+document.addEventListener("visibilitychange", () => { if (!document.hidden) tai(); });
 // hoa rơi thưa: tối đa 6 bông cùng lúc, mỗi ~1.8s một bông; tắt nếu người xem bật giảm chuyển động
 if (!matchMedia("(prefers-reduced-motion: reduce)").matches) setInterval(() => {
   if (document.hidden || document.querySelectorAll(".hoa").length >= 6) return;
