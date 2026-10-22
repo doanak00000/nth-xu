@@ -43,6 +43,17 @@
   summary .st { margin-left:auto; display:flex; flex-direction:column; align-items:flex-end; gap:1px; }
   summary .st + span { margin-left:12px; }
   .giolam { font-size:11.5px; color:var(--muted); font-weight:500; }
+  .hen { border-top:1.5px dashed var(--line); padding:10px 16px; font-size:13.5px; display:flex; align-items:center;
+         gap:8px; flex-wrap:wrap; }
+  .hen b { color:var(--accent); }
+  .hen input { font:inherit; color:var(--fg); border:1.5px solid var(--line); border-radius:10px; padding:4px 8px;
+               background:var(--today); }
+  .hen button, .chinh button { font:inherit; font-weight:700; color:#fff; background:var(--accent); border:0;
+               border-radius:999px; padding:5px 14px; cursor:pointer; }
+  .hen button:disabled { opacity:.5; cursor:default; }
+  .hen .tt { color:var(--muted); font-size:12.5px; }
+  .chinh { text-align:center; margin-top:18px; font-size:13px; color:var(--muted); }
+  .chinh button { background:none; color:var(--accent); padding:4px 8px; }
   .badge { font-size:12px; font-weight:700; padding:3px 10px; border-radius:999px; background:var(--head); color:var(--muted); }
   .badge.chay { background:var(--run-bg); color:var(--run); }
   .badge.xong { background:var(--ok-bg); color:var(--ok); }
@@ -84,13 +95,46 @@
     <img class="cc" src="cong_chua.webp" alt="" width="180" height="201">
   </div>
   <div id="list"></div>
+  <div class="chinh" id="chinh"></div>
 </main>
 <script>
 const lay = f => fetch(f + "?t=" + Date.now()).then(r => r.ok ? r.json() : {});
 // tự tải lại dữ liệu mỗi phút (tool push lên GitHub Pages), giữ nguyên acc đang mở; dữ liệu không đổi thì khỏi vẽ lại
 let cu = "";
-const tai = () => Promise.all([lay("xu.json"), lay("trang_thai.json").catch(() => ({}))]).then(([data, tt]) => {
-  const moi = JSON.stringify([data, tt]);
+// chỉnh giờ chạy acc public: web ghi lenh.json lên repo bằng GitHub token (chỉ lưu ở trình duyệt này);
+// tool kéo về trong ~20s, áp giờ rồi ghi id lệnh đã nhận vào trang_thai.json
+const API = "https://api.github.com/repos/doanak00000/nth-xu/contents/lenh.json";
+const doc = k => { try { return localStorage.getItem(k) || ""; } catch { return ""; } };
+const ghi = (k, v) => { try { v ? localStorage.setItem(k, v) : localStorage.removeItem(k); } catch {} };
+let tok = doc("nth_gh_token"), lenhMoi = {};
+const b64 = s => btoa(unescape(encodeURIComponent(s))), tuB64 = s => decodeURIComponent(escape(atob(s.replace(/\s/g, ""))));
+async function luuGio(acc, gio) {
+  const h = { Authorization: "Bearer " + tok, Accept: "application/vnd.github+json" };
+  let r = await fetch(API + "?t=" + Date.now(), { headers: h }), sha, d = {};
+  if (r.ok) { const j = await r.json(); sha = j.sha; d = JSON.parse(tuB64(j.content)); }
+  else if (r.status !== 404) throw new Error(r.status === 401 ? "token sai / hết hạn" : "GitHub " + r.status);
+  (d.gio ||= {})[acc] = { gio, id: Date.now().toString(36) };
+  r = await fetch(API, { method: "PUT", headers: h, body: JSON.stringify({
+    message: `web: giờ chạy ${acc} -> ${gio || "chạy ngay"}`, content: b64(JSON.stringify(d, null, 1)), ...(sha && { sha }) }) });
+  if (!r.ok) throw new Error(r.status === 401 || r.status === 403 ? "token không có quyền ghi repo" : "GitHub " + r.status);
+  lenhMoi[acc] = d.gio[acc];
+}
+function veChinh() {
+  const c = document.getElementById("chinh"), b = document.createElement("button");
+  c.textContent = tok ? "Đang ở chế độ chỉnh giờ chạy · " : "";
+  b.textContent = tok ? "Thoát" : "🔑 Chỉnh giờ chạy";
+  b.onclick = () => {
+    if (tok) tok = "";
+    else tok = (prompt("Dán GitHub token (fine-grained, chỉ repo nth-xu, quyền Contents: Read and write):") || "").trim();
+    ghi("nth_gh_token", tok); veChinh(); cu = ""; tai();
+  };
+  c.appendChild(b);
+}
+veChinh();
+const tai = () => Promise.all([lay("xu.json"), lay("trang_thai.json").catch(() => ({})), lay("lenh.json").catch(() => ({}))])
+ .then(([data, tt, lenh]) => {
+  if (document.activeElement?.closest?.("#list .hen")) return;   // đang sửa giờ -> đừng vẽ lại mất chữ đang gõ
+  const moi = JSON.stringify([data, tt, lenh, lenhMoi, !!tok]);
   if (moi === cu) return;
   cu = moi;
   const list = document.getElementById("list");
@@ -149,6 +193,30 @@ const tai = () => Promise.all([lay("xu.json"), lay("trang_thai.json").catch(() =
     sp.textContent = Object.keys(nvs).length + " nhân vật";
     sum.appendChild(sp);
     det.appendChild(sum);
+    // giờ chạy (hẹn giờ) + sửa từ web: lệnh chưa được tool nhận thì hiện "chờ tool nhận"
+    {
+      const l = lenhMoi[acc]?.id > (lenh.gio?.[acc]?.id || "") ? lenhMoi[acc] : lenh.gio?.[acc];
+      const cho = l && t.lenh !== l.id, gioHt = cho ? l.gio : (t.gio || "");
+      const box = document.createElement("div"); box.className = "hen";
+      box.append("Giờ chạy: ");
+      if (tok) {
+        const ip = document.createElement("input"); ip.type = "time"; ip.value = gioHt;
+        const bt = document.createElement("button"); bt.textContent = "Lưu";
+        const tx = document.createElement("span"); tx.className = "tt";
+        bt.onclick = async () => {
+          bt.disabled = true; tx.textContent = "đang gửi…";
+          try { await luuGio(acc, ip.value); cu = ""; ip.blur(); tai(); }
+          catch (e) { tx.textContent = "✗ " + e.message; bt.disabled = false; }
+        };
+        box.append(ip, bt, tx);
+        if (cho) tx.textContent = "⏳ chờ tool nhận…"; else if (l) tx.textContent = "✓ tool đã nhận";
+      } else {
+        const g = document.createElement("b");   // tool bản cũ chưa ghi "gio" -> chưa biết
+        g.textContent = cho || t.gio !== undefined ? gioHt || "chạy ngay" : "—"; box.append(g);
+        if (cho) { const tx = document.createElement("span"); tx.className = "tt"; tx.textContent = " (đang đổi, chờ tool nhận)"; box.append(tx); }
+      }
+      det.appendChild(box);
+    }
     // nhân vật làm hôm nay: ✓ hoặc ⚠ + bước lỗi (vd "chụp ảnh: failed, roll: 3/4")
     if (hn.length) {
       const box = document.createElement("div"); box.className = "homnay";
