@@ -252,7 +252,7 @@ const tai = (ep = false) => Promise.all([lay("xu.json"), lay("trang_thai.json").
         const k = document.createElement("span"); k.className = n.loi.length ? "sai" : "ok";
         k.textContent = (n.loi.length ? "⚠ " : "✓ ") + n.ten; r.appendChild(k);
         const g = document.createElement("span"); g.className = "gio";
-        g.textContent = n.luc + (n.treo != null ? ` · treo ${n.treo}/8 ô` : ""); r.appendChild(g);
+        g.textContent = n.luc + (n.treo != null ? ` · treo ${n.treo}/8 ô` + (n.het_to && n.treo < 8 ? " (hết tơ)" : "") : ""); r.appendChild(g);
         if (n.treo != null && n.treo < 8) { const c = document.createElement("span"); c.className = "co"; c.textContent = "⚑"; c.title = "treo chưa đủ 8/8 ô"; r.appendChild(c); }
         if (n.loi.length) r.appendChild(document.createTextNode(" — " + n.loi.join(", ")));
         box.appendChild(r);
