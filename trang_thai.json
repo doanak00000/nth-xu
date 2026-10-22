@@ -8,11 +8,11 @@
   "nhan_vat": []
  },
  "mytre1608": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[0] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-10-22 10:56",
-  "ket_thuc": "",
+  "ket_thuc": "2026-10-22 12:30",
   "nhan_vat": [
    {
     "ten": "BILLOW",
@@ -37,6 +37,11 @@
    {
     "ten": "KRIXI",
     "luc": "12:17",
+    "loi": []
+   },
+   {
+    "ten": "Enzo",
+    "luc": "12:30",
     "loi": []
    }
   ]
