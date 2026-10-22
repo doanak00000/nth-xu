@@ -8,13 +8,18 @@
  },
  "mytre1608": {
   "st": "chay",
-  "nv": 1,
+  "nv": 2,
   "may": "[0] LD",
   "bat_dau": "2026-10-22 10:56",
   "nhan_vat": [
    {
     "ten": "BILLOW",
     "luc": "11:08",
+    "loi": []
+   },
+   {
+    "ten": "HELEN",
+    "luc": "11:20",
     "loi": []
    }
   ]
