@@ -42,6 +42,7 @@
   .empty { color:var(--line); }
   summary .st { margin-left:auto; display:flex; flex-direction:column; align-items:flex-end; gap:1px; }
   summary .st + span { margin-left:12px; }
+  .giolam { font-size:11.5px; color:var(--muted); font-weight:500; }
   .badge { font-size:12px; font-weight:700; padding:3px 10px; border-radius:999px; background:var(--head); color:var(--muted); }
   .badge.chay { background:var(--run-bg); color:var(--run); }
   .badge.xong { background:var(--ok-bg); color:var(--ok); }
@@ -121,6 +122,17 @@ Promise.all([lay("xu.json"), lay("trang_thai.json").catch(() => ({}))]).then(([d
     b.className = "badge " + (thieu || soLoi ? "loi" : t.st);
     b.textContent = nhanSt(t).replace("✓", soLoi ? "⚠" : "✓") + (soLoi ? ` · ${soLoi} nv lỗi` : "");
     st.appendChild(b);
+    // giờ làm: "10:55 → 12:40 · 1h45" (đang chạy: "từ 10:55"); không phải hôm nay thì kèm ngày
+    if (t.bat_dau) {
+      const gio = s => (s.slice(0, 10) === days[2] ? "" : s.slice(8, 10) + "/" + s.slice(5, 7) + " ") + s.slice(11);
+      const g = document.createElement("span"); g.className = "giolam";
+      if (t.st === "chay") g.textContent = "từ " + gio(t.bat_dau);
+      else if (t.ket_thuc && t.ket_thuc >= t.bat_dau) {
+        const ph = Math.round((new Date(t.ket_thuc.replace(" ", "T")) - new Date(t.bat_dau.replace(" ", "T"))) / 6e4);
+        g.textContent = gio(t.bat_dau) + " → " + gio(t.ket_thuc) + " · " + (ph >= 60 ? Math.floor(ph / 60) + "h" + String(ph % 60).padStart(2, "0") : ph + " phút");
+      } else g.textContent = "bắt đầu " + gio(t.bat_dau);
+      st.appendChild(g);
+    }
     sum.appendChild(st);
     const sp = document.createElement("span");
     sp.textContent = Object.keys(nvs).length + " nhân vật";
