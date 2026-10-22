@@ -121,9 +121,9 @@ async function luuGio(acc, gio) {
   lenhMoi[acc] = d.gio[acc];
 }
 // token chỉ hỏi 1 lần, lúc bấm "Sửa" lần đầu; thử ngay: phải ghi được repo nth-xu
-async function xinToken() {
-  if (tok) return true;
-  const t = (prompt("Nhập GitHub token (chỉ cần 1 lần, trình duyệt này sẽ nhớ):") || "").trim();
+async function xinToken(t = "") {
+  if (tok && !t) return true;
+  t ||= (prompt("Nhập GitHub token (chỉ cần 1 lần, trình duyệt này sẽ nhớ):") || "").trim();
   if (!t) return false;
   const r = await fetch(API.replace("/contents/lenh.json", ""), { headers: { Authorization: "Bearer " + t } })
     .then(r => r.ok ? r.json() : null).catch(() => null);
@@ -139,6 +139,9 @@ function veChinh() {   // có token -> nút quên token (máy lạ / đổi toke
   c.appendChild(b);
 }
 veChinh();
+// cách 2: link 1 lần "…/nth-xu/#t=<token>" -> thử token, lưu, xoá khỏi thanh địa chỉ (phần # không gửi lên server)
+{ const t = new URLSearchParams(location.hash.slice(1)).get("t");
+  if (t) { history.replaceState(null, "", location.pathname + location.search); xinToken(t.trim()); } }
 let dangSua = "";   // acc đang mở ô sửa giờ -> không vẽ lại trang (mất chữ đang chọn)
 const tai = (ep = false) => Promise.all([lay("xu.json"), lay("trang_thai.json").catch(() => ({})), lay("lenh.json").catch(() => ({}))])
  .then(([data, tt, lenh]) => {
