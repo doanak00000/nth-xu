@@ -156,11 +156,11 @@
   ]
  },
  "doangia1011": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[0] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-10-22 17:47",
-  "ket_thuc": "",
+  "ket_thuc": "2026-10-22 18:57",
   "nhan_vat": [
    {
     "ten": "SócAva",
@@ -185,6 +185,11 @@
    {
     "ten": "ChumChumr",
     "luc": "18:45",
+    "loi": []
+   },
+   {
+    "ten": "MARLIN",
+    "luc": "18:57",
     "loi": []
    }
   ]
