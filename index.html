@@ -89,7 +89,7 @@
 const lay = f => fetch(f + "?t=" + Date.now()).then(r => r.ok ? r.json() : {});
 Promise.all([lay("xu.json"), lay("trang_thai.json").catch(() => ({}))]).then(([data, tt]) => {
   const list = document.getElementById("list");
-  const accs = [...new Set([...Object.keys(data), ...Object.keys(tt)])].sort();
+  const accs = [...new Set([...Object.keys(tt), ...Object.keys(data)])];   // trang_thai.json giữ thứ tự kho acc
   // giống cột Trạng thái trên UI bot
   const nhanSt = t => ({ chay: `▶ đang chạy ${Math.min(t.nv + 1, 6)}/6`, do: `⏸ dở ${t.nv}/6`,
                          xong: t.nv > 0 && t.nv < 6 ? `⚠ xong ${t.nv}/6` : "✓ xong", loi: "✗ lỗi" })[t.st] || "chưa chạy";
@@ -98,6 +98,9 @@ Promise.all([lay("xu.json"), lay("trang_thai.json").catch(() => ({}))]).then(([d
   const ngay = k => { const d = new Date(); d.setDate(d.getDate() - k);
     return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); };
   const days = [ngay(2), ngay(1), ngay(0)], nhan = ["2 hôm trước", "Hôm qua", "Hôm nay"];
+  // thứ tự chạy: acc đã chạy hôm nay theo giờ bắt đầu (nhân vật đầu tiên), rồi tới acc chưa chạy theo thứ tự kho
+  const batDau = a => (tt[a]?.bat_dau || "").startsWith(days[2]) ? tt[a].bat_dau : "~";
+  accs.sort((a, b) => batDau(a) < batDau(b) ? -1 : batDau(a) > batDau(b) ? 1 : 0);   // "~" > chữ số -> chưa chạy xuống cuối
   // tổng xu = số xu GẦN NHẤT của mọi nhân vật, mọi acc (xu.json chỉ có acc public). "1.049M" / "159.2K" / "46413"
   const soXu = s => { const m = /^([\d.]+)\s*([MK]?)$/i.exec(s || ""); return m ? +m[1] * ({ M: 1e6, K: 1e3 }[m[2].toUpperCase()] || 1) : 0; };
   let tong = 0, soNv = 0;
