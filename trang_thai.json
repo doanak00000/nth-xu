@@ -419,11 +419,11 @@
   ]
  },
  "myxinh1011": {
-  "st": "chay",
-  "nv": 3,
-  "may": "[0] LD",
+  "st": "loi",
+  "nv": 2,
+  "may": "",
   "bat_dau": "2026-10-23 20:25",
-  "ket_thuc": "",
+  "ket_thuc": "2026-10-23 21:09",
   "gio": "20:40",
   "lenh": "",
   "nhan_vat": [
@@ -449,6 +449,16 @@
     "loi": [],
     "treo": 5,
     "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "Hoa Phii",
+    "luc": "21:09",
+    "loi": [
+     "dừng (OpenCV(5.0.0) D:\\a\\opencv-python\\opencv-python\\opencv\\module): failed"
+    ],
+    "treo": null,
+    "het_to": false,
     "ke_day": false
    }
   ]
