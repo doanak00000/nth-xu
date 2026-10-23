@@ -177,11 +177,11 @@
   ]
  },
  "doanmy1011": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[0] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-10-23 15:21",
-  "ket_thuc": "",
+  "ket_thuc": "2026-10-23 16:34",
   "gio": "15:35",
   "lenh": "",
   "nhan_vat": [
@@ -223,6 +223,18 @@
     "ten": "YumiCa",
     "luc": "16:17",
     "loi": [],
+    "treo": 8,
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "Đá Lâm",
+    "luc": "16:34",
+    "loi": [
+     "mộng hoa lục (unlike): failed",
+     "roll: 3/4",
+     "mốc: 3/4"
+    ],
     "treo": 8,
     "het_to": false,
     "ke_day": false
