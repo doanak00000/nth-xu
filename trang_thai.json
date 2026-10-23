@@ -243,13 +243,22 @@
  },
  "doangia1608": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[0] LD",
   "bat_dau": "2026-10-23 16:54",
   "ket_thuc": "",
-  "gio": "16:54",
+  "gio": "17:06",
   "lenh": "",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "NhữDïnhYˆ",
+    "luc": "17:03",
+    "loi": [],
+    "treo": 4,
+    "het_to": false,
+    "ke_day": true
+   }
+  ]
  },
  "doangia1011": {
   "st": "",
