@@ -105,8 +105,13 @@
 <script>
 // đọc thẳng file trong repo (raw) -> không chờ GitHub Pages phát bản (có lúc kẹt hàng chờ cả chục phút); ?t= bỏ qua cache.
 // raw lỗi thì đọc bản trên Pages
-const RAW = "https://raw.githubusercontent.com/doanak00000/nth-xu/main/";
-const lay = f => fetch(RAW + f + "?t=" + Date.now()).then(r => { if (!r.ok) throw 0; return r.json(); })
+// raw.githubusercontent đệm 5 phút và BỎ QUA "?t=" (đo 23/10: tool đã nhận giờ mà web vẫn "chờ tool nhận") -> hỏi API sha
+//  commit mới nhất rồi đọc file theo sha (link theo sha không bao giờ cũ); API lỗi / hết lượt (60/giờ) -> đọc "main" như cũ
+const RAW = "https://raw.githubusercontent.com/doanak00000/nth-xu/";
+const laySha = () => fetch("https://api.github.com/repos/doanak00000/nth-xu/commits/main",
+  { headers: { Accept: "application/vnd.github.sha", ...(tok && { Authorization: "Bearer " + tok }) } })
+  .then(r => r.ok ? r.text() : "main").catch(() => "main");
+const lay = (f, sha = "main") => fetch(RAW + sha + "/" + f + "?t=" + Date.now()).then(r => { if (!r.ok) throw 0; return r.json(); })
   .catch(() => fetch(f + "?t=" + Date.now()).then(r => r.ok ? r.json() : {}));
 // tự tải lại dữ liệu mỗi phút (tool push lên GitHub Pages), giữ nguyên acc đang mở; dữ liệu không đổi thì khỏi vẽ lại
 let cu = "";
@@ -149,7 +154,7 @@ veChinh();
   if (t) { history.replaceState(null, "", location.pathname + location.search);
     xinToken(t.trim()).then(ok => ok || alert("Token sai, hết hạn hoặc không có quyền ghi repo nth-xu.")); } }
 let dangSua = "";   // acc đang mở ô sửa giờ -> không vẽ lại trang (mất chữ đang chọn)
-const tai = (ep = false) => Promise.all([lay("xu.json"), lay("trang_thai.json").catch(() => ({})), lay("lenh.json").catch(() => ({}))])
+const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), lay("trang_thai.json", s).catch(() => ({})), lay("lenh.json", s).catch(() => ({}))]))
  .then(([data, tt, lenh]) => {
   if (dangSua && !ep) return;   // đang sửa giờ: lượt tự tải mỗi phút đừng vẽ lại
   const moi = JSON.stringify([data, tt, lenh, lenhMoi]);
