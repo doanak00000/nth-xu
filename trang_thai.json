@@ -354,11 +354,11 @@
   ]
  },
  "myxinh1608": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[0] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-10-24 19:29",
-  "ket_thuc": "",
+  "ket_thuc": "2026-10-24 20:42",
   "gio": "19:45",
   "lenh": "",
   "nhan_vat": [
@@ -397,6 +397,14 @@
    {
     "ten": "MissU",
     "luc": "20:31",
+    "loi": [],
+    "treo": 8,
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "With U",
+    "luc": "20:42",
     "loi": [],
     "treo": 8,
     "het_to": false,
