@@ -1,474 +1,82 @@
 {
  "doanmy1011": {
-  "st": "xong",
-  "nv": 6,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-10-24 09:45",
   "ket_thuc": "2026-10-24 10:19",
   "gio": "10:30",
   "lenh": "mvml54ft",
-  "nhan_vat": [
-   {
-    "ten": "Khoáng Doãn",
-    "luc": "09:50",
-    "loi": [],
-    "treo": 0,
-    "het_to": false,
-    "ke_day": true
-   },
-   {
-    "ten": "THẠCH",
-    "luc": "09:55",
-    "loi": [],
-    "treo": 0,
-    "het_to": false,
-    "ke_day": true
-   },
-   {
-    "ten": "FI Smy",
-    "luc": "10:00",
-    "loi": [],
-    "treo": 0,
-    "het_to": false,
-    "ke_day": true
-   },
-   {
-    "ten": "MyCA",
-    "luc": "10:06",
-    "loi": [],
-    "treo": 0,
-    "het_to": false,
-    "ke_day": true
-   },
-   {
-    "ten": "YumiCa",
-    "luc": "10:11",
-    "loi": [],
-    "treo": 0,
-    "het_to": false,
-    "ke_day": true
-   },
-   {
-    "ten": "Đá Lâm",
-    "luc": "10:19",
-    "loi": [],
-    "treo": 0,
-    "het_to": false,
-    "ke_day": true
-   }
-  ]
+  "nhan_vat": []
  },
  "mytre1608": {
-  "st": "xong",
-  "nv": 6,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-10-24 11:35",
   "ket_thuc": "2026-10-24 12:31",
   "gio": "11:49",
   "lenh": "",
-  "nhan_vat": [
-   {
-    "ten": "BILLOW",
-    "luc": "11:46",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "HELEN",
-    "luc": "11:58",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "IGGY",
-    "luc": "12:10",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "TRiệu Vân",
-    "luc": "12:20",
-    "loi": [],
-    "treo": 5,
-    "het_to": false,
-    "ke_day": true
-   },
-   {
-    "ten": "KRIXI",
-    "luc": "12:25",
-    "loi": [],
-    "treo": 0,
-    "het_to": false,
-    "ke_day": true
-   },
-   {
-    "ten": "Enzo",
-    "luc": "12:31",
-    "loi": [],
-    "treo": 0,
-    "het_to": false,
-    "ke_day": true
-   }
-  ]
+  "nhan_vat": []
  },
  "maianh0000001": {
-  "st": "xong",
-  "nv": 6,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-10-24 13:04",
   "ket_thuc": "2026-10-24 14:14",
   "gio": "13:20",
   "lenh": "",
-  "nhan_vat": [
-   {
-    "ten": "HưToàn",
-    "luc": "13:17",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "DiêmBảoKỳ",
-    "luc": "13:29",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "TriềuHân",
-    "luc": "13:40",
-    "loi": [],
-    "treo": 7,
-    "het_to": true,
-    "ke_day": false
-   },
-   {
-    "ten": "LaiXuân",
-    "luc": "13:53",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "LộcXuânNam",
-    "luc": "14:05",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "ThànhVững",
-    "luc": "14:14",
-    "loi": [],
-    "treo": 5,
-    "het_to": true,
-    "ke_day": false
-   }
-  ]
+  "nhan_vat": []
  },
  "doanmy1608": {
-  "st": "xong",
-  "nv": 6,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-10-24 14:23",
   "ket_thuc": "2026-10-24 15:33",
   "gio": "14:38",
   "lenh": "",
-  "nhan_vat": [
-   {
-    "ten": "Miêu Lan",
-    "luc": "14:35",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "WH",
-    "luc": "14:47",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Stylist Mỹ",
-    "luc": "14:59",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Chỉ Hồng",
-    "luc": "15:10",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Thữ",
-    "luc": "15:21",
-    "loi": [],
-    "treo": 7,
-    "het_to": true,
-    "ke_day": false
-   },
-   {
-    "ten": "LADY",
-    "luc": "15:33",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   }
-  ]
+  "nhan_vat": []
  },
  "doangia1608": {
-  "st": "xong",
-  "nv": 6,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-10-24 17:06",
   "ket_thuc": "2026-10-24 18:19",
   "gio": "17:22",
   "lenh": "",
-  "nhan_vat": [
-   {
-    "ten": "NhữỮïnhY",
-    "luc": "17:19",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "TrânCẩm",
-    "luc": "17:31",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "TràChiHy",
-    "luc": "17:44",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Miêu My",
-    "luc": "17:56",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Doan Myy",
-    "luc": "18:08",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "NhiếpUyển",
-    "luc": "18:19",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   }
-  ]
+  "nhan_vat": []
  },
  "doangia1011": {
-  "st": "xong",
-  "nv": 6,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-10-24 18:20",
   "ket_thuc": "2026-10-24 19:29",
   "gio": "18:35",
   "lenh": "",
-  "nhan_vat": [
-   {
-    "ten": "SócAva",
-    "luc": "18:32",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "DoRy",
-    "luc": "18:43",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Nemo",
-    "luc": "18:55",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Dolia Babie",
-    "luc": "19:07",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "ChumChum",
-    "luc": "19:16",
-    "loi": [],
-    "treo": 5,
-    "het_to": true,
-    "ke_day": false
-   },
-   {
-    "ten": "MARLIN",
-    "luc": "19:28",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   }
-  ]
+  "nhan_vat": []
  },
  "myxinh1608": {
-  "st": "xong",
-  "nv": 6,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-10-24 19:29",
   "ket_thuc": "2026-10-24 20:42",
   "gio": "19:45",
   "lenh": "",
-  "nhan_vat": [
-   {
-    "ten": "Kiss U",
-    "luc": "19:42",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Mam U",
-    "luc": "19:54",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Need U",
-    "luc": "20:09",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Louwe U",
-    "luc": "20:19",
-    "loi": [],
-    "treo": 7,
-    "het_to": true,
-    "ke_day": false
-   },
-   {
-    "ten": "MissU",
-    "luc": "20:31",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "With U",
-    "luc": "20:42",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   }
-  ]
+  "nhan_vat": []
  },
  "myxinh1011": {
-  "st": "xong",
-  "nv": 6,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-10-24 20:44",
   "ket_thuc": "2026-10-24 21:51",
   "gio": "20:57",
   "lenh": "",
-  "nhan_vat": [
-   {
-    "ten": "Chân Hoàn",
-    "luc": "20:54",
-    "loi": [],
-    "treo": 6,
-    "het_to": true,
-    "ke_day": false
-   },
-   {
-    "ten": "Ngưy AnhLạc",
-    "luc": "21:06",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Tắcc",
-    "luc": "21:16",
-    "loi": [],
-    "treo": 5,
-    "het_to": true,
-    "ke_day": false
-   },
-   {
-    "ten": "Hoa Phii",
-    "luc": "21:25",
-    "loi": [],
-    "treo": 6,
-    "het_to": true,
-    "ke_day": false
-   },
-   {
-    "ten": "Hoàngg Hậu",
-    "luc": "21:37",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "TháiHậu",
-    "luc": "21:51",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   }
-  ]
+  "nhan_vat": []
  }
 }
