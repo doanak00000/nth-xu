@@ -30,11 +30,11 @@
   "nhan_vat": []
  },
  "doanmy1011": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[0] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-10-24 09:45",
-  "ket_thuc": "",
+  "ket_thuc": "2026-10-24 10:19",
   "gio": "09:53",
   "lenh": "mvl6wrod",
   "nhan_vat": [
@@ -74,6 +74,18 @@
     "ten": "YumiCa",
     "luc": "10:11",
     "loi": [],
+    "treo": 0,
+    "het_to": false,
+    "ke_day": true
+   },
+   {
+    "ten": "Đá Lâm",
+    "luc": "10:19",
+    "loi": [
+     "mộng hoa lục (unlike): failed",
+     "roll: 3/4",
+     "mốc: 3/4"
+    ],
     "treo": 0,
     "het_to": false,
     "ke_day": true
