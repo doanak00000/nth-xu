@@ -59,11 +59,11 @@
   ]
  },
  "mytre1608": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[0] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-10-24 11:35",
-  "ket_thuc": "",
+  "ket_thuc": "2026-10-24 12:31",
   "gio": "11:49",
   "lenh": "",
   "nhan_vat": [
@@ -102,6 +102,14 @@
    {
     "ten": "KRIXI",
     "luc": "12:25",
+    "loi": [],
+    "treo": 0,
+    "het_to": false,
+    "ke_day": true
+   },
+   {
+    "ten": "Enzo",
+    "luc": "12:31",
     "loi": [],
     "treo": 0,
     "het_to": false,
