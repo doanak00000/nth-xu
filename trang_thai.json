@@ -414,7 +414,7 @@
  },
  "myxinh1011": {
   "st": "chay",
-  "nv": 2,
+  "nv": 3,
   "may": "[0] LD",
   "bat_dau": "2026-10-24 20:44",
   "ket_thuc": "",
@@ -435,6 +435,14 @@
     "loi": [],
     "treo": 8,
     "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "Tắcc",
+    "luc": "21:16",
+    "loi": [],
+    "treo": 5,
+    "het_to": true,
     "ke_day": false
    }
   ]
