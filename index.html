@@ -172,9 +172,11 @@ const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), l
   const ngay = k => { const d = new Date(); d.setDate(d.getDate() - k);
     return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); };
   const days = [ngay(2), ngay(1), ngay(0)], nhan = ["2 hôm trước", "Hôm qua", "Hôm nay"];
-  // thứ tự chạy: acc đã chạy hôm nay theo giờ bắt đầu (nhân vật đầu tiên), rồi tới acc chưa chạy theo thứ tự kho
-  const batDau = a => (tt[a]?.bat_dau || "").startsWith(days[2]) ? tt[a].bat_dau : "~";
-  accs.sort((a, b) => batDau(a) < batDau(b) ? -1 : batDau(a) > batDau(b) ? 1 : 0);   // "~" > chữ số -> chưa chạy xuống cuối
+  // thứ tự theo giờ chạy (hẹn sớm lên đầu, "chạy ngay" đầu tiên); lệnh web chưa được tool nhận thì theo giờ vừa sửa
+  // cùng giờ giữ thứ tự kho; acc chưa biết giờ (tool cũ / chỉ có trong xu.json) xuống cuối
+  const gioChay = a => { const l = lenhMoi[a]?.id > (lenh.gio?.[a]?.id || "") ? lenhMoi[a] : lenh.gio?.[a];
+    return l && tt[a]?.lenh !== l.id ? l.gio : tt[a]?.gio ?? "~"; };
+  accs.sort((a, b) => gioChay(a) < gioChay(b) ? -1 : gioChay(a) > gioChay(b) ? 1 : 0);
   // tổng xu = số xu GẦN NHẤT của mọi nhân vật, mọi acc (xu.json chỉ có acc public). "1.049M" / "159.2K" / "46413"
   const soXu = s => { const m = /^([\d.]+)\s*([MK]?)$/i.exec(s || ""); return m ? +m[1] * ({ M: 1e6, K: 1e3 }[m[2].toUpperCase()] || 1) : 0; };
   // them = xu tăng so với hôm qua: mỗi nhân vật lấy số mới nhất trừ số mới nhất tới hết hôm qua (nhân vật mới chưa có số cũ -> bỏ)
