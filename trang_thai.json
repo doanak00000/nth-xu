@@ -66,7 +66,7 @@
   "may": "[0] LD",
   "bat_dau": "2026-10-25 11:51",
   "ket_thuc": "",
-  "gio": "11:49",
+  "gio": "12:08",
   "lenh": "",
   "nhan_vat": [
    {
@@ -74,6 +74,14 @@
     "luc": "12:03",
     "loi": [],
     "treo": 8,
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "Ki Bà",
+    "luc": "12:05",
+    "loi": [],
+    "treo": null,
     "het_to": false,
     "ke_day": false
    }
