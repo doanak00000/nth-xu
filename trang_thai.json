@@ -11,7 +11,9 @@
    {
     "ten": "Đá Lâm",
     "luc": "10:44",
-    "loi": [],
+    "loi": [
+     "nhận thưởng: failed"
+    ],
     "treo": 8,
     "het_to": false,
     "ke_day": false
@@ -59,9 +61,9 @@
   ]
  },
  "mytre1608": {
-  "st": "chay",
+  "st": "",
   "nv": 0,
-  "may": "[0] LD",
+  "may": "",
   "bat_dau": "2026-10-25 11:49",
   "ket_thuc": "",
   "gio": "11:49",
