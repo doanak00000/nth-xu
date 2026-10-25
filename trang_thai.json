@@ -62,7 +62,7 @@
  },
  "mytre1608": {
   "st": "chay",
-  "nv": 4,
+  "nv": 5,
   "may": "[0] LD",
   "bat_dau": "2026-10-25 11:51",
   "ket_thuc": "",
@@ -100,6 +100,16 @@
      "treo bán: failed"
     ],
     "treo": 4,
+    "het_to": false,
+    "ke_day": true
+   },
+   {
+    "ten": "KRIXI",
+    "luc": "12:43",
+    "loi": [
+     "treo bán: failed"
+    ],
+    "treo": 1,
     "het_to": false,
     "ke_day": true
    }
