@@ -1,7 +1,7 @@
 {
  "doanmy1011": {
   "st": "chay",
-  "nv": 4,
+  "nv": 5,
   "may": "[0] LD",
   "bat_dau": "2026-10-25 10:31",
   "ket_thuc": "",
@@ -39,6 +39,14 @@
     "treo": 4,
     "het_to": false,
     "ke_day": true
+   },
+   {
+    "ten": "MyCA",
+    "luc": "11:12",
+    "loi": [],
+    "treo": 2,
+    "het_to": true,
+    "ke_day": false
    }
   ]
  },
