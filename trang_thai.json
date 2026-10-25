@@ -1,10 +1,10 @@
 {
  "doanmy1011": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[0] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-10-25 10:31",
-  "ket_thuc": "",
+  "ket_thuc": "2026-10-25 11:19",
   "gio": "10:47",
   "lenh": "mvml54ft",
   "nhan_vat": [
@@ -47,6 +47,14 @@
     "treo": 2,
     "het_to": true,
     "ke_day": false
+   },
+   {
+    "ten": "YumiCa",
+    "luc": "11:19",
+    "loi": [],
+    "treo": 3,
+    "het_to": false,
+    "ke_day": true
    }
   ]
  },
