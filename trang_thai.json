@@ -11,9 +11,7 @@
    {
     "ten": "Đá Lâm",
     "luc": "10:44",
-    "loi": [
-     "nhận thưởng: failed"
-    ],
+    "loi": [],
     "treo": 8,
     "het_to": false,
     "ke_day": false
@@ -96,9 +94,7 @@
    {
     "ten": "TRiệu Vân",
     "luc": "12:37",
-    "loi": [
-     "treo bán: failed"
-    ],
+    "loi": [],
     "treo": 4,
     "het_to": false,
     "ke_day": true
@@ -106,9 +102,7 @@
    {
     "ten": "KRIXI",
     "luc": "12:43",
-    "loi": [
-     "treo bán: failed"
-    ],
+    "loi": [],
     "treo": 1,
     "het_to": false,
     "ke_day": true
@@ -116,9 +110,7 @@
    {
     "ten": "Enzo",
     "luc": "12:49",
-    "loi": [
-     "roll: 2/4"
-    ],
+    "loi": [],
     "treo": 1,
     "het_to": false,
     "ke_day": true
