@@ -541,8 +541,8 @@
     "luc": "21:20",
     "loi": [],
     "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
+    "treo_lai": 0,
+    "treo_lai_luc": "23:16",
     "het_to": false,
     "ke_day": false
    },
