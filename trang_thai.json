@@ -189,15 +189,24 @@
  },
  "doanmy1608": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[0] LD",
   "bat_dau": "2026-10-26 14:38",
   "ket_thuc": "",
-  "gio": "14:38",
+  "gio": "14:46",
   "lenh": "",
   "treo": "",
   "lenh_treo": "",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "Miêu Lan",
+    "luc": "14:43",
+    "loi": [],
+    "treo": 0,
+    "het_to": false,
+    "ke_day": true
+   }
+  ]
  },
  "doangia1608": {
   "st": "",
