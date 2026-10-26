@@ -1,121 +1,23 @@
 {
  "doanmy1011": {
-  "st": "xong",
-  "nv": 6,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-10-25 10:31",
   "ket_thuc": "2026-10-25 11:19",
   "gio": "10:47",
   "lenh": "mvml54ft",
-  "nhan_vat": [
-   {
-    "ten": "Đá Lâm",
-    "luc": "10:44",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Khoáng Doãn",
-    "luc": "10:51",
-    "loi": [],
-    "treo": 3,
-    "het_to": false,
-    "ke_day": true
-   },
-   {
-    "ten": "THẠCH",
-    "luc": "10:57",
-    "loi": [],
-    "treo": 3,
-    "het_to": true,
-    "ke_day": false
-   },
-   {
-    "ten": "FI Smy",
-    "luc": "11:06",
-    "loi": [],
-    "treo": 4,
-    "het_to": false,
-    "ke_day": true
-   },
-   {
-    "ten": "MyCA",
-    "luc": "11:12",
-    "loi": [],
-    "treo": 2,
-    "het_to": true,
-    "ke_day": false
-   },
-   {
-    "ten": "YumiCa",
-    "luc": "11:19",
-    "loi": [],
-    "treo": 3,
-    "het_to": false,
-    "ke_day": true
-   }
-  ]
+  "nhan_vat": []
  },
  "mytre1608": {
-  "st": "xong",
-  "nv": 6,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-10-25 11:51",
   "ket_thuc": "2026-10-25 12:49",
   "gio": "12:08",
   "lenh": "",
-  "nhan_vat": [
-   {
-    "ten": "BILLOW",
-    "luc": "12:05",
-    "loi": [],
-    "treo": null,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "HELEN",
-    "luc": "12:16",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "IGGY",
-    "luc": "12:28",
-    "loi": [],
-    "treo": 8,
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "TRiệu Vân",
-    "luc": "12:37",
-    "loi": [],
-    "treo": 4,
-    "het_to": false,
-    "ke_day": true
-   },
-   {
-    "ten": "KRIXI",
-    "luc": "12:43",
-    "loi": [],
-    "treo": 1,
-    "het_to": false,
-    "ke_day": true
-   },
-   {
-    "ten": "Enzo",
-    "luc": "12:49",
-    "loi": [],
-    "treo": 1,
-    "het_to": false,
-    "ke_day": true
-   }
-  ]
+  "nhan_vat": []
  },
  "maianh0000001": {
   "st": "",
