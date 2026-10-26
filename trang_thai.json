@@ -298,11 +298,11 @@
  },
  "doangia1608": {
   "st": "chay",
-  "nv": 1,
+  "nv": 2,
   "may": "[0] LD",
   "bat_dau": "2026-10-26 17:22",
   "ket_thuc": "",
-  "gio": "17:22",
+  "gio": "17:31",
   "lenh": "",
   "treo": "",
   "lenh_treo": "",
@@ -310,6 +310,16 @@
    {
     "ten": "NhữDinhY",
     "luc": "17:28",
+    "loi": [],
+    "treo": 0,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": true
+   },
+   {
+    "ten": "TrânCẩm",
+    "luc": "17:34",
     "loi": [],
     "treo": 0,
     "treo_lai": null,
