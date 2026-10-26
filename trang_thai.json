@@ -1,4 +1,9 @@
 {
+ "_tool": {
+  "chay": false,
+  "che_do": "",
+  "lenh_start": ""
+ },
  "doanmy1011": {
   "st": "xong",
   "nv": 6,
@@ -7,6 +12,8 @@
   "ket_thuc": "2026-10-26 12:05",
   "gio": "11:12",
   "lenh": "mvml54ft",
+  "treo": "",
+  "lenh_treo": "",
   "nhan_vat": [
    {
     "ten": "Đá Lâm",
@@ -66,6 +73,8 @@
   "ket_thuc": "2026-10-26 13:23",
   "gio": "12:25",
   "lenh": "",
+  "treo": "",
+  "lenh_treo": "",
   "nhan_vat": [
    {
     "ten": "BILLOW",
@@ -125,6 +134,8 @@
   "ket_thuc": "2026-10-26 14:13",
   "gio": "13:49",
   "lenh": "",
+  "treo": "",
+  "lenh_treo": "",
   "nhan_vat": [
    {
     "ten": "HuưToàn",
@@ -184,6 +195,8 @@
   "ket_thuc": "2026-10-25 14:52",
   "gio": "14:38",
   "lenh": "",
+  "treo": "",
+  "lenh_treo": "",
   "nhan_vat": []
  },
  "doangia1608": {
@@ -194,6 +207,8 @@
   "ket_thuc": "2026-10-24 18:19",
   "gio": "17:22",
   "lenh": "",
+  "treo": "",
+  "lenh_treo": "",
   "nhan_vat": []
  },
  "doangia1011": {
@@ -204,6 +219,8 @@
   "ket_thuc": "2026-10-24 19:29",
   "gio": "18:35",
   "lenh": "",
+  "treo": "",
+  "lenh_treo": "",
   "nhan_vat": []
  },
  "myxinh1608": {
@@ -214,6 +231,8 @@
   "ket_thuc": "2026-10-24 20:42",
   "gio": "19:45",
   "lenh": "",
+  "treo": "",
+  "lenh_treo": "",
   "nhan_vat": []
  },
  "myxinh1011": {
@@ -224,6 +243,8 @@
   "ket_thuc": "2026-10-24 21:51",
   "gio": "20:57",
   "lenh": "",
+  "treo": "",
+  "lenh_treo": "",
   "nhan_vat": []
  }
 }
