@@ -1,7 +1,7 @@
 {
  "_tool": {
   "chay": true,
-  "che_do": "treo",
+  "che_do": "thuong",
   "lenh_start": ""
  },
  "doanmy1608": {
@@ -523,7 +523,7 @@
   "ket_thuc": "2026-10-26 21:48",
   "gio": "21:11",
   "lenh": "",
-  "treo": "running:[0] LD",
+  "treo": "",
   "lenh_treo": "mvpdwdt4",
   "nhan_vat": [
    {
