@@ -200,23 +200,23 @@ const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), l
   const mo = new Set([...list.querySelectorAll("details[open]")].map(d => d.dataset.acc));
   list.textContent = "";
   const accs = [...new Set([...Object.keys(tt), ...Object.keys(data)])].filter(a => a[0] !== "_");   // trang_thai.json giữ thứ tự kho acc
-  // tool: đang chạy gì + Start (chạy thường / chỉ treo lại tơ) — tool đang chạy thì dừng rồi Start lại
+  // tool: đang chạy gì + Start (tool đang dừng -> chạy full; đang chạy thì tool bỏ qua). Treo lại tơ tool tự xếp lượt:
+  //  chạy full xong mỗi nhóm 4 acc thì treo lại các acc tick trong nhóm đó
   {
     const tl = tt._tool, box = document.createElement("div"); box.className = "hen";
     const sl = startMoi?.id > (lenh.start?.id || "") ? startMoi : lenh.start, cho = sl && tl && tl.lenh_start !== sl.id;
     const g = document.createElement("b");
-    g.textContent = !tl ? "—" : tl.chay ? "▶ đang chạy " + (tl.che_do === "treo" ? "(treo lại tơ)" : "(chạy thường)") : "■ đang dừng";
-    const chon = document.createElement("select");
-    chon.append(new Option("Chạy thường", "thuong"), new Option("Chỉ treo lại tơ (acc tick Treo lại)", "treo"));
+    g.textContent = !tl ? "—" : tl.chay ? "▶ đang chạy " + (tl.che_do === "treo" ? "(treo lại tơ)" : "(chạy full)") : "■ đang dừng";
     const bt = document.createElement("button"); bt.textContent = "▶ Start";
+    bt.disabled = !!tl?.chay;
     const tx = document.createElement("span"); tx.className = "tt";
     if (cho) tx.textContent = "⏳ chờ tool nhận…";
     bt.onclick = () => canToken(box, async () => {
       bt.disabled = true; tx.textContent = "đang gửi…";
-      try { await guiStart(chon.value); cu = ""; tai(true); }
+      try { await guiStart("thuong"); cu = ""; tai(true); }
       catch (e) { tx.textContent = "✗ " + e.message; bt.disabled = false; }
     });
-    box.append("Tool: ", g, chon, bt, tx);
+    box.append("Tool: ", g, bt, tx);
     document.getElementById("tool").replaceChildren(box);
   }
   // giống cột Trạng thái trên UI bot
@@ -307,7 +307,7 @@ const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), l
       }
       det.appendChild(box);
     }
-    // treo lại tơ: tick rồi Start "Chỉ treo lại tơ" -> tool chỉ gỡ hàng hết hạn + treo lại (acc ✓ cũng được), xong tự bỏ tick
+    // treo lại tơ: tick -> chạy full xong nhóm 4 acc chứa acc này thì tool tự treo lại (tối đa 4 ô/nhân vật), xong tự bỏ tick
     if (t.treo !== undefined) {
       const l = treoMoi[acc]?.id > (lenh.treo?.[acc]?.id || "") ? treoMoi[acc] : lenh.treo?.[acc];
       const cho = l && t.lenh_treo !== l.id, dang = t.treo.startsWith("running:");
@@ -323,6 +323,7 @@ const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), l
         catch (e) { tx.textContent = "✗ " + e.message; ck.checked = !ck.checked; ck.disabled = false; }
       });
       lb.append(ck, "Treo lại tơ");
+      lb.title = "Chạy full xong nhóm 4 acc chứa acc này thì tool tự treo lại tơ (tối đa 4 ô/nhân vật)";
       box.append(lb, tx);
       det.appendChild(box);
     }
@@ -335,7 +336,8 @@ const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), l
         const k = document.createElement("span"); k.className = n.loi.length ? "sai" : "ok";
         k.textContent = (n.loi.length ? "⚠ " : "✓ ") + n.ten; r.appendChild(k);
         const g = document.createElement("span"); g.className = "gio";
-        g.textContent = n.luc + (n.treo != null ? ` · treo ${n.treo}/8 ô` + (n.het_to && n.treo < 8 ? " (hết tơ)" : "") : ""); r.appendChild(g);
+        g.textContent = n.luc + (n.treo != null ? ` · treo ${n.treo}/8 ô` + (n.het_to && n.treo < 8 ? " (hết tơ)" : "") : "")
+          + (n.treo_lai != null ? ` · treo lại ${n.treo_lai} ô` + (n.treo_lai_luc ? ` (${n.treo_lai_luc})` : "") : ""); r.appendChild(g);
         if (n.treo != null && n.treo < 8 && !n.het_to) { const c = document.createElement("span"); c.className = "co"; c.textContent = "⚑"; c.title = "treo chưa đủ 8/8 ô"; r.appendChild(c); }
         if (n.loi.length) r.appendChild(document.createTextNode(" — " + n.loi.join(", ")));
         box.appendChild(r);

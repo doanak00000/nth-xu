@@ -1,7 +1,7 @@
 {
  "_tool": {
-  "chay": true,
-  "che_do": "thuong",
+  "chay": false,
+  "che_do": "",
   "lenh_start": ""
  },
  "doanmy1011": {
@@ -20,6 +20,8 @@
     "luc": "11:09",
     "loi": [],
     "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
     "het_to": false,
     "ke_day": false
    },
@@ -28,6 +30,8 @@
     "luc": "11:20",
     "loi": [],
     "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
     "het_to": false,
     "ke_day": false
    },
@@ -36,6 +40,8 @@
     "luc": "11:29",
     "loi": [],
     "treo": 5,
+    "treo_lai": null,
+    "treo_lai_luc": "",
     "het_to": false,
     "ke_day": true
    },
@@ -44,6 +50,8 @@
     "luc": "11:42",
     "loi": [],
     "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
     "het_to": false,
     "ke_day": false
    },
@@ -52,6 +60,8 @@
     "luc": "11:54",
     "loi": [],
     "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
     "het_to": false,
     "ke_day": false
    },
@@ -60,6 +70,8 @@
     "luc": "12:05",
     "loi": [],
     "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
     "het_to": false,
     "ke_day": false
    }
@@ -81,6 +93,8 @@
     "luc": "12:22",
     "loi": [],
     "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
     "het_to": false,
     "ke_day": false
    },
@@ -89,6 +103,8 @@
     "luc": "12:35",
     "loi": [],
     "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
     "het_to": false,
     "ke_day": false
    },
@@ -97,6 +113,8 @@
     "luc": "12:47",
     "loi": [],
     "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
     "het_to": false,
     "ke_day": false
    },
@@ -105,6 +123,8 @@
     "luc": "12:59",
     "loi": [],
     "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
     "het_to": false,
     "ke_day": false
    },
@@ -113,6 +133,8 @@
     "luc": "13:11",
     "loi": [],
     "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
     "het_to": false,
     "ke_day": false
    },
@@ -121,6 +143,8 @@
     "luc": "13:23",
     "loi": [],
     "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
     "het_to": false,
     "ke_day": false
    }
@@ -142,6 +166,8 @@
     "luc": "13:46",
     "loi": [],
     "treo": 0,
+    "treo_lai": null,
+    "treo_lai_luc": "",
     "het_to": false,
     "ke_day": true
    },
@@ -150,6 +176,8 @@
     "luc": "13:51",
     "loi": [],
     "treo": 0,
+    "treo_lai": null,
+    "treo_lai_luc": "",
     "het_to": false,
     "ke_day": true
    },
@@ -158,6 +186,8 @@
     "luc": "13:57",
     "loi": [],
     "treo": 0,
+    "treo_lai": null,
+    "treo_lai_luc": "",
     "het_to": false,
     "ke_day": true
    },
@@ -166,6 +196,8 @@
     "luc": "14:03",
     "loi": [],
     "treo": 0,
+    "treo_lai": null,
+    "treo_lai_luc": "",
     "het_to": false,
     "ke_day": true
    },
@@ -174,6 +206,8 @@
     "luc": "14:08",
     "loi": [],
     "treo": 0,
+    "treo_lai": null,
+    "treo_lai_luc": "",
     "het_to": false,
     "ke_day": true
    },
@@ -182,6 +216,8 @@
     "luc": "14:13",
     "loi": [],
     "treo": 0,
+    "treo_lai": null,
+    "treo_lai_luc": "",
     "het_to": false,
     "ke_day": true
    }
@@ -203,6 +239,8 @@
     "luc": "14:43",
     "loi": [],
     "treo": 0,
+    "treo_lai": null,
+    "treo_lai_luc": "",
     "het_to": false,
     "ke_day": true
    },
@@ -211,6 +249,8 @@
     "luc": "14:49",
     "loi": [],
     "treo": 0,
+    "treo_lai": null,
+    "treo_lai_luc": "",
     "het_to": false,
     "ke_day": true
    },
@@ -219,6 +259,8 @@
     "luc": "14:53",
     "loi": [],
     "treo": 0,
+    "treo_lai": null,
+    "treo_lai_luc": "",
     "het_to": false,
     "ke_day": true
    },
@@ -227,6 +269,8 @@
     "luc": "14:59",
     "loi": [],
     "treo": 0,
+    "treo_lai": null,
+    "treo_lai_luc": "",
     "het_to": false,
     "ke_day": true
    },
@@ -235,6 +279,8 @@
     "luc": "15:05",
     "loi": [],
     "treo": 1,
+    "treo_lai": null,
+    "treo_lai_luc": "",
     "het_to": true,
     "ke_day": false
    },
@@ -243,6 +289,8 @@
     "luc": "15:10",
     "loi": [],
     "treo": 0,
+    "treo_lai": null,
+    "treo_lai_luc": "",
     "het_to": false,
     "ke_day": true
    }
