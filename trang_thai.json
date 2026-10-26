@@ -189,7 +189,7 @@
  },
  "doanmy1608": {
   "st": "chay",
-  "nv": 3,
+  "nv": 4,
   "may": "[0] LD",
   "bat_dau": "2026-10-26 14:38",
   "ket_thuc": "",
@@ -217,6 +217,14 @@
    {
     "ten": "Stylist My",
     "luc": "14:53",
+    "loi": [],
+    "treo": 0,
+    "het_to": false,
+    "ke_day": true
+   },
+   {
+    "ten": "Chỉ Hồng",
+    "luc": "14:59",
     "loi": [],
     "treo": 0,
     "het_to": false,
