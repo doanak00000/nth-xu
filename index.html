@@ -56,6 +56,13 @@
   .hen button:disabled { opacity:.5; cursor:default; }
   .hen button.phu { background:none; color:var(--accent); border:1.5px solid var(--line); padding:3px 12px; }
   .hen .tt { color:var(--muted); font-size:12.5px; }
+  .tool { background:var(--card); border:1.5px solid var(--line); border-radius:20px; box-shadow:var(--shadow);
+          margin-bottom:12px; }
+  .tool .hen { border-top:0; }
+  .hen select { font:inherit; color:var(--fg); border:1.5px solid var(--line); border-radius:10px; padding:4px 8px;
+                background:var(--today); }
+  .hen label { display:flex; align-items:center; gap:6px; cursor:pointer; }
+  .hen input[type=checkbox] { accent-color:var(--accent); width:16px; height:16px; }
   .chinh { text-align:center; margin-top:18px; font-size:13px; color:var(--muted); }
   .chinh button { background:none; color:var(--accent); padding:4px 8px; }
   .badge { font-size:12px; font-weight:700; padding:3px 10px; border-radius:999px; background:var(--head); color:var(--muted); }
@@ -99,6 +106,7 @@
     <div class="tong" id="tong"></div>
     <img class="cc" src="cong_chua.webp" alt="" width="180" height="201">
   </div>
+  <div class="tool" id="tool"></div>
   <div id="list"></div>
   <div class="chinh" id="chinh"></div>
 </main>
@@ -122,16 +130,44 @@ const doc = k => { try { return localStorage.getItem(k) || ""; } catch { return 
 const ghi = (k, v) => { try { v ? localStorage.setItem(k, v) : localStorage.removeItem(k); } catch {} };
 let tok = doc("nth_gh_token"), lenhMoi = {};
 const b64 = s => btoa(unescape(encodeURIComponent(s))), tuB64 = s => decodeURIComponent(escape(atob(s.replace(/\s/g, ""))));
-async function luuGio(acc, gio) {
+// sua(d, id): đổi lệnh trong lenh.json; lệnh: gio {tk: {gio, id}} · treo {tk: {bat, id}} · start {che_do, id}
+async function ghiLenh(sua, msg) {
   const h = { Authorization: "Bearer " + tok, Accept: "application/vnd.github+json" };
   let r = await fetch(API + "?t=" + Date.now(), { headers: h }), sha, d = {};
   if (r.ok) { const j = await r.json(); sha = j.sha; d = JSON.parse(tuB64(j.content)); }
   else if (r.status !== 404) throw new Error(r.status === 401 ? "token sai / hết hạn" : "GitHub " + r.status);
-  (d.gio ||= {})[acc] = { gio, id: Date.now().toString(36) };
+  sua(d, Date.now().toString(36));
   r = await fetch(API, { method: "PUT", headers: h, body: JSON.stringify({
-    message: `web: giờ chạy ${acc} -> ${gio || "chạy ngay"}`, content: b64(JSON.stringify(d, null, 1)), ...(sha && { sha }) }) });
+    message: "web: " + msg, content: b64(JSON.stringify(d, null, 1)), ...(sha && { sha }) }) });
   if (!r.ok) throw new Error(r.status === 401 || r.status === 403 ? "token không có quyền ghi repo" : "GitHub " + r.status);
+  return d;
+}
+const luuGio = async (acc, gio) => {
+  const d = await ghiLenh((d, id) => (d.gio ||= {})[acc] = { gio, id }, `giờ chạy ${acc} -> ${gio || "chạy ngay"}`);
   lenhMoi[acc] = d.gio[acc];
+};
+let treoMoi = {}, startMoi = null;   // lệnh vừa gửi, chưa thấy trong lenh.json (raw đệm vài phút)
+const luuTreo = async (acc, bat) => {
+  const d = await ghiLenh((d, id) => (d.treo ||= {})[acc] = { bat, id }, `${bat ? "tick" : "bỏ tick"} treo lại tơ ${acc}`);
+  treoMoi[acc] = d.treo[acc];
+};
+const guiStart = async che_do => { startMoi = (await ghiLenh((d, id) => d.start = { che_do, id }, "Start " + che_do)).start; };
+// chưa có token -> ô nhập token ngay trong `box` (iPhone mở link trong Zalo/Messenger: prompt() bị chặn); có rồi -> tiep()
+function canToken(box, tiep) {
+  if (tok) return tiep();
+  dangSua = dangSua || "_token";   // chặn lượt tự tải mỗi phút xoá mất ô đang nhập
+  const ip = document.createElement("input"); ip.type = "password"; ip.placeholder = "GitHub token (nhập 1 lần)";
+  const ok = document.createElement("button"); ok.textContent = "OK";
+  const huy = document.createElement("button"); huy.textContent = "Huỷ"; huy.className = "phu";
+  const tx = document.createElement("span"); tx.className = "tt";
+  ok.onclick = async () => {
+    ok.disabled = true; tx.textContent = "đang thử token…";
+    if (await xinToken(ip.value.trim())) { if (dangSua === "_token") dangSua = ""; cu = ""; tiep(); return; }
+    tx.textContent = "✗ token sai, hết hạn hoặc không có quyền ghi repo nth-xu"; ok.disabled = false;
+  };
+  huy.onclick = () => { dangSua = ""; cu = ""; tai(); };
+  box.replaceChildren("Token: ", ip, ok, huy, tx);
+  ip.focus();
 }
 // token chỉ hỏi 1 lần, lúc bấm "Sửa" lần đầu (ô nhập ngay trên trang); thử ngay: phải ghi được repo nth-xu
 async function xinToken(t) {
@@ -157,13 +193,32 @@ let dangSua = "";   // acc đang mở ô sửa giờ -> không vẽ lại trang 
 const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), lay("trang_thai.json", s).catch(() => ({})), lay("lenh.json", s).catch(() => ({}))]))
  .then(([data, tt, lenh]) => {
   if (dangSua && !ep) return;   // đang sửa giờ: lượt tự tải mỗi phút đừng vẽ lại
-  const moi = JSON.stringify([data, tt, lenh, lenhMoi]);
+  const moi = JSON.stringify([data, tt, lenh, lenhMoi, treoMoi, startMoi]);
   if (moi === cu) return;
   cu = moi;
   const list = document.getElementById("list");
   const mo = new Set([...list.querySelectorAll("details[open]")].map(d => d.dataset.acc));
   list.textContent = "";
-  const accs = [...new Set([...Object.keys(tt), ...Object.keys(data)])];   // trang_thai.json giữ thứ tự kho acc
+  const accs = [...new Set([...Object.keys(tt), ...Object.keys(data)])].filter(a => a[0] !== "_");   // trang_thai.json giữ thứ tự kho acc
+  // tool: đang chạy gì + Start (chạy thường / chỉ treo lại tơ) — tool đang chạy thì dừng rồi Start lại
+  {
+    const tl = tt._tool, box = document.createElement("div"); box.className = "hen";
+    const sl = startMoi?.id > (lenh.start?.id || "") ? startMoi : lenh.start, cho = sl && tl && tl.lenh_start !== sl.id;
+    const g = document.createElement("b");
+    g.textContent = !tl ? "—" : tl.chay ? "▶ đang chạy " + (tl.che_do === "treo" ? "(treo lại tơ)" : "(chạy thường)") : "■ đang dừng";
+    const chon = document.createElement("select");
+    chon.append(new Option("Chạy thường", "thuong"), new Option("Chỉ treo lại tơ (acc tick Treo lại)", "treo"));
+    const bt = document.createElement("button"); bt.textContent = "▶ Start";
+    const tx = document.createElement("span"); tx.className = "tt";
+    if (cho) tx.textContent = "⏳ chờ tool nhận…";
+    bt.onclick = () => canToken(box, async () => {
+      bt.disabled = true; tx.textContent = "đang gửi…";
+      try { await guiStart(chon.value); cu = ""; tai(true); }
+      catch (e) { tx.textContent = "✗ " + e.message; bt.disabled = false; }
+    });
+    box.append("Tool: ", g, chon, bt, tx);
+    document.getElementById("tool").replaceChildren(box);
+  }
   // giống cột Trạng thái trên UI bot
   const nhanSt = t => ({ chay: `▶ đang chạy ${Math.min(t.nv + 1, 6)}/6`, do: `⏸ dở ${t.nv}/6`,
                          xong: t.nv > 0 && t.nv < 6 ? `⚠ xong ${t.nv}/6` : "✓ xong", loi: "✗ lỗi" })[t.st] || "chưa chạy";
@@ -246,25 +301,29 @@ const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), l
         const g = document.createElement("b");   // tool bản cũ chưa ghi "gio" -> chưa biết
         g.textContent = cho || t.gio !== undefined ? gioHt || "chạy ngay" : "—";
         const sua = document.createElement("button"); sua.textContent = "Sửa"; sua.className = "phu";
-        sua.onclick = () => {
-          if (tok) { dangSua = acc; cu = ""; tai(true); return; }
-          // iPhone mở link trong Zalo/Messenger: prompt()/alert() bị chặn im lặng -> nhập token ngay trên trang
-          dangSua = acc;   // chặn lượt tự tải mỗi phút xoá mất ô đang nhập
-          const ip = document.createElement("input"); ip.type = "password"; ip.placeholder = "GitHub token (nhập 1 lần)";
-          const ok = document.createElement("button"); ok.textContent = "OK";
-          const huy = document.createElement("button"); huy.textContent = "Huỷ"; huy.className = "phu";
-          ok.onclick = async () => {
-            ok.disabled = true; tx.textContent = "đang thử token…";
-            if (await xinToken(ip.value.trim())) { cu = ""; tai(true); return; }
-            tx.textContent = "✗ token sai, hết hạn hoặc không có quyền ghi repo nth-xu"; ok.disabled = false;
-          };
-          huy.onclick = () => { dangSua = ""; cu = ""; tai(); };
-          box.replaceChildren("Token: ", ip, ok, huy, tx);
-          ip.focus();
-        };
+        sua.onclick = () => { dangSua = acc; canToken(box, () => { dangSua = acc; cu = ""; tai(true); }); };
         box.append(g, sua, tx);
         if (cho) tx.textContent = "⏳ chờ tool nhận…"; else if (l && tok) tx.textContent = "✓ tool đã nhận";
       }
+      det.appendChild(box);
+    }
+    // treo lại tơ: tick rồi Start "Chỉ treo lại tơ" -> tool chỉ gỡ hàng hết hạn + treo lại (acc ✓ cũng được), xong tự bỏ tick
+    if (t.treo !== undefined) {
+      const l = treoMoi[acc]?.id > (lenh.treo?.[acc]?.id || "") ? treoMoi[acc] : lenh.treo?.[acc];
+      const cho = l && t.lenh_treo !== l.id, dang = t.treo.startsWith("running:");
+      const box = document.createElement("div"); box.className = "hen";
+      const lb = document.createElement("label"), ck = document.createElement("input"); ck.type = "checkbox";
+      ck.checked = cho ? l.bat : !!t.treo;
+      ck.disabled = dang;
+      const tx = document.createElement("span"); tx.className = "tt";
+      tx.textContent = cho ? "⏳ chờ tool nhận…" : dang ? "▶ đang treo lại" : "";
+      ck.onchange = () => canToken(box, async () => {
+        ck.disabled = true; tx.textContent = "đang gửi…";
+        try { await luuTreo(acc, ck.checked); cu = ""; tai(true); }
+        catch (e) { tx.textContent = "✗ " + e.message; ck.checked = !ck.checked; ck.disabled = false; }
+      });
+      lb.append(ck, "Treo lại tơ");
+      box.append(lb, tx);
       det.appendChild(box);
     }
     // nhân vật làm hôm nay: ✓ hoặc ⚠ + bước lỗi (vd "chụp ảnh: failed, roll: 3/4")
