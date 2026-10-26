@@ -118,11 +118,11 @@
   ]
  },
  "maianh0000001": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[0] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-10-26 13:40",
-  "ket_thuc": "",
+  "ket_thuc": "2026-10-26 14:13",
   "gio": "13:49",
   "lenh": "",
   "nhan_vat": [
@@ -161,6 +161,14 @@
    {
     "ten": "LộcXuânNama",
     "luc": "14:08",
+    "loi": [],
+    "treo": 0,
+    "het_to": false,
+    "ke_day": true
+   },
+   {
+    "ten": "ThànhVững",
+    "luc": "14:13",
     "loi": [],
     "treo": 0,
     "het_to": false,
