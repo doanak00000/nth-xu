@@ -1,13 +1,22 @@
 {
  "doanmy1011": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[0] LD",
   "bat_dau": "2026-10-26 10:57",
   "ket_thuc": "",
   "gio": "10:57",
   "lenh": "mvml54ft",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "Đá Lâm",
+    "luc": "11:09",
+    "loi": [],
+    "treo": 8,
+    "het_to": false,
+    "ke_day": false
+   }
+  ]
  },
  "mytre1608": {
   "st": "",
