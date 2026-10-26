@@ -119,13 +119,22 @@
  },
  "maianh0000001": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[0] LD",
   "bat_dau": "2026-10-26 13:40",
   "ket_thuc": "",
-  "gio": "13:20",
+  "gio": "13:49",
   "lenh": "",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "HuưToàn",
+    "luc": "13:46",
+    "loi": [],
+    "treo": 0,
+    "het_to": false,
+    "ke_day": true
+   }
+  ]
  },
  "doanmy1608": {
   "st": "",
