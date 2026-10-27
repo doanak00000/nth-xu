@@ -297,11 +297,11 @@
   ]
  },
  "doangia1608": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[0] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-10-27 17:31",
-  "ket_thuc": "",
+  "ket_thuc": "2026-10-27 18:24",
   "gio": "17:43",
   "lenh": "",
   "treo": "",
@@ -350,6 +350,16 @@
    {
     "ten": "Doan Myy",
     "luc": "18:15",
+    "loi": [],
+    "treo": 4,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": true
+   },
+   {
+    "ten": "NhiếpUyển",
+    "luc": "18:24",
     "loi": [],
     "treo": 4,
     "treo_lai": null,
