@@ -517,14 +517,25 @@
  },
  "myxinh1011": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[0] LD",
   "bat_dau": "2026-10-27 21:11",
   "ket_thuc": "",
-  "gio": "21:11",
+  "gio": "21:25",
   "lenh": "",
   "treo": "",
   "lenh_treo": "mvpdwdt4",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "Chân Hoàn",
+    "luc": "21:22",
+    "loi": [],
+    "treo": 6,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   }
+  ]
  }
 }
