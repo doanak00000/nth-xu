@@ -79,7 +79,7 @@
  },
  "maianh0000001": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[0] LD",
   "bat_dau": "2026-10-27 10:35",
   "ket_thuc": "",
@@ -87,7 +87,18 @@
   "lenh": "mvp8ia0n",
   "treo": "",
   "lenh_treo": "",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "DiêmBảoKỹ",
+    "luc": "10:45",
+    "loi": [],
+    "treo": 4,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": true
+   }
+  ]
  },
  "doanmy1011": {
   "st": "",
