@@ -1,7 +1,7 @@
 {
  "_tool": {
-  "chay": false,
-  "che_do": "",
+  "chay": true,
+  "che_do": "thuong",
   "lenh_start": ""
  },
  "doanmy1608": {
@@ -310,7 +310,9 @@
    {
     "ten": "NhữỮïnhY",
     "luc": "17:55",
-    "loi": [],
+    "loi": [
+     "mộng hoa lục: failed"
+    ],
     "treo": 8,
     "treo_lai": null,
     "treo_lai_luc": "",
@@ -320,7 +322,9 @@
    {
     "ten": "TrânCẩm",
     "luc": "18:07",
-    "loi": [],
+    "loi": [
+     "hảo cảm: failed"
+    ],
     "treo": 8,
     "treo_lai": null,
     "treo_lai_luc": "",
@@ -330,7 +334,10 @@
    {
     "ten": "TràChiHy",
     "luc": "18:19",
-    "loi": [],
+    "loi": [
+     "roll: 3/4",
+     "mốc: 3/4"
+    ],
     "treo": 8,
     "treo_lai": null,
     "treo_lai_luc": "",
@@ -360,7 +367,9 @@
    {
     "ten": "NhiếpUyển",
     "luc": "18:55",
-    "loi": [],
+    "loi": [
+     "hảo cảm: failed"
+    ],
     "treo": 8,
     "treo_lai": null,
     "treo_lai_luc": "",
@@ -456,7 +465,10 @@
    {
     "ten": "Kiss U",
     "luc": "20:27",
-    "loi": [],
+    "loi": [
+     "roll: 3/4",
+     "mốc: 3/4"
+    ],
     "treo": 8,
     "treo_lai": null,
     "treo_lai_luc": "",
@@ -521,14 +533,25 @@
  },
  "myxinh1011": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[0] LD",
   "bat_dau": "2026-10-28 21:25",
   "ket_thuc": "",
-  "gio": "21:25",
+  "gio": "21:40",
   "lenh": "",
   "treo": "",
   "lenh_treo": "mvpdwdt4",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "Chân Hoàn",
+    "luc": "21:37",
+    "loi": [],
+    "treo": 7,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   }
+  ]
  }
 }
