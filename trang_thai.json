@@ -1,7 +1,7 @@
 {
  "_tool": {
-  "chay": true,
-  "che_do": "thuong",
+  "chay": false,
+  "che_do": "",
   "lenh_start": ""
  },
  "doanmy1608": {
@@ -310,9 +310,7 @@
    {
     "ten": "NhữỮïnhY",
     "luc": "17:55",
-    "loi": [
-     "mộng hoa lục: failed"
-    ],
+    "loi": [],
     "treo": 8,
     "treo_lai": null,
     "treo_lai_luc": "",
@@ -322,9 +320,7 @@
    {
     "ten": "TrânCẩm",
     "luc": "18:07",
-    "loi": [
-     "hảo cảm: failed"
-    ],
+    "loi": [],
     "treo": 8,
     "treo_lai": null,
     "treo_lai_luc": "",
@@ -334,10 +330,7 @@
    {
     "ten": "TràChiHy",
     "luc": "18:19",
-    "loi": [
-     "roll: 3/4",
-     "mốc: 3/4"
-    ],
+    "loi": [],
     "treo": 8,
     "treo_lai": null,
     "treo_lai_luc": "",
@@ -367,9 +360,7 @@
    {
     "ten": "NhiếpUyển",
     "luc": "18:55",
-    "loi": [
-     "hảo cảm: failed"
-    ],
+    "loi": [],
     "treo": 8,
     "treo_lai": null,
     "treo_lai_luc": "",
@@ -465,10 +456,7 @@
    {
     "ten": "Kiss U",
     "luc": "20:27",
-    "loi": [
-     "roll: 3/4",
-     "mốc: 3/4"
-    ],
+    "loi": [],
     "treo": 8,
     "treo_lai": null,
     "treo_lai_luc": "",
