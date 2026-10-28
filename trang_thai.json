@@ -533,7 +533,7 @@
  },
  "myxinh1011": {
   "st": "chay",
-  "nv": 3,
+  "nv": 4,
   "may": "[0] LD",
   "bat_dau": "2026-10-28 21:25",
   "ket_thuc": "",
@@ -565,6 +565,16 @@
    {
     "ten": "Tắcc",
     "luc": "22:00",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "Hoa Phii",
+    "luc": "22:12",
     "loi": [],
     "treo": 8,
     "treo_lai": null,
