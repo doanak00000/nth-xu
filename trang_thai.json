@@ -448,15 +448,26 @@
  },
  "myxinh1608": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[0] LD",
   "bat_dau": "2026-10-29 20:30",
   "ket_thuc": "",
-  "gio": "20:30",
+  "gio": "20:45",
   "lenh": "",
   "treo": "",
   "lenh_treo": "mvpb1sjp",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "Kiss U",
+    "luc": "20:42",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   }
+  ]
  },
  "myxinh1011": {
   "st": "",
