@@ -79,7 +79,7 @@
  },
  "maianh0000001": {
   "st": "chay",
-  "nv": 1,
+  "nv": 2,
   "may": "[0] LD",
   "bat_dau": "2026-10-29 11:30",
   "ket_thuc": "",
@@ -92,6 +92,20 @@
     "ten": "DiêmBảoKỳ",
     "luc": "11:42",
     "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "TriềuHân",
+    "luc": "11:56",
+    "loi": [
+     "nghề nghiệp: failed",
+     "roll: 3/4",
+     "mốc: 3/4"
+    ],
     "treo": 8,
     "treo_lai": null,
     "treo_lai_luc": "",
