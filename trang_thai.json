@@ -6,7 +6,7 @@
  },
  "doanmy1608": {
   "st": "chay",
-  "nv": 3,
+  "nv": 4,
   "may": "[0] LD",
   "bat_dau": "2026-10-29 10:15",
   "ket_thuc": "",
@@ -38,6 +38,16 @@
    {
     "ten": "Stylist My",
     "luc": "10:52",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "Chỉ Hồng",
+    "luc": "11:04",
     "loi": [],
     "treo": 8,
     "treo_lai": null,
