@@ -229,15 +229,26 @@
  },
  "mytre1608": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[0] LD",
   "bat_dau": "2026-10-29 13:58",
   "ket_thuc": "",
-  "gio": "13:49",
+  "gio": "14:13",
   "lenh": "mvp8jq5w",
   "treo": "",
   "lenh_treo": "",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "BILLOW",
+    "luc": "14:10",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   }
+  ]
  },
  "doangia1608": {
   "st": "",
