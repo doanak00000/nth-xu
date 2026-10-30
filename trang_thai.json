@@ -79,7 +79,7 @@
  },
  "maianh0000001": {
   "st": "chay",
-  "nv": 3,
+  "nv": 4,
   "may": "[0] LD",
   "bat_dau": "2026-10-30 11:45",
   "ket_thuc": "",
@@ -111,6 +111,16 @@
    {
     "ten": "LaiXuân",
     "luc": "12:20",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "LộcXuânNam",
+    "luc": "12:32",
     "loi": [],
     "treo": 8,
     "treo_lai": null,
