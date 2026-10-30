@@ -516,11 +516,11 @@
   ]
  },
  "myxinh1011": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[0] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-10-30 21:58",
-  "ket_thuc": "",
+  "ket_thuc": "2026-10-30 23:08",
   "gio": "22:13",
   "lenh": "",
   "treo": "",
@@ -569,6 +569,16 @@
    {
     "ten": "Hoàngg Hậu",
     "luc": "22:57",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "TháiHậu",
+    "luc": "23:08",
     "loi": [],
     "treo": 8,
     "treo_lai": null,
