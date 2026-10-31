@@ -6,7 +6,7 @@
  },
  "doanmy1608": {
   "st": "chay",
-  "nv": 5,
+  "nv": 6,
   "may": "[0] LD",
   "bat_dau": "2026-10-31 10:46",
   "ket_thuc": "",
@@ -63,6 +63,16 @@
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "LADY",
+    "luc": "11:57",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
     "ke_day": false
    }
   ]
