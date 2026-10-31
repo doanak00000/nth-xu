@@ -302,7 +302,7 @@
   "may": "[0] LD",
   "bat_dau": "2026-10-31 18:30",
   "ket_thuc": "",
-  "gio": "18:30",
+  "gio": "18:46",
   "lenh": "",
   "treo": "",
   "lenh_treo": "mvp8o9yg",
@@ -353,6 +353,30 @@
   "lenh": "",
   "treo": "",
   "lenh_treo": "mvpdwdt4",
+  "nhan_vat": []
+ },
+ "khadoan1608": {
+  "st": "",
+  "nv": 0,
+  "may": "",
+  "bat_dau": "",
+  "ket_thuc": "",
+  "gio": "",
+  "lenh": "",
+  "treo": "",
+  "lenh_treo": "",
+  "nhan_vat": []
+ },
+ "mylu1108": {
+  "st": "",
+  "nv": 0,
+  "may": "",
+  "bat_dau": "",
+  "ket_thuc": "",
+  "gio": "",
+  "lenh": "",
+  "treo": "",
+  "lenh_treo": "",
   "nhan_vat": []
  }
 }
