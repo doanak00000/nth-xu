@@ -110,13 +110,13 @@
    },
    {
     "ten": "LaiXuân",
-    "luc": "12:36",
+    "luc": "12:38",
     "loi": [],
-    "treo": 7,
+    "treo": null,
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": false,
-    "ke_day": true
+    "ke_day": false
    }
   ]
  },
