@@ -6,15 +6,31 @@
  },
  "khadoan1608": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[0] LD",
   "bat_dau": "2026-11-01 09:47",
   "ket_thuc": "",
-  "gio": "09:45",
+  "gio": "10:02",
   "lenh": "mvx7ntj8",
   "treo": "",
   "lenh_treo": "",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "Lâm Mỳ Mỳ",
+    "luc": "09:59",
+    "loi": [
+     "nghề nghiệp: failed",
+     "mộng hoa lục: failed",
+     "roll: 3/4",
+     "mốc: 3/4"
+    ],
+    "treo": 4,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": true
+   }
+  ]
  },
  "doanmy1608": {
   "st": "",
