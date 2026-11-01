@@ -374,7 +374,7 @@
  },
  "mylu1108": {
   "st": "chay",
-  "nv": 4,
+  "nv": 5,
   "may": "[0] LD",
   "bat_dau": "2026-11-01 17:35",
   "ket_thuc": "",
@@ -421,6 +421,16 @@
     "loi": [
      "mộng hoa lục: failed"
     ],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "Mây",
+    "luc": "18:38",
+    "loi": [],
     "treo": 8,
     "treo_lai": null,
     "treo_lai_luc": "",
