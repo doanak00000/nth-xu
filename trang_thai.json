@@ -6,7 +6,7 @@
  },
  "khadoan1608": {
   "st": "chay",
-  "nv": 1,
+  "nv": 2,
   "may": "[0] LD",
   "bat_dau": "2026-11-01 09:47",
   "ket_thuc": "",
@@ -24,6 +24,16 @@
      "roll: 3/4",
      "mốc: 3/4"
     ],
+    "treo": 4,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": true
+   },
+   {
+    "ten": "YuuMyy",
+    "luc": "10:08",
+    "loi": [],
     "treo": 4,
     "treo_lai": null,
     "treo_lai_luc": "",
