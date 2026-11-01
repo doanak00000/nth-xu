@@ -374,15 +374,26 @@
  },
  "mylu1108": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[0] LD",
   "bat_dau": "2026-11-01 17:35",
   "ket_thuc": "",
-  "gio": "17:30",
+  "gio": "17:51",
   "lenh": "mvwdd5wy",
   "treo": "",
   "lenh_treo": "",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "DoctorM",
+    "luc": "17:48",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   }
+  ]
  },
  "doangia1608": {
   "st": "",
