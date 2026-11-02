@@ -1,7 +1,7 @@
 {
  "_tool": {
-  "chay": false,
-  "che_do": "",
+  "chay": true,
+  "che_do": "thuong",
   "lenh_start": ""
  },
  "khadoan1608": {
@@ -244,6 +244,79 @@
     "treo_lai_luc": "",
     "het_to": false,
     "ke_day": false
+   }
+  ]
+ },
+ "myxinh1011": {
+  "st": "xong",
+  "nv": 6,
+  "may": "",
+  "bat_dau": "2026-11-02 16:50",
+  "ket_thuc": "2026-11-02 17:28",
+  "gio": "16:59",
+  "lenh": "mvz0j6rn",
+  "treo": "cho",
+  "lenh_treo": "mvz0hyln",
+  "nhan_vat": [
+   {
+    "ten": "Chân Hoàn",
+    "luc": "16:56",
+    "loi": [],
+    "treo": 1,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "Ngưy AnhLạc",
+    "luc": "17:03",
+    "loi": [],
+    "treo": 0,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": true
+   },
+   {
+    "ten": "TšŠc",
+    "luc": "17:10",
+    "loi": [],
+    "treo": null,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "Hoa Phii",
+    "luc": "17:16",
+    "loi": [],
+    "treo": 0,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": true
+   },
+   {
+    "ten": "Hoàngg Hậư",
+    "luc": "17:22",
+    "loi": [],
+    "treo": 0,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": true
+   },
+   {
+    "ten": "TháiHậu",
+    "luc": "17:28",
+    "loi": [],
+    "treo": 0,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": true
    }
   ]
  },
@@ -526,79 +599,6 @@
     "treo_lai_luc": "",
     "het_to": false,
     "ke_day": false
-   }
-  ]
- },
- "myxinh1011": {
-  "st": "xong",
-  "nv": 6,
-  "may": "",
-  "bat_dau": "2026-11-02 16:50",
-  "ket_thuc": "2026-11-02 17:28",
-  "gio": "16:59",
-  "lenh": "mvz0j6rn",
-  "treo": "cho",
-  "lenh_treo": "mvz0hyln",
-  "nhan_vat": [
-   {
-    "ten": "Chân Hoàn",
-    "luc": "16:56",
-    "loi": [],
-    "treo": 1,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": true,
-    "ke_day": false
-   },
-   {
-    "ten": "Ngưy AnhLạc",
-    "luc": "17:03",
-    "loi": [],
-    "treo": 0,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": true
-   },
-   {
-    "ten": "TšŠc",
-    "luc": "17:10",
-    "loi": [],
-    "treo": null,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Hoa Phii",
-    "luc": "17:16",
-    "loi": [],
-    "treo": 0,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": true
-   },
-   {
-    "ten": "Hoàngg Hậư",
-    "luc": "17:22",
-    "loi": [],
-    "treo": 0,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": true
-   },
-   {
-    "ten": "TháiHậu",
-    "luc": "17:28",
-    "loi": [],
-    "treo": 0,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": true
    }
   ]
  }
