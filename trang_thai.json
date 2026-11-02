@@ -328,13 +328,13 @@
    },
    {
     "ten": "TšŠc",
-    "luc": "17:09",
+    "luc": "17:10",
     "loi": [],
-    "treo": 0,
+    "treo": null,
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": false,
-    "ke_day": true
+    "ke_day": false
    }
   ]
  }
