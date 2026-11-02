@@ -1,11 +1,11 @@
 {
  "_tool": {
-  "chay": true,
-  "che_do": "thuong",
+  "chay": false,
+  "che_do": "",
   "lenh_start": ""
  },
  "khadoan1608": {
-  "st": "",
+  "st": "xong",
   "nv": 0,
   "may": "",
   "bat_dau": "2026-11-01 09:47",
@@ -17,7 +17,7 @@
   "nhan_vat": []
  },
  "doanmy1608": {
-  "st": "",
+  "st": "xong",
   "nv": 0,
   "may": "",
   "bat_dau": "2026-11-01 11:01",
