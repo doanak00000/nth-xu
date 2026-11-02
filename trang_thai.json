@@ -501,10 +501,10 @@
     "ten": "Lowe U",
     "luc": "22:19",
     "loi": [],
-    "treo": 7,
+    "treo": null,
     "treo_lai": null,
     "treo_lai_luc": "",
-    "het_to": true,
+    "het_to": false,
     "ke_day": false
    }
   ]
