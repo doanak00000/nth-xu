@@ -176,15 +176,26 @@
  },
  "mytre1608": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[1] LD-1",
   "bat_dau": "2026-11-02 15:05",
   "ket_thuc": "",
-  "gio": "15:04",
+  "gio": "15:22",
   "lenh": "mvp8jq5w",
   "treo": "",
   "lenh_treo": "",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "BILLOW",
+    "luc": "15:19",
+    "loi": [],
+    "treo": 7,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": true
+   }
+  ]
  },
  "mylu1108": {
   "st": "",
