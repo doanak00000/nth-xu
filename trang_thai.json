@@ -255,7 +255,7 @@
   "ket_thuc": "2026-11-02 17:28",
   "gio": "16:59",
   "lenh": "mvz0j6rn",
-  "treo": "running:[1] LD-1",
+  "treo": "",
   "lenh_treo": "mvz0hyln",
   "nhan_vat": [
    {
@@ -313,8 +313,8 @@
     "luc": "17:28",
     "loi": [],
     "treo": 0,
-    "treo_lai": null,
-    "treo_lai_luc": "",
+    "treo_lai": 0,
+    "treo_lai_luc": "23:34",
     "het_to": false,
     "ke_day": true
    }
