@@ -236,12 +236,12 @@
   "nhan_vat": [
    {
     "ten": "Đá Lâm",
-    "luc": "14:14",
+    "luc": "14:15",
     "loi": [],
-    "treo": 3,
+    "treo": null,
     "treo_lai": null,
     "treo_lai_luc": "",
-    "het_to": true,
+    "het_to": false,
     "ke_day": false
    }
   ]
