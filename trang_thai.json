@@ -225,7 +225,7 @@
  },
  "doanmy1011": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[1] LD-1",
   "bat_dau": "2026-11-03 14:06",
   "ket_thuc": "",
@@ -233,7 +233,18 @@
   "lenh": "mvp8iqly",
   "treo": "",
   "lenh_treo": "mvoxl8i7",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "Đá Lâm",
+    "luc": "14:14",
+    "loi": [],
+    "treo": 3,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   }
+  ]
  },
  "mytre1608": {
   "st": "",
