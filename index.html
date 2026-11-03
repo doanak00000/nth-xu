@@ -56,9 +56,6 @@
   .hen button:disabled { opacity:.5; cursor:default; }
   .hen button.phu { background:none; color:var(--accent); border:1.5px solid var(--line); padding:3px 12px; }
   .hen .tt { color:var(--muted); font-size:12.5px; }
-  .tool { background:var(--card); border:1.5px solid var(--line); border-radius:20px; box-shadow:var(--shadow);
-          margin-bottom:12px; }
-  .tool .hen { border-top:0; }
   .hen select { font:inherit; color:var(--fg); border:1.5px solid var(--line); border-radius:10px; padding:4px 8px;
                 background:var(--today); }
   .hen label { display:flex; align-items:center; gap:6px; cursor:pointer; }
@@ -106,7 +103,6 @@
     <div class="tong" id="tong"></div>
     <img class="cc" src="cong_chua.webp" alt="" width="180" height="201">
   </div>
-  <div class="tool" id="tool"></div>
   <div id="list"></div>
   <div class="chinh" id="chinh"></div>
 </main>
@@ -146,12 +142,11 @@ const luuGio = async (acc, gio) => {
   const d = await ghiLenh((d, id) => (d.gio ||= {})[acc] = { gio, id }, `giờ chạy ${acc} -> ${gio || "chạy ngay"}`);
   lenhMoi[acc] = d.gio[acc];
 };
-let treoMoi = {}, startMoi = null;   // lệnh vừa gửi, chưa thấy trong lenh.json (raw đệm vài phút)
+let treoMoi = {};   // lệnh vừa gửi, chưa thấy trong lenh.json (raw đệm vài phút)
 const luuTreo = async (acc, bat) => {
   const d = await ghiLenh((d, id) => (d.treo ||= {})[acc] = { bat, id }, `${bat ? "tick" : "bỏ tick"} treo lại tơ ${acc}`);
   treoMoi[acc] = d.treo[acc];
 };
-const guiStart = async che_do => { startMoi = (await ghiLenh((d, id) => d.start = { che_do, id }, "Start " + che_do)).start; };
 // chưa có token -> ô nhập token ngay trong `box` (iPhone mở link trong Zalo/Messenger: prompt() bị chặn); có rồi -> tiep()
 function canToken(box, tiep) {
   if (tok) return tiep();
@@ -193,32 +188,13 @@ let dangSua = "";   // acc đang mở ô sửa giờ -> không vẽ lại trang 
 const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), lay("trang_thai.json", s).catch(() => ({})), lay("lenh.json", s).catch(() => ({}))]))
  .then(([data, tt, lenh]) => {
   if (dangSua && !ep) return;   // đang sửa giờ: lượt tự tải mỗi phút đừng vẽ lại
-  const moi = JSON.stringify([data, tt, lenh, lenhMoi, treoMoi, startMoi]);
+  const moi = JSON.stringify([data, tt, lenh, lenhMoi, treoMoi]);
   if (moi === cu) return;
   cu = moi;
   const list = document.getElementById("list");
   const mo = new Set([...list.querySelectorAll("details[open]")].map(d => d.dataset.acc));
   list.textContent = "";
   const accs = [...new Set([...Object.keys(tt), ...Object.keys(data)])].filter(a => a[0] !== "_");   // trang_thai.json giữ thứ tự kho acc
-  // tool: đang chạy gì + Start (tool đang dừng -> chạy full; đang chạy thì tool bỏ qua). Treo lại tơ tool tự xếp lượt:
-  //  chạy full xong mỗi nhóm 4 acc thì treo lại các acc tick trong nhóm đó
-  {
-    const tl = tt._tool, box = document.createElement("div"); box.className = "hen";
-    const sl = startMoi?.id > (lenh.start?.id || "") ? startMoi : lenh.start, cho = sl && tl && tl.lenh_start !== sl.id;
-    const g = document.createElement("b");
-    g.textContent = !tl ? "—" : tl.chay ? "▶ đang chạy " + (tl.che_do === "treo" ? "(treo lại tơ)" : "(chạy full)") : "■ đang dừng";
-    const bt = document.createElement("button"); bt.textContent = "▶ Start";
-    bt.disabled = !!tl?.chay;
-    const tx = document.createElement("span"); tx.className = "tt";
-    if (cho) tx.textContent = "⏳ chờ tool nhận…";
-    bt.onclick = () => canToken(box, async () => {
-      bt.disabled = true; tx.textContent = "đang gửi…";
-      try { await guiStart("thuong"); cu = ""; tai(true); }
-      catch (e) { tx.textContent = "✗ " + e.message; bt.disabled = false; }
-    });
-    box.append("Tool: ", g, bt, tx);
-    document.getElementById("tool").replaceChildren(box);
-  }
   // giống cột Trạng thái trên UI bot
   const nhanSt = t => ({ chay: `▶ đang chạy ${Math.min(t.nv + 1, 6)}/6`, do: `⏸ dở ${t.nv}/6`,
                          xong: t.nv > 0 && t.nv < 6 ? `⚠ xong ${t.nv}/6` : "✓ xong", loi: "✗ lỗi" })[t.st] || "chưa chạy";
@@ -307,7 +283,7 @@ const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), l
       }
       det.appendChild(box);
     }
-    // treo lại tơ: tick -> chạy full xong nhóm 4 acc chứa acc này thì tool tự treo lại (tối đa 4 ô/nhân vật), xong tự bỏ tick
+    // treo lại tơ: tick -> chạy full xong nhóm 5 acc chứa acc này thì tool tự treo lại (tối đa 4 ô/nhân vật), xong tự bỏ tick
     if (t.treo !== undefined) {
       const l = treoMoi[acc]?.id > (lenh.treo?.[acc]?.id || "") ? treoMoi[acc] : lenh.treo?.[acc];
       const cho = l && t.lenh_treo !== l.id, dang = t.treo.startsWith("running:");
@@ -323,7 +299,7 @@ const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), l
         catch (e) { tx.textContent = "✗ " + e.message; ck.checked = !ck.checked; ck.disabled = false; }
       });
       lb.append(ck, "Treo lại tơ");
-      lb.title = "Chạy full xong nhóm 4 acc chứa acc này thì tool tự treo lại tơ (tối đa 4 ô/nhân vật)";
+      lb.title = "Chạy full xong nhóm 5 acc chứa acc này thì tool tự treo lại tơ (tối đa 4 ô/nhân vật)";
       box.append(lb, tx);
       det.appendChild(box);
     }
