@@ -517,7 +517,7 @@
  },
  "doangia1608": {
   "st": "chay",
-  "nv": 3,
+  "nv": 4,
   "may": "[1] LD-1",
   "bat_dau": "2026-11-03 19:20",
   "ket_thuc": "",
@@ -550,6 +550,20 @@
     "ten": "TràChiHy",
     "luc": "19:53",
     "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "Miêu My",
+    "luc": "20:07",
+    "loi": [
+     "nghề nghiệp: failed",
+     "roll: 3/4",
+     "mốc: 3/4"
+    ],
     "treo": 8,
     "treo_lai": null,
     "treo_lai_luc": "",
