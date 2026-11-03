@@ -444,7 +444,7 @@
  },
  "mylu1108": {
   "st": "chay",
-  "nv": 3,
+  "nv": 4,
   "may": "[1] LD-1",
   "bat_dau": "2026-11-03 18:07",
   "ket_thuc": "",
@@ -476,6 +476,16 @@
    {
     "ten": "BệuBảnhBao",
     "luc": "18:39",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "Dượcc Dượcc",
+    "luc": "18:50",
     "loi": [],
     "treo": 8,
     "treo_lai": null,
