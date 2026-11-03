@@ -1,11 +1,11 @@
 {
  "_tool": {
-  "chay": true,
-  "che_do": "thuong",
+  "chay": false,
+  "che_do": "",
   "lenh_start": ""
  },
  "khadoan1608": {
-  "st": "xong",
+  "st": "",
   "nv": 0,
   "may": "",
   "bat_dau": "2026-11-01 09:47",
@@ -17,7 +17,7 @@
   "nhan_vat": []
  },
  "doanmy1608": {
-  "st": "xong",
+  "st": "",
   "nv": 0,
   "may": "",
   "bat_dau": "2026-11-01 11:01",
@@ -29,8 +29,8 @@
   "nhan_vat": []
  },
  "maianh0000001": {
-  "st": "xong",
-  "nv": 6,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-11-02 12:29",
   "ket_thuc": "2026-11-02 13:40",
@@ -38,72 +38,11 @@
   "lenh": "mvp8ia0n",
   "treo": "",
   "lenh_treo": "",
-  "nhan_vat": [
-   {
-    "ten": "DiêmBảoKỹ",
-    "luc": "12:40",
-    "loi": [],
-    "treo": 7,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": true
-   },
-   {
-    "ten": "TriêuHân",
-    "luc": "12:52",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "LaiXuân",
-    "luc": "13:04",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "LộcXuânNam",
-    "luc": "13:16",
-    "loi": [],
-    "treo": 7,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": true
-   },
-   {
-    "ten": "ThànhVững",
-    "luc": "13:29",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "HưToàn",
-    "luc": "13:40",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   }
-  ]
+  "nhan_vat": []
  },
  "doanmy1011": {
-  "st": "xong",
-  "nv": 6,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-11-02 13:50",
   "ket_thuc": "2026-11-02 15:04",
@@ -111,72 +50,11 @@
   "lenh": "mvp8iqly",
   "treo": "",
   "lenh_treo": "mvoxl8i7",
-  "nhan_vat": [
-   {
-    "ten": "Đá Lâm",
-    "luc": "14:03",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Khoáng Doãn",
-    "luc": "14:15",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "THẠCH",
-    "luc": "14:27",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "FI Smy",
-    "luc": "14:39",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "MyCA",
-    "luc": "14:52",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "YumiCa",
-    "luc": "15:04",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   }
-  ]
+  "nhan_vat": []
  },
  "mytre1608": {
-  "st": "xong",
-  "nv": 6,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-11-02 15:05",
   "ket_thuc": "2026-11-02 16:24",
@@ -184,72 +62,11 @@
   "lenh": "mvp8jq5w",
   "treo": "",
   "lenh_treo": "",
-  "nhan_vat": [
-   {
-    "ten": "BILLOW",
-    "luc": "15:19",
-    "loi": [],
-    "treo": 7,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": true
-   },
-   {
-    "ten": "HELEN",
-    "luc": "15:31",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "IGGY",
-    "luc": "15:44",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "TRiệu Vân",
-    "luc": "15:56",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "KRIXI",
-    "luc": "16:08",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Enzo",
-    "luc": "16:24",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   }
-  ]
+  "nhan_vat": []
  },
  "myxinh1011": {
-  "st": "xong",
-  "nv": 6,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-11-02 16:50",
   "ket_thuc": "2026-11-02 17:28",
@@ -257,72 +74,11 @@
   "lenh": "mvz0j6rn",
   "treo": "",
   "lenh_treo": "mvz0hyln",
-  "nhan_vat": [
-   {
-    "ten": "Chân Hoàn",
-    "luc": "16:56",
-    "loi": [],
-    "treo": 1,
-    "treo_lai": 4,
-    "treo_lai_luc": "23:11",
-    "het_to": true,
-    "ke_day": false
-   },
-   {
-    "ten": "Ngưy AnhLạc",
-    "luc": "17:03",
-    "loi": [],
-    "treo": 0,
-    "treo_lai": 4,
-    "treo_lai_luc": "23:16",
-    "het_to": false,
-    "ke_day": true
-   },
-   {
-    "ten": "TšŠc",
-    "luc": "17:10",
-    "loi": [],
-    "treo": null,
-    "treo_lai": 4,
-    "treo_lai_luc": "23:22",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Hoa Phii",
-    "luc": "17:16",
-    "loi": [],
-    "treo": 0,
-    "treo_lai": 4,
-    "treo_lai_luc": "23:27",
-    "het_to": false,
-    "ke_day": true
-   },
-   {
-    "ten": "Hoàngg Hậư",
-    "luc": "17:22",
-    "loi": [],
-    "treo": 0,
-    "treo_lai": 4,
-    "treo_lai_luc": "23:32",
-    "het_to": false,
-    "ke_day": true
-   },
-   {
-    "ten": "TháiHậu",
-    "luc": "17:28",
-    "loi": [],
-    "treo": 0,
-    "treo_lai": 0,
-    "treo_lai_luc": "23:34",
-    "het_to": false,
-    "ke_day": true
-   }
-  ]
+  "nhan_vat": []
  },
  "mylu1108": {
-  "st": "xong",
-  "nv": 5,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-11-02 17:51",
   "ket_thuc": "2026-11-02 19:02",
@@ -330,62 +86,11 @@
   "lenh": "mvwdd5wy",
   "treo": "",
   "lenh_treo": "",
-  "nhan_vat": [
-   {
-    "ten": "Tán",
-    "luc": "18:04",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "DoctorM",
-    "luc": "18:10",
-    "loi": [],
-    "treo": 0,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": true,
-    "ke_day": false
-   },
-   {
-    "ten": "BệuBảnhBao",
-    "luc": "18:22",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Ủượcc Dượcc",
-    "luc": "18:35",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Mây",
-    "luc": "18:48",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   }
-  ]
+  "nhan_vat": []
  },
  "doangia1608": {
-  "st": "xong",
-  "nv": 6,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-11-02 19:02",
   "ket_thuc": "2026-11-02 20:18",
@@ -393,72 +98,11 @@
   "lenh": "",
   "treo": "",
   "lenh_treo": "mvp8o9yg",
-  "nhan_vat": [
-   {
-    "ten": "NhữDinhY",
-    "luc": "19:17",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "TrânCẩm",
-    "luc": "19:29",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "TràChiHự",
-    "luc": "19:41",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Miêu My",
-    "luc": "19:53",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Doan Myy",
-    "luc": "20:05",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "NhiếpUyểïr",
-    "luc": "20:18",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   }
-  ]
+  "nhan_vat": []
  },
  "doangia1011": {
-  "st": "xong",
-  "nv": 6,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-11-02 20:19",
   "ket_thuc": "2026-11-02 21:26",
@@ -466,72 +110,11 @@
   "lenh": "mvp8kkwk",
   "treo": "",
   "lenh_treo": "",
-  "nhan_vat": [
-   {
-    "ten": "SócAva",
-    "luc": "20:26",
-    "loi": [],
-    "treo": 0,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": true,
-    "ke_day": false
-   },
-   {
-    "ten": "DoRy",
-    "luc": "20:37",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Nemo",
-    "luc": "20:49",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Bolia Babie",
-    "luc": "21:02",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "ChumChum",
-    "luc": "21:13",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "MARLIN",
-    "luc": "21:26",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   }
-  ]
+  "nhan_vat": []
  },
  "myxinh1608": {
-  "st": "xong",
-  "nv": 6,
+  "st": "",
+  "nv": 0,
   "may": "",
   "bat_dau": "2026-11-02 21:30",
   "ket_thuc": "2026-11-02 23:01",
@@ -539,67 +122,6 @@
   "lenh": "",
   "treo": "",
   "lenh_treo": "mvpb1sjp",
-  "nhan_vat": [
-   {
-    "ten": "Kiss U",
-    "luc": "21:42",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Mam U",
-    "luc": "21:55",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Need U",
-    "luc": "22:07",
-    "loi": [],
-    "treo": 8,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "Lowe U",
-    "luc": "22:20",
-    "loi": [],
-    "treo": null,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "MissU",
-    "luc": "23:03",
-    "loi": [],
-    "treo": null,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
-   {
-    "ten": "With U",
-    "luc": "23:03",
-    "loi": [],
-    "treo": null,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   }
-  ]
+  "nhan_vat": []
  }
 }
