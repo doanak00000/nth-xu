@@ -152,15 +152,26 @@
  },
  "doanmy1608": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[1] LD",
   "bat_dau": "2026-11-04 11:31",
   "ket_thuc": "",
-  "gio": "11:31",
+  "gio": "11:38",
   "lenh": "mvp85yyg",
   "treo": "",
   "lenh_treo": "",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "Miêu Lan",
+    "luc": "11:38",
+    "loi": [],
+    "treo": 2,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   }
+  ]
  },
  "maianh0000001": {
   "st": "",
