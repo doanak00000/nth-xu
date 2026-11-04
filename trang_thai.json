@@ -1,7 +1,7 @@
 {
  "_tool": {
-  "chay": false,
-  "che_do": "",
+  "chay": true,
+  "che_do": "thuong",
   "lenh_start": ""
  },
  "mytre1608": {
@@ -78,9 +78,9 @@
   ]
  },
  "khadoan1608": {
-  "st": "do",
+  "st": "chay",
   "nv": 3,
-  "may": "",
+  "may": "[1] LD",
   "bat_dau": "2026-11-04 10:16",
   "ket_thuc": "",
   "gio": "10:27",
