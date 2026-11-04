@@ -468,7 +468,7 @@
  },
  "doangia1608": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[1] LD",
   "bat_dau": "2026-11-04 19:31",
   "ket_thuc": "",
@@ -476,7 +476,18 @@
   "lenh": "",
   "treo": "",
   "lenh_treo": "mvp8o9yg",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "NhữỮïnhY",
+    "luc": "19:42",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   }
+  ]
  },
  "doangia1011": {
   "st": "",
