@@ -1,7 +1,7 @@
 {
  "_tool": {
-  "chay": false,
-  "che_do": "",
+  "chay": true,
+  "che_do": "thuong",
   "lenh_start": ""
  },
  "mytre1608": {
@@ -506,10 +506,10 @@
   ]
  },
  "doangia1608": {
-  "st": "",
+  "st": "chay",
   "nv": 0,
-  "may": "",
-  "bat_dau": "2026-11-05 20:25",
+  "may": "[1] LD",
+  "bat_dau": "2026-11-05 20:29",
   "ket_thuc": "",
   "gio": "19:42",
   "lenh": "",
