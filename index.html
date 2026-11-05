@@ -147,6 +147,11 @@ const luuTreo = async (acc, bat) => {
   const d = await ghiLenh((d, id) => (d.treo ||= {})[acc] = { bat, id }, `${bat ? "tick" : "bỏ tick"} treo lại tơ ${acc}`);
   treoMoi[acc] = d.treo[acc];
 };
+let daMoi = {};     // lệnh loại đá vừa gửi, chưa thấy trong lenh.json
+const luuDa = async (acc, da) => {
+  const d = await ghiLenh((d, id) => (d.da ||= {})[acc] = { da, id }, `${acc} chế tơ bằng đá ${da === "vang" ? "vàng" : "trắng tím"}`);
+  daMoi[acc] = d.da[acc];
+};
 // chưa có token -> ô nhập token ngay trong `box` (iPhone mở link trong Zalo/Messenger: prompt() bị chặn); có rồi -> tiep()
 function canToken(box, tiep) {
   if (tok) return tiep();
@@ -188,7 +193,7 @@ let dangSua = "";   // acc đang mở ô sửa giờ -> không vẽ lại trang 
 const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), lay("trang_thai.json", s).catch(() => ({})), lay("lenh.json", s).catch(() => ({}))]))
  .then(([data, tt, lenh]) => {
   if (dangSua && !ep) return;   // đang sửa giờ: lượt tự tải mỗi phút đừng vẽ lại
-  const moi = JSON.stringify([data, tt, lenh, lenhMoi, treoMoi]);
+  const moi = JSON.stringify([data, tt, lenh, lenhMoi, treoMoi, daMoi]);
   if (moi === cu) return;
   cu = moi;
   const list = document.getElementById("list");
@@ -301,6 +306,28 @@ const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), l
       lb.append(ck, "Treo lại tơ");
       lb.title = "Chạy full xong nhóm 5 acc chứa acc này thì tool tự treo lại tơ (tối đa 4 ô/nhân vật)";
       box.append(lb, tx);
+      det.appendChild(box);
+    }
+    // loại đá chế tơ của cả acc: trắng tím (mặc định) / vàng — 2 luồng độc lập, đá đắt thì không tự đổi loại
+    if (t.da !== undefined) {
+      const l = daMoi[acc]?.id > (lenh.da?.[acc]?.id || "") ? daMoi[acc] : lenh.da?.[acc];
+      const cho = l && t.lenh_da !== l.id;
+      const box = document.createElement("div"); box.className = "hen";
+      const sel = document.createElement("select");
+      for (const [v, chu] of [["trang", "Đá trắng tím"], ["vang", "Đá vàng"]]) {
+        const o = document.createElement("option"); o.value = v; o.textContent = chu; sel.appendChild(o);
+      }
+      sel.value = cho ? l.da : t.da;
+      const tx = document.createElement("span"); tx.className = "tt";
+      tx.textContent = cho ? "⏳ chờ tool nhận…" : "";
+      const truoc = sel.value;
+      sel.onchange = () => canToken(box, async () => {
+        sel.disabled = true; tx.textContent = "đang gửi…";
+        try { await luuDa(acc, sel.value); cu = ""; tai(true); }
+        catch (e) { tx.textContent = "✗ " + e.message; sel.value = truoc; sel.disabled = false; }
+      });
+      sel.title = "Cả acc mua + chế tơ bằng loại đá này (đá đắt thì chỉ chế bằng đá có sẵn, không tự đổi loại)";
+      box.append("Chế tơ bằng: ", sel, tx);
       det.appendChild(box);
     }
     // nhân vật làm hôm nay: ✓ hoặc ⚠ + bước lỗi (vd "chụp ảnh: failed, roll: 3/4")
