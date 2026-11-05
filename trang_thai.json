@@ -79,7 +79,7 @@
  },
  "khadoan1608": {
   "st": "chay",
-  "nv": 3,
+  "nv": 4,
   "may": "[1] LD",
   "bat_dau": "2026-11-05 11:09",
   "ket_thuc": "",
@@ -111,6 +111,16 @@
    {
     "ten": "YuuMyy",
     "luc": "11:43",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "Chỉ Chỉi",
+    "luc": "11:54",
     "loi": [],
     "treo": 8,
     "treo_lai": null,
