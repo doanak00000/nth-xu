@@ -598,7 +598,7 @@
  },
  "doangia1011": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[1] LD",
   "bat_dau": "2026-11-05 21:49",
   "ket_thuc": "",
@@ -608,7 +608,18 @@
   "lenh_treo": "",
   "da": "trang",
   "lenh_da": "",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "SócAva",
+    "luc": "22:01",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   }
+  ]
  },
  "myxinh1608": {
   "st": "",
