@@ -142,7 +142,7 @@
  },
  "doanmy1608": {
   "st": "chay",
-  "nv": 4,
+  "nv": 5,
   "may": "[1] LD",
   "bat_dau": "2026-11-05 12:20",
   "ket_thuc": "",
@@ -184,6 +184,16 @@
    {
     "ten": "Chỉ Hồng",
     "luc": "13:04",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "TKế Tiểu Thưz",
+    "luc": "13:16",
     "loi": [],
     "treo": 8,
     "treo_lai": null,
