@@ -288,7 +288,7 @@
  },
  "doanmy1011": {
   "st": "chay",
-  "nv": 5,
+  "nv": 6,
   "may": "[1] LD",
   "bat_dau": "2026-11-05 14:48",
   "ket_thuc": "",
@@ -340,6 +340,16 @@
    {
     "ten": "MyCA",
     "luc": "15:57",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "YumiGa",
+    "luc": "16:10",
     "loi": [],
     "treo": 8,
     "treo_lai": null,
