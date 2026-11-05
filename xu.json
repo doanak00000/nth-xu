@@ -593,11 +593,6 @@
   },
   "Dolia Babie": {
    "ngay": {
-    "2026-11-02": {
-     "xu": "806.4K",
-     "chua_rut": "7308",
-     "luc": "20:55"
-    },
     "2026-11-03": {
      "xu": "804.9K",
      "chua_rut": "0",
@@ -607,11 +602,17 @@
      "xu": "794K",
      "chua_rut": "18936",
      "luc": "21:19"
+    },
+    "2026-11-05": {
+     "xu": "806.9K",
+     "chua_rut": "23409",
+     "luc": "22:30"
     }
    },
    "bien_the": [
     "Dotlia Babie",
-    "Bolia Babie"
+    "Bolia Babie",
+    "Boltia Babie"
    ]
   },
   "DoRy": {
