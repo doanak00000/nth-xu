@@ -1,7 +1,7 @@
 {
  "_tool": {
-  "chay": false,
-  "che_do": "",
+  "chay": true,
+  "che_do": "thuong",
   "lenh_start": ""
  },
  "mytre1608": {
@@ -62,7 +62,7 @@
  },
  "doanmy1011": {
   "st": "chay",
-  "nv": 4,
+  "nv": 5,
   "may": "[1] LD",
   "bat_dau": "2026-11-06 15:42",
   "ket_thuc": "",
@@ -76,6 +76,16 @@
    {
     "ten": "Písmy",
     "luc": "15:56",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "nv5",
+    "luc": "16:15",
     "loi": [],
     "treo": 8,
     "treo_lai": null,
