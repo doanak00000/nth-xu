@@ -407,7 +407,7 @@
  },
  "myxinh1608": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[1] LD",
   "bat_dau": "2026-11-06 23:33",
   "ket_thuc": "",
@@ -417,6 +417,21 @@
   "lenh_treo": "mvpb1sjp",
   "da": "trang",
   "lenh_da": "",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "Kiss U",
+    "luc": "23:45",
+    "loi": [
+     "nghề nghiệp: failed",
+     "roll: 3/4",
+     "mốc: 3/4"
+    ],
+    "treo": 2,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   }
+  ]
  }
 }
