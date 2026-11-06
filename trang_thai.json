@@ -107,17 +107,28 @@
  },
  "myxinh1011": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[1] LD",
   "bat_dau": "2026-11-06 17:58",
   "ket_thuc": "",
-  "gio": "17:45",
+  "gio": "18:11",
   "lenh": "mvz0j6rn",
   "treo": "",
   "lenh_treo": "mvz0hyln",
   "da": "trang",
   "lenh_da": "",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "Nguy AnhLạc",
+    "luc": "18:11",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   }
+  ]
  },
  "mylu1108": {
   "st": "",
