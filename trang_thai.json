@@ -311,7 +311,7 @@
  },
  "maianh0000001": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[1] LD",
   "bat_dau": "2026-11-07 13:57",
   "ket_thuc": "",
@@ -321,7 +321,21 @@
   "lenh_treo": "",
   "da": "trang",
   "lenh_da": "",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "TrêuHân",
+    "luc": "14:03",
+    "loi": [
+     "chế tơ lần 2: failed",
+     "treo: failed"
+    ],
+    "treo": "failed",
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   }
+  ]
  },
  "doanmy1011": {
   "st": "",
