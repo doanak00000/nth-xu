@@ -1,7 +1,7 @@
 {
  "_tool": {
-  "chay": true,
-  "che_do": "thuong",
+  "chay": false,
+  "che_do": "",
   "lenh_start": ""
  },
  "myxinh1608": {
@@ -171,7 +171,7 @@
   "lenh_da": "",
   "nhan_vat": [
    {
-    "ten": "Tầm My",
+    "ten": "Lâm My",
     "luc": "11:34",
     "loi": [],
     "treo": 4,
