@@ -701,7 +701,7 @@
  },
  "doangia1011": {
   "st": "chay",
-  "nv": 2,
+  "nv": 3,
   "may": "[1] LD",
   "bat_dau": "2026-11-07 23:13",
   "ket_thuc": "",
@@ -725,6 +725,16 @@
    {
     "ten": "Dol",
     "luc": "23:35",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "Nemo",
+    "luc": "23:48",
     "loi": [],
     "treo": 8,
     "treo_lai": null,
