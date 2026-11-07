@@ -1,7 +1,7 @@
 {
  "_tool": {
-  "chay": false,
-  "che_do": "",
+  "chay": true,
+  "che_do": "thuong",
   "lenh_start": ""
  },
  "myxinh1608": {
@@ -310,10 +310,10 @@
   ]
  },
  "maianh0000001": {
-  "st": "",
+  "st": "chay",
   "nv": 0,
-  "may": "",
-  "bat_dau": "2026-11-07 13:54",
+  "may": "[1] LD",
+  "bat_dau": "2026-11-07 13:57",
   "ket_thuc": "",
   "gio": "13:44",
   "lenh": "mvp8ia0n",
