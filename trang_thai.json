@@ -1,7 +1,7 @@
 {
  "_tool": {
-  "chay": false,
-  "che_do": "",
+  "chay": true,
+  "che_do": "thuong",
   "lenh_start": ""
  },
  "myxinh1608": {
@@ -83,11 +83,11 @@
   ]
  },
  "mytre1608": {
-  "st": "",
+  "st": "chay",
   "nv": 0,
-  "may": "",
-  "bat_dau": "2026-11-05 10:02",
-  "ket_thuc": "2026-11-05 11:08",
+  "may": "[1] LD",
+  "bat_dau": "2026-11-07 10:13",
+  "ket_thuc": "",
   "gio": "10:13",
   "lenh": "mw2w6zcy",
   "treo": "",
