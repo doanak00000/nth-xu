@@ -1,7 +1,7 @@
 {
  "_tool": {
-  "chay": false,
-  "che_do": "",
+  "chay": true,
+  "che_do": "thuong",
   "lenh_start": ""
  },
  "myxinh1608": {
@@ -159,7 +159,7 @@
  },
  "khadoan1608": {
   "st": "chay",
-  "nv": 2,
+  "nv": 3,
   "may": "[1] LD",
   "bat_dau": "2026-11-07 11:21",
   "ket_thuc": "",
@@ -184,6 +184,18 @@
     "ten": "Lâm Mỳ Mỳ",
     "luc": "11:45",
     "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "uMyy",
+    "luc": "11:57",
+    "loi": [
+     "mốc: 2/4"
+    ],
     "treo": 8,
     "treo_lai": null,
     "treo_lai_luc": "",
