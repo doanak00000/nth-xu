@@ -195,9 +195,16 @@ let dangSua = "";   // acc đang mở ô sửa giờ -> không vẽ lại trang 
 const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), lay("trang_thai.json", s).catch(() => ({})), lay("lenh.json", s).catch(() => ({}))]))
  .then(([data, tt, lenh]) => {
   if (dangSua && !ep) return;   // đang sửa giờ: lượt tự tải mỗi phút đừng vẽ lại
-  const moi = JSON.stringify([data, tt, lenh, lenhMoi, treoMoi, daMoi]);
+  // (07/11) ngày đùa: web hiện mọi nhân vật làm hôm nay đều lỗi (chỉ hiển thị, dữ liệu thật không đổi); qua 0h 08/11 tự hết
+  const dua = Date.now() < new Date(2026, 10, 8).getTime();
+  const moi = JSON.stringify([data, tt, lenh, lenhMoi, treoMoi, daMoi, dua]);
   if (moi === cu) return;
   cu = moi;
+  if (dua) {
+    tt = structuredClone(tt);
+    const LOI = ["roll: 0/4", "mốc: 0/4", "chế tơ: failed", "treo tơ: failed", "mộng hoa lục: failed"];
+    for (const t of Object.values(tt)) (t.nhan_vat || []).forEach((n, i) => { n.loi = [LOI[i % LOI.length], LOI[(i + 2) % LOI.length]]; });
+  }
   const list = document.getElementById("list");
   const mo = new Set([...list.querySelectorAll("details[open]")].map(d => d.dataset.acc));
   list.textContent = "";
