@@ -83,11 +83,11 @@
   ]
  },
  "mytre1608": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[1] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-11-07 10:13",
-  "ket_thuc": "",
+  "ket_thuc": "2026-11-07 10:57",
   "gio": "10:21",
   "lenh": "mw2w6zcy",
   "treo": "",
@@ -138,6 +138,16 @@
    {
     "ten": "KRIXI",
     "luc": "10:49",
+    "loi": [],
+    "treo": 0,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": true
+   },
+   {
+    "ten": "Pñ¿o",
+    "luc": "10:57",
     "loi": [],
     "treo": 0,
     "treo_lai": null,
