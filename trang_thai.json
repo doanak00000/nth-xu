@@ -397,7 +397,7 @@
  },
  "doanmy1011": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[1] LD",
   "bat_dau": "2026-11-07 17:48",
   "ket_thuc": "",
@@ -407,7 +407,18 @@
   "lenh_treo": "mvoxl8i7",
   "da": "trang",
   "lenh_da": "",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "Đa Lâm",
+    "luc": "18:00",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   }
+  ]
  },
  "myxinh1011": {
   "st": "",
