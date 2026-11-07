@@ -330,8 +330,8 @@
      "treo: failed"
     ],
     "treo": "failed",
-    "treo_lai": null,
-    "treo_lai_luc": "",
+    "treo_lai": 0,
+    "treo_lai_luc": "22:57",
     "het_to": false,
     "ke_day": false
    },
