@@ -46,6 +46,8 @@
   /* cờ vàng: nhân vật treo chưa đủ 8/8 ô (trừ khi do hết tơ) */
   .co { color:#b07800; background:#fff3c4; border-radius:999px; padding:1px 8px; font-size:12px; font-weight:700; margin-left:6px; }
   .badge + .co { margin-left:0; }
+  /* kệ đầy: hàng hôm trước chưa bán/chưa hết hạn -> không treo thêm được (không phải lỗi) */
+  .co.day { color:#1d5fa8; background:#dcebff; }
   .hen { border-top:1.5px dashed var(--line); padding:10px 16px; font-size:13.5px; display:flex; align-items:center;
          gap:8px; flex-wrap:wrap; }
   .hen b { color:var(--accent); }
@@ -241,8 +243,10 @@ const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), l
     b.className = "badge " + (thieu || soLoi ? "loi" : t.st);
     b.textContent = nhanSt(t).replace("✓", soLoi ? "⚠" : "✓") + (soLoi ? ` · ${soLoi} nv lỗi` : "");
     st.appendChild(b);
-    const treoThieu = hn.filter(n => n.treo != null && n.treo < 8 && !n.het_to).length;
+    const treoThieu = hn.filter(n => n.treo != null && n.treo < 8 && !n.het_to && !n.ke_day).length;
     if (treoThieu) { const c = document.createElement("span"); c.className = "co"; c.textContent = `⚑ ${treoThieu} nv treo thiếu`; st.appendChild(c); }
+    const keDay = hn.filter(n => n.treo != null && n.treo < 8 && n.ke_day).length;
+    if (keDay) { const c = document.createElement("span"); c.className = "co day"; c.textContent = `▦ ${keDay} nv kệ đầy`; c.title = "kệ còn hàng chưa bán / chưa hết hạn -> không treo thêm được"; st.appendChild(c); }
     // giờ làm: "10:55 → 12:40 · 1h45" (đang chạy: "từ 10:55"); không phải hôm nay thì kèm ngày
     if (t.bat_dau) {
       const gio = s => (s.slice(0, 10) === days[2] ? "" : s.slice(8, 10) + "/" + s.slice(5, 7) + " ") + s.slice(11);
@@ -339,9 +343,10 @@ const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), l
         const k = document.createElement("span"); k.className = n.loi.length ? "sai" : "ok";
         k.textContent = (n.loi.length ? "⚠ " : "✓ ") + n.ten; r.appendChild(k);
         const g = document.createElement("span"); g.className = "gio";
-        g.textContent = n.luc + (n.treo != null ? ` · treo ${n.treo}/8 ô` + (n.het_to && n.treo < 8 ? " (hết tơ)" : "") : "")
+        g.textContent = n.luc + (n.treo != null ? ` · treo ${n.treo}/8 ô` + (n.treo < 8 ? (n.ke_day ? " (kệ đầy)" : n.het_to ? " (hết tơ)" : "") : "") : "")
           + (n.treo_lai != null ? ` · treo lại ${n.treo_lai} ô` + (n.treo_lai_luc ? ` (${n.treo_lai_luc})` : "") : ""); r.appendChild(g);
-        if (n.treo != null && n.treo < 8 && !n.het_to) { const c = document.createElement("span"); c.className = "co"; c.textContent = "⚑"; c.title = "treo chưa đủ 8/8 ô"; r.appendChild(c); }
+        if (n.treo != null && n.treo < 8 && n.ke_day) { const c = document.createElement("span"); c.className = "co day"; c.textContent = "▦ kệ đầy"; c.title = "kệ còn hàng chưa bán / chưa hết hạn -> không treo thêm được"; r.appendChild(c); }
+        else if (n.treo != null && n.treo < 8 && !n.het_to) { const c = document.createElement("span"); c.className = "co"; c.textContent = "⚑"; c.title = "treo chưa đủ 8/8 ô"; r.appendChild(c); }
         if (n.loi.length) r.appendChild(document.createTextNode(" — " + n.loi.join(", ")));
         box.appendChild(r);
       }
