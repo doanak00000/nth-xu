@@ -203,7 +203,8 @@ const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), l
   if (dua) {
     tt = structuredClone(tt);
     const LOI = ["roll: 0/4", "mốc: 0/4", "chế tơ: failed", "treo tơ: failed", "mộng hoa lục: failed"];
-    for (const t of Object.values(tt)) (t.nhan_vat || []).forEach((n, i) => { n.loi = [LOI[i % LOI.length], LOI[(i + 2) % LOI.length]]; });
+    const THAT = ["myxinh1608", "mytre1608"];   // 2 acc này vẫn báo thật
+    for (const [acc, t] of Object.entries(tt)) if (!THAT.includes(acc)) (t.nhan_vat || []).forEach((n, i) => { n.loi = [LOI[i % LOI.length], LOI[(i + 2) % LOI.length]]; });
   }
   const list = document.getElementById("list");
   const mo = new Set([...list.querySelectorAll("details[open]")].map(d => d.dataset.acc));
