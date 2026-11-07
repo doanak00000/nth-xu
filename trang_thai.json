@@ -1,7 +1,7 @@
 {
  "_tool": {
-  "chay": true,
-  "che_do": "thuong",
+  "chay": false,
+  "che_do": "",
   "lenh_start": ""
  },
  "myxinh1608": {
@@ -18,7 +18,7 @@
   "lenh_da": "",
   "nhan_vat": [
    {
-    "ten": "th U",
+    "ten": "With U",
     "luc": "09:08",
     "loi": [],
     "treo": 1,
@@ -38,7 +38,7 @@
     "ke_day": false
    },
    {
-    "ten": "Mang U",
+    "ten": "Mam U",
     "luc": "09:23",
     "loi": [],
     "treo": 2,
@@ -48,7 +48,7 @@
     "ke_day": false
    },
    {
-    "ten": "nv4",
+    "ten": "Need U",
     "luc": "09:32",
     "loi": [
      "roll: 0/4",
@@ -61,7 +61,7 @@
     "ke_day": true
    },
    {
-    "ten": "Toue U",
+    "ten": "Love U",
     "luc": "09:39",
     "loi": [],
     "treo": 0,
@@ -71,7 +71,7 @@
     "ke_day": true
    },
    {
-    "ten": "RSsU",
+    "ten": "Miss U",
     "luc": "09:46",
     "loi": [],
     "treo": 1,
