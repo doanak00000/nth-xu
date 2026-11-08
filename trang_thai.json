@@ -81,17 +81,28 @@
  },
  "mytre1608": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[1] LD",
   "bat_dau": "2026-11-08 10:21",
   "ket_thuc": "",
-  "gio": "10:21",
+  "gio": "10:29",
   "lenh": "mw2w6zcy",
   "treo": "",
   "lenh_treo": "mw1o9ls8",
   "da": "trang",
   "lenh_da": "",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "BILLOW",
+    "luc": "10:29",
+    "loi": [],
+    "treo": 0,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": true
+   }
+  ]
  },
  "khadoan1608": {
   "st": "",
