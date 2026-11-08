@@ -458,7 +458,7 @@
  },
  "myxinh1011": {
   "st": "chay",
-  "nv": 2,
+  "nv": 3,
   "may": "[1] LD",
   "bat_dau": "2026-11-08 19:20",
   "ket_thuc": "",
@@ -486,6 +486,16 @@
      "mốc: 3/4",
      "nghề nghiệp: failed"
     ],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "Hoa Phii",
+    "luc": "19:59",
+    "loi": [],
     "treo": 8,
     "treo_lai": null,
     "treo_lai_luc": "",
