@@ -381,7 +381,7 @@
  },
  "doanmy1011": {
   "st": "chay",
-  "nv": 3,
+  "nv": 4,
   "may": "[1] LD",
   "bat_dau": "2026-11-08 18:01",
   "ket_thuc": "",
@@ -415,6 +415,16 @@
    {
     "ten": "THẠCH Khả",
     "luc": "18:38",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "FISmy",
+    "luc": "18:51",
     "loi": [],
     "treo": 8,
     "treo_lai": null,
