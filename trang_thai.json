@@ -6,17 +6,28 @@
  },
  "myxinh1608": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[1] LD",
   "bat_dau": "2026-11-08 09:08",
   "ket_thuc": "",
-  "gio": "09:08",
+  "gio": "09:18",
   "lenh": "mw5pmdr6",
   "treo": "",
   "lenh_treo": "mvpb1sjp",
   "da": "trang",
   "lenh_da": "",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "With U",
+    "luc": "09:18",
+    "loi": [],
+    "treo": 5,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   }
+  ]
  },
  "mytre1608": {
   "st": "",
