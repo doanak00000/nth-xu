@@ -164,7 +164,7 @@
  },
  "khadoan1608": {
   "st": "chay",
-  "nv": 3,
+  "nv": 4,
   "may": "[1] LD",
   "bat_dau": "2026-11-09 11:57",
   "ket_thuc": "",
@@ -206,6 +206,18 @@
      "chế tơ lần 2: failed"
     ],
     "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "Tố Đại Đế",
+    "luc": "12:42",
+    "loi": [
+     "treo: failed"
+    ],
+    "treo": "failed",
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": false,
