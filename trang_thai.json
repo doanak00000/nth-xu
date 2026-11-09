@@ -1,7 +1,7 @@
 {
  "_tool": {
-  "chay": false,
-  "che_do": "",
+  "chay": true,
+  "che_do": "thuong",
   "lenh_start": ""
  },
  "myxinh1608": {
@@ -83,7 +83,7 @@
  },
  "mytre1608": {
   "st": "chay",
-  "nv": 1,
+  "nv": 2,
   "may": "[1] LD",
   "bat_dau": "2026-11-09 10:48",
   "ket_thuc": "",
@@ -99,6 +99,16 @@
     "luc": "10:57",
     "loi": [],
     "treo": 4,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": true
+   },
+   {
+    "ten": "HELEN",
+    "luc": "11:07",
+    "loi": [],
+    "treo": 3,
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": false,
