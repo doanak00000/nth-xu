@@ -83,7 +83,7 @@
  },
  "mytre1608": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[1] LD",
   "bat_dau": "2026-11-09 10:48",
   "ket_thuc": "",
@@ -93,7 +93,18 @@
   "lenh_treo": "mw1o9ls8",
   "da": "trang",
   "lenh_da": "",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "BILL0W",
+    "luc": "10:57",
+    "loi": [],
+    "treo": 4,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": true
+   }
+  ]
  },
  "khadoan1608": {
   "st": "",
