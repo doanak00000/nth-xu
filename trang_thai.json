@@ -249,7 +249,7 @@
  },
  "doanmy1608": {
   "st": "chay",
-  "nv": 1,
+  "nv": 2,
   "may": "[1] LD",
   "bat_dau": "2026-11-09 13:08",
   "ket_thuc": "",
@@ -276,6 +276,21 @@
     "treo_lai_luc": "",
     "het_to": false,
     "ke_day": false
+   },
+   {
+    "ten": "Stylist Mỹ",
+    "luc": "13:20",
+    "loi": [
+     "chụp ảnh: failed",
+     "mộng hoa lục: failed",
+     "roll: failed",
+     "mốc: failed"
+    ],
+    "treo": 3,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": true
    }
   ]
  },
