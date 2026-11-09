@@ -83,7 +83,7 @@
  },
  "mytre1608": {
   "st": "chay",
-  "nv": 4,
+  "nv": 5,
   "may": "[1] LD",
   "bat_dau": "2026-11-09 10:48",
   "ket_thuc": "",
@@ -131,6 +131,18 @@
      "mộng hoa lục: failed"
     ],
     "treo": 3,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": true
+   },
+   {
+    "ten": "KRIXI",
+    "luc": "11:35",
+    "loi": [
+     "mộng hoa lục: failed"
+    ],
+    "treo": 4,
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": false,
