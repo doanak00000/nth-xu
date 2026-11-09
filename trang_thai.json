@@ -164,7 +164,7 @@
  },
  "khadoan1608": {
   "st": "chay",
-  "nv": 2,
+  "nv": 3,
   "may": "[1] LD",
   "bat_dau": "2026-11-09 11:57",
   "ket_thuc": "",
@@ -189,6 +189,22 @@
     "ten": "Lâm Mỳ Mỳ",
     "luc": "12:22",
     "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "Chỉ Chỉi",
+    "luc": "12:36",
+    "loi": [
+     "chụp ảnh: failed",
+     "hảo cảm: failed",
+     "roll: failed",
+     "mốc: 0/4",
+     "chế tơ lần 2: failed"
+    ],
     "treo": 8,
     "treo_lai": null,
     "treo_lai_luc": "",
