@@ -226,6 +226,20 @@
     "treo_lai_luc": "",
     "het_to": false,
     "ke_day": true
+   },
+   {
+    "ten": "May Mạc",
+    "luc": "12:34",
+    "loi": [
+     "chụp ảnh: failed",
+     "roll: 2/4",
+     "dừng (nhan_moc_hoat_dong: không ở trang Thanh Nhai Thư): failed"
+    ],
+    "treo": null,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
    }
   ]
  },
