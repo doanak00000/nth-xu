@@ -324,7 +324,7 @@
  },
  "maianh0000001": {
   "st": "chay",
-  "nv": 3,
+  "nv": 2,
   "may": "[1] LD",
   "bat_dau": "2026-11-10 15:23",
   "ket_thuc": "",
@@ -361,8 +361,10 @@
    },
    {
     "ten": "LộcXuânNam",
-    "luc": "16:02",
-    "loi": [],
+    "luc": "16:03",
+    "loi": [
+     "dừng (không mở được bảng Hoạt động): failed"
+    ],
     "treo": null,
     "treo_lai": null,
     "treo_lai_luc": "",
