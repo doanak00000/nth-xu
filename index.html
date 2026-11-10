@@ -317,7 +317,7 @@ const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), l
       box.append(lb, tx);
       det.appendChild(box);
     }
-    // (10/11) giờ treo tơ: tới giờ LD [0] treo lại tơ acc này (1 lần/ngày), không quá 15:00
+    // (10/11) giờ treo tơ: acc tick "Treo lại tơ" có giờ -> tới giờ LD [0] treo; không giờ -> nhóm 5 acc như cũ
     if (t.gio_treo !== undefined) {
       const l = gioTreoMoi[acc]?.id > (lenh.gio_treo?.[acc]?.id || "") ? gioTreoMoi[acc] : lenh.gio_treo?.[acc];
       const cho = l && t.lenh_gio_treo !== l.id, gioHt = cho ? l.gio : t.gio_treo;
@@ -336,6 +336,7 @@ const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), l
           catch (e) { tx.textContent = "✗ " + e.message; luu.disabled = huy.disabled = false; }
         };
         huy.onclick = () => { dangSua = ""; cu = ""; tai(); };
+        tx.textContent = "không được đặt sau 15:00";
         box.append(ip, luu, huy, tx);
         setTimeout(() => ip.focus());
       } else {
@@ -344,9 +345,9 @@ const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), l
         sua.onclick = () => { dangSua = khoa; canToken(box, () => { dangSua = khoa; cu = ""; tai(true); }); };
         box.append(g, sua, tx);
         if (cho) tx.textContent = "⏳ chờ tool nhận…";
-        else if (t.treo_ngay === days[2] && t.gio_treo) tx.textContent = "✓ đã treo hôm nay";
+        else tx.textContent = "(tick Treo lại tơ · LD [0] · không được đặt sau 15:00)";
       }
-      box.title = "Tới giờ này LDPlayer [0] treo lại tơ acc này (1 lần/ngày, chỉ trước 15:00)";
+      box.title = "Tick 'Treo lại tơ' + đặt giờ: tới giờ LDPlayer [0] treo. Không đặt giờ: treo theo nhóm 5 acc như cũ. Không được đặt sau 15:00.";
       det.appendChild(box);
     }
     // loại đá chế tơ của cả acc: trắng tím (mặc định) / vàng — 2 luồng độc lập, đá đắt thì không tự đổi loại
