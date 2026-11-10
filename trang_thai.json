@@ -87,7 +87,7 @@
  },
  "doangia1011": {
   "st": "chay",
-  "nv": 2,
+  "nv": 3,
   "may": "[1] LD",
   "bat_dau": "2026-11-10 10:32",
   "ket_thuc": "",
@@ -116,6 +116,20 @@
     "ten": "DoRy",
     "luc": "10:46",
     "loi": [],
+    "treo": 0,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": true
+   },
+   {
+    "ten": "Nemo",
+    "luc": "11:05",
+    "loi": [
+     "roll: 3/4",
+     "mốc: 0/4",
+     "nghề nghiệp: failed"
+    ],
     "treo": 0,
     "treo_lai": null,
     "treo_lai_luc": "",
