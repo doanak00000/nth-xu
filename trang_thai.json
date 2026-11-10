@@ -1,7 +1,7 @@
 {
  "_tool": {
-  "chay": true,
-  "che_do": "thuong",
+  "chay": false,
+  "che_do": "",
   "lenh_start": ""
  },
  "myxinh1608": {
@@ -16,6 +16,10 @@
   "lenh_treo": "mvpb1sjp",
   "da": "trang",
   "lenh_da": "",
+  "gio_treo": "",
+  "treo_gio": false,
+  "treo_ngay": "",
+  "lenh_gio_treo": "",
   "nhan_vat": [
    {
     "ten": "With U",
@@ -93,20 +97,10 @@
   "lenh_treo": "",
   "da": "trang",
   "lenh_da": "",
-  "nhan_vat": []
- },
- "doanmy1608": {
-  "st": "",
-  "nv": 0,
-  "may": "",
-  "bat_dau": "2026-11-09 13:08",
-  "ket_thuc": "2026-11-09 13:58",
-  "gio": "13:28",
-  "lenh": "mwa354ne",
-  "treo": "",
-  "lenh_treo": "",
-  "da": "trang",
-  "lenh_da": "",
+  "gio_treo": "",
+  "treo_gio": false,
+  "treo_ngay": "",
+  "lenh_gio_treo": "",
   "nhan_vat": []
  },
  "khadoan1608": {
@@ -121,6 +115,28 @@
   "lenh_treo": "",
   "da": "trang",
   "lenh_da": "",
+  "gio_treo": "",
+  "treo_gio": false,
+  "treo_ngay": "",
+  "lenh_gio_treo": "",
+  "nhan_vat": []
+ },
+ "doanmy1608": {
+  "st": "",
+  "nv": 0,
+  "may": "",
+  "bat_dau": "2026-11-09 13:08",
+  "ket_thuc": "2026-11-09 13:58",
+  "gio": "13:28",
+  "lenh": "mwa354ne",
+  "treo": "",
+  "lenh_treo": "",
+  "da": "trang",
+  "lenh_da": "",
+  "gio_treo": "",
+  "treo_gio": false,
+  "treo_ngay": "",
+  "lenh_gio_treo": "",
   "nhan_vat": []
  },
  "maianh0000001": {
@@ -135,6 +151,10 @@
   "lenh_treo": "",
   "da": "trang",
   "lenh_da": "",
+  "gio_treo": "",
+  "treo_gio": false,
+  "treo_ngay": "",
+  "lenh_gio_treo": "",
   "nhan_vat": []
  },
  "mytre1608": {
@@ -149,6 +169,10 @@
   "lenh_treo": "mw1o9ls8",
   "da": "trang",
   "lenh_da": "",
+  "gio_treo": "",
+  "treo_gio": false,
+  "treo_ngay": "",
+  "lenh_gio_treo": "",
   "nhan_vat": []
  },
  "doanmy1011": {
@@ -163,6 +187,10 @@
   "lenh_treo": "mvoxl8i7",
   "da": "trang",
   "lenh_da": "",
+  "gio_treo": "",
+  "treo_gio": false,
+  "treo_ngay": "",
+  "lenh_gio_treo": "",
   "nhan_vat": []
  },
  "myxinh1011": {
@@ -177,6 +205,10 @@
   "lenh_treo": "mvz0hyln",
   "da": "trang",
   "lenh_da": "",
+  "gio_treo": "",
+  "treo_gio": false,
+  "treo_ngay": "",
+  "lenh_gio_treo": "",
   "nhan_vat": []
  },
  "mylu1108": {
@@ -191,6 +223,10 @@
   "lenh_treo": "",
   "da": "trang",
   "lenh_da": "",
+  "gio_treo": "",
+  "treo_gio": false,
+  "treo_ngay": "",
+  "lenh_gio_treo": "",
   "nhan_vat": []
  },
  "doangia1608": {
@@ -205,6 +241,10 @@
   "lenh_treo": "mvp8o9yg",
   "da": "trang",
   "lenh_da": "",
+  "gio_treo": "",
+  "treo_gio": false,
+  "treo_ngay": "",
+  "lenh_gio_treo": "",
   "nhan_vat": []
  }
 }
