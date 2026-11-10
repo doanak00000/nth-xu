@@ -317,7 +317,7 @@ const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), l
       box.append(lb, tx);
       det.appendChild(box);
     }
-    // (10/11 user) Treo lại theo giờ: tick + giờ -> mỗi ngày tới giờ LD [0] treo lại (tick giữ). Không được đặt sau 15:00
+    // (10/11 user) Treo lại theo giờ: tick + giờ -> tới giờ LD [0] treo lại. Không được đặt sau 15:00; qua 5h sáng tool bỏ tick
     if (t.gio_treo !== undefined) {
       const l = gioTreoMoi[acc]?.id > (lenh.gio_treo?.[acc]?.id || "") ? gioTreoMoi[acc] : lenh.gio_treo?.[acc];
       const cho = l && t.lenh_gio_treo !== l.id;
@@ -340,7 +340,7 @@ const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), l
       ip.onfocus = () => { dangSua = acc + "#treo"; };   // đang chọn giờ -> lượt tự tải không xoá ô
       ip.onblur = () => { if (dangSua === acc + "#treo") dangSua = ""; };
       lb.append(ck, "Treo lại theo giờ (LD 0)");
-      lb.title = "Tick + chọn giờ: mỗi ngày tới giờ đó LDPlayer [0] treo lại tơ acc này. Không được đặt sau 15:00.";
+      lb.title = "Tick + chọn giờ: tới giờ đó LDPlayer [0] treo lại tơ acc này. Không được đặt sau 15:00. Qua ngày (5h sáng) tự bỏ tick.";
       box.append(lb, " ", ip, tx);
       det.appendChild(box);
     }
