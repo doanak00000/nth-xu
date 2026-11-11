@@ -409,7 +409,7 @@
  },
  "mytre1608": {
   "st": "chay",
-  "nv": 4,
+  "nv": 5,
   "may": "[1] LD",
   "bat_dau": "2026-11-11 16:45",
   "ket_thuc": "",
@@ -457,6 +457,16 @@
    {
     "ten": "TRiệu Vân",
     "luc": "17:32",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "KRIXI",
+    "luc": "17:44",
     "loi": [],
     "treo": 8,
     "treo_lai": null,
