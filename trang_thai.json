@@ -1,7 +1,7 @@
 {
  "_tool": {
-  "chay": false,
-  "che_do": "",
+  "chay": true,
+  "che_do": "thuong",
   "lenh_start": ""
  },
  "myxinh1608": {
@@ -177,7 +177,7 @@
   "gio_treo": "13:21",
   "treo_gio": false,
   "treo_ngay": "2026-11-12",
-  "lenh_gio_treo": "mwbq1mef",
+  "lenh_gio_treo": "mwd8i3xh",
   "nhan_vat": []
  },
  "doanmy1608": {
