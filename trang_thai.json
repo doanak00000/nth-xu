@@ -1,7 +1,7 @@
 {
  "_tool": {
-  "chay": true,
-  "che_do": "thuong",
+  "chay": false,
+  "che_do": "",
   "lenh_start": ""
  },
  "myxinh1608": {
@@ -178,7 +178,28 @@
   "treo_gio": false,
   "treo_ngay": "2026-11-12",
   "lenh_gio_treo": "mwd8i3xh",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "Lâm My",
+    "luc": "14:39",
+    "loi": [],
+    "treo": null,
+    "treo_lai": 0,
+    "treo_lai_luc": "14:39",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "Lâm Mỳ Mỳ",
+    "luc": "14:39",
+    "loi": [],
+    "treo": null,
+    "treo_lai": 0,
+    "treo_lai_luc": "14:39",
+    "het_to": false,
+    "ke_day": false
+   }
+  ]
  },
  "doanmy1608": {
   "st": "chay",
