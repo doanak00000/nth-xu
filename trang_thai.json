@@ -328,11 +328,11 @@
  },
  "doanmy1608": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[1] LD",
   "bat_dau": "2026-11-13 15:03",
   "ket_thuc": "",
-  "gio": "14:48",
+  "gio": "15:13",
   "lenh": "mwa5x2w4",
   "treo": "",
   "lenh_treo": "",
@@ -342,7 +342,18 @@
   "treo_gio": false,
   "treo_ngay": "",
   "lenh_gio_treo": "",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "TKế Tiểu Thư",
+    "luc": "15:13",
+    "loi": [],
+    "treo": 5,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   }
+  ]
  },
  "maianh0000001": {
   "st": "",
