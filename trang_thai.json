@@ -249,7 +249,7 @@
  },
  "khadoan1608": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[1] LD",
   "bat_dau": "2026-11-13 13:36",
   "ket_thuc": "",
@@ -263,7 +263,18 @@
   "treo_gio": false,
   "treo_ngay": "2026-11-12",
   "lenh_gio_treo": "mwd8i3xh",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "Lâm My",
+    "luc": "13:48",
+    "loi": [],
+    "treo": 3,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   }
+  ]
  },
  "doanmy1608": {
   "st": "",
