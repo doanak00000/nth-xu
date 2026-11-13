@@ -375,7 +375,7 @@ const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), l
         const k = document.createElement("span"); k.className = n.loi.length ? "sai" : "ok";
         k.textContent = (n.loi.length ? "⚠ " : "✓ ") + n.ten; r.appendChild(k);
         const g = document.createElement("span"); g.className = "gio";
-        g.textContent = [n.treo != null ? `treo ${n.treo}/8 ô` + (n.treo < 8 ? (n.ke_day ? " (kệ đầy)" : n.het_to ? " (hết tơ)" : "") : "") : "",
+        g.textContent = [n.luc ? "xong " + n.luc : "", n.treo != null ? `treo ${n.treo}/8 ô` + (n.treo < 8 ? (n.ke_day ? " (kệ đầy)" : n.het_to ? " (hết tơ)" : "") : "") : "",
           n.treo_lai != null ? `treo lại ${n.treo_lai} ô` : ""].filter(Boolean).map(x => " · " + x).join(""); r.appendChild(g);
         if (n.treo != null && n.treo < 8 && n.ke_day) { const c = document.createElement("span"); c.className = "co day"; c.textContent = "▦ kệ đầy"; c.title = "kệ còn hàng chưa bán / chưa hết hạn -> không treo thêm được"; r.appendChild(c); }
         else if (n.treo != null && n.treo < 8 && !n.het_to) { const c = document.createElement("span"); c.className = "co"; c.textContent = "⚑"; c.title = "treo chưa đủ 8/8 ô"; r.appendChild(c); }
