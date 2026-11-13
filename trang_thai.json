@@ -645,11 +645,11 @@
   ]
  },
  "mylu1108": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[1] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-11-13 22:00",
-  "ket_thuc": "",
+  "ket_thuc": "2026-11-13 23:07",
   "gio": "22:11",
   "lenh": "mw67mqjc",
   "treo": "",
@@ -704,6 +704,16 @@
    {
     "ten": "Y Tán",
     "luc": "22:57",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "Sư Tán",
+    "luc": "23:07",
     "loi": [],
     "treo": 8,
     "treo_lai": null,
