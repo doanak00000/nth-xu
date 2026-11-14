@@ -85,11 +85,11 @@
  },
  "myxinh1608": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[1] LD",
   "bat_dau": "2026-11-14 10:13",
   "ket_thuc": "",
-  "gio": "10:13",
+  "gio": "10:23",
   "lenh": "mwa23b2u",
   "treo": "",
   "lenh_treo": "mvpb1sjp",
@@ -99,7 +99,18 @@
   "treo_gio": false,
   "treo_ngay": "",
   "lenh_gio_treo": "",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "With U",
+    "luc": "10:23",
+    "loi": [],
+    "treo": 4,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   }
+  ]
  },
  "doangia1011": {
   "st": "",
