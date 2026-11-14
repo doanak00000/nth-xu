@@ -6,11 +6,11 @@
  },
  "doanmy1011": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[1] LD",
   "bat_dau": "2026-11-14 08:42",
   "ket_thuc": "",
-  "gio": "08:42",
+  "gio": "08:55",
   "lenh": "mweapz9z",
   "treo": "",
   "lenh_treo": "mvoxl8i7",
@@ -20,7 +20,18 @@
   "treo_gio": false,
   "treo_ngay": "",
   "lenh_gio_treo": "",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "Đá Lâm",
+    "luc": "08:55",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   }
+  ]
  },
  "myxinh1608": {
   "st": "",
