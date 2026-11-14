@@ -85,7 +85,7 @@
  },
  "myxinh1608": {
   "st": "chay",
-  "nv": 1,
+  "nv": 2,
   "may": "[1] LD",
   "bat_dau": "2026-11-14 10:13",
   "ket_thuc": "",
@@ -105,6 +105,16 @@
     "luc": "10:23",
     "loi": [],
     "treo": 4,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "Kiss U",
+    "luc": "10:31",
+    "loi": [],
+    "treo": 2,
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": true,
