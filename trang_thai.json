@@ -1,7 +1,7 @@
 {
  "_tool": {
-  "chay": true,
-  "che_do": "thuong",
+  "chay": false,
+  "che_do": "",
   "lenh_start": ""
  },
  "doanmy1011": {
@@ -162,6 +162,85 @@
    }
   ]
  },
+ "doangia1608": {
+  "st": "xong",
+  "nv": 6,
+  "may": "",
+  "bat_dau": "2026-11-14 11:13",
+  "ket_thuc": "2026-11-14 11:55",
+  "gio": "11:20",
+  "lenh": "",
+  "treo": "",
+  "lenh_treo": "mvp8o9yg",
+  "da": "trang",
+  "lenh_da": "",
+  "gio_treo": "",
+  "treo_gio": false,
+  "treo_ngay": "",
+  "lenh_gio_treo": "",
+  "nhan_vat": [
+   {
+    "ten": "NhữDinhY",
+    "luc": "11:20",
+    "loi": [],
+    "treo": 1,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "TrânCẩm",
+    "luc": "11:27",
+    "loi": [],
+    "treo": 1,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "TràChiHy",
+    "luc": "11:34",
+    "loi": [],
+    "treo": 1,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "Miêu My",
+    "luc": "11:41",
+    "loi": [],
+    "treo": 0,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": true
+   },
+   {
+    "ten": "Doan Myy",
+    "luc": "11:48",
+    "loi": [],
+    "treo": 1,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "NhiếpUyển",
+    "luc": "11:55",
+    "loi": [],
+    "treo": 1,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   }
+  ]
+ },
  "doangia1011": {
   "st": "",
   "nv": 0,
@@ -287,84 +366,5 @@
   "treo_ngay": "",
   "lenh_gio_treo": "",
   "nhan_vat": []
- },
- "doangia1608": {
-  "st": "xong",
-  "nv": 6,
-  "may": "",
-  "bat_dau": "2026-11-14 11:13",
-  "ket_thuc": "2026-11-14 11:55",
-  "gio": "11:20",
-  "lenh": "",
-  "treo": "",
-  "lenh_treo": "mvp8o9yg",
-  "da": "trang",
-  "lenh_da": "",
-  "gio_treo": "",
-  "treo_gio": false,
-  "treo_ngay": "",
-  "lenh_gio_treo": "",
-  "nhan_vat": [
-   {
-    "ten": "NhữDinhY",
-    "luc": "11:20",
-    "loi": [],
-    "treo": 1,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": true,
-    "ke_day": false
-   },
-   {
-    "ten": "TrânCẩm",
-    "luc": "11:27",
-    "loi": [],
-    "treo": 1,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": true,
-    "ke_day": false
-   },
-   {
-    "ten": "TràChiHy",
-    "luc": "11:34",
-    "loi": [],
-    "treo": 1,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": true,
-    "ke_day": false
-   },
-   {
-    "ten": "Miêu My",
-    "luc": "11:41",
-    "loi": [],
-    "treo": 0,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": true
-   },
-   {
-    "ten": "Doan Myy",
-    "luc": "11:48",
-    "loi": [],
-    "treo": 1,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": true,
-    "ke_day": false
-   },
-   {
-    "ten": "NhiếpUyển",
-    "luc": "11:55",
-    "loi": [],
-    "treo": 1,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": true,
-    "ke_day": false
-   }
-  ]
  }
 }
