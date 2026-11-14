@@ -84,11 +84,11 @@
   ]
  },
  "myxinh1608": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[1] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-11-14 10:13",
-  "ket_thuc": "",
+  "ket_thuc": "2026-11-14 11:09",
   "gio": "10:23",
   "lenh": "mwa23b2u",
   "treo": "",
@@ -145,6 +145,16 @@
     "luc": "11:00",
     "loi": [],
     "treo": 5,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "Miss U",
+    "luc": "11:09",
+    "loi": [],
+    "treo": 4,
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": true,
