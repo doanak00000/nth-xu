@@ -722,11 +722,11 @@
  },
  "mylu1108": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[1] LD",
   "bat_dau": "2026-11-14 22:11",
   "ket_thuc": "",
-  "gio": "22:11",
+  "gio": "22:22",
   "lenh": "mw67mqjc",
   "treo": "",
   "lenh_treo": "",
@@ -736,6 +736,17 @@
   "treo_gio": false,
   "treo_ngay": "",
   "lenh_gio_treo": "",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "DoctorM",
+    "luc": "22:22",
+    "loi": [],
+    "treo": 5,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   }
+  ]
  }
 }
