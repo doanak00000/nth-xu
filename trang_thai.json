@@ -5,11 +5,11 @@
   "lenh_start": ""
  },
  "doanmy1011": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[1] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-11-14 08:42",
-  "ket_thuc": "",
+  "ket_thuc": "2026-11-14 09:55",
   "gio": "08:55",
   "lenh": "mweapz9z",
   "treo": "",
@@ -64,6 +64,16 @@
    {
     "ten": "YumiCa",
     "luc": "09:43",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "Khoáng Doãn",
+    "luc": "09:55",
     "loi": [],
     "treo": 8,
     "treo_lai": null,
