@@ -163,11 +163,11 @@
   ]
  },
  "doangia1608": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[1] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-11-15 11:20",
-  "ket_thuc": "",
+  "ket_thuc": "2026-11-15 12:26",
   "gio": "11:32",
   "lenh": "",
   "treo": "",
@@ -224,6 +224,16 @@
     "luc": "12:16",
     "loi": [],
     "treo": 5,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "Doan Myy",
+    "luc": "12:26",
+    "loi": [],
+    "treo": 6,
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": true,
