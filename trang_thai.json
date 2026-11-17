@@ -327,11 +327,11 @@
   ]
  },
  "doanmy1608": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[1] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-11-17 16:31",
-  "ket_thuc": "",
+  "ket_thuc": "2026-11-17 17:38",
   "gio": "16:43",
   "lenh": "mwk30ttc",
   "treo": "",
@@ -388,6 +388,16 @@
     "luc": "17:28",
     "loi": [],
     "treo": 6,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "LADY",
+    "luc": "17:38",
+    "loi": [],
+    "treo": 4,
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": true,
