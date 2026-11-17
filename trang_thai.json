@@ -246,7 +246,7 @@
  },
  "doangia1011": {
   "st": "chay",
-  "nv": 1,
+  "nv": 2,
   "may": "[1] LD",
   "bat_dau": "2026-11-17 14:02",
   "ket_thuc": "",
@@ -269,6 +269,16 @@
      "mốc: 0/4"
     ],
     "treo": 5,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "MARLIN",
+    "luc": "14:24",
+    "loi": [],
+    "treo": 7,
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": true,
