@@ -5,22 +5,37 @@
   "lenh_start": ""
  },
  "doanmy1011": {
-  "st": "chay",
+  "st": "loi",
   "nv": 0,
-  "may": "[1] LD",
+  "may": "",
   "bat_dau": "2026-11-17 09:58",
-  "ket_thuc": "",
+  "ket_thuc": "2026-11-17 10:14",
   "gio": "09:25",
   "lenh": "mweapz9z",
   "treo": "",
   "lenh_treo": "mvoxl8i7",
-  "da": "tuyet",
+  "da": "vang",
   "lenh_da": "mwk2do22",
   "gio_treo": "",
   "treo_gio": false,
   "treo_ngay": "",
   "lenh_gio_treo": "",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "Đá Lâm",
+    "luc": "10:14",
+    "loi": [
+     "hảo cảm: failed",
+     "lỗi che_to (doi_acc: bắt buộc nhưng không thấy 'nghe_nghiep.pn): failed",
+     "dừng (doi_acc: bắt buộc nhưng không thấy 'nghe_nghiep.png' sau 10s): failed"
+    ],
+    "treo": null,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   }
+  ]
  },
  "myxinh1608": {
   "st": "",
