@@ -6,11 +6,11 @@
  },
  "doanmy1011": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[1] LD",
   "bat_dau": "2026-11-17 10:32",
   "ket_thuc": "",
-  "gio": "09:25",
+  "gio": "10:51",
   "lenh": "mweapz9z",
   "treo": "",
   "lenh_treo": "mvoxl8i7",
@@ -37,13 +37,9 @@
    },
    {
     "ten": "THẠCH Khả",
-    "luc": "10:29",
-    "loi": [
-     "mộng hoa lục: failed",
-     "lỗi hao_cam (không mở được bảng Hoạt động): failed",
-     "dừng (không mở được bảng Hoạt động): failed"
-    ],
-    "treo": null,
+    "luc": "10:51",
+    "loi": [],
+    "treo": 8,
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": false,
