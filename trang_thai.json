@@ -406,11 +406,11 @@
   ]
  },
  "maianh0000001": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[1] LD",
+  "st": "loi",
+  "nv": 4,
+  "may": "",
   "bat_dau": "2026-11-17 17:51",
-  "ket_thuc": "",
+  "ket_thuc": "2026-11-17 19:01",
   "gio": "18:02",
   "lenh": "mwk30evp",
   "treo": "",
@@ -466,8 +466,10 @@
    },
    {
     "ten": "HưToàn",
-    "luc": "19:00",
-    "loi": [],
+    "luc": "19:01",
+    "loi": [
+     "dừng (không mở được bảng Hoạt động): failed"
+    ],
     "treo": null,
     "treo_lai": null,
     "treo_lai_luc": "",
