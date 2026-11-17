@@ -245,11 +245,11 @@
   ]
  },
  "doangia1011": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[1] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-11-17 14:02",
-  "ket_thuc": "",
+  "ket_thuc": "2026-11-17 15:06",
   "gio": "14:12",
   "lenh": "mwceczgb",
   "treo": "",
@@ -312,6 +312,16 @@
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "Nemo",
+    "luc": "15:06",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
     "ke_day": false
    }
   ]
