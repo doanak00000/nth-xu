@@ -5,11 +5,11 @@
   "lenh_start": ""
  },
  "doanmy1011": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[1] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-11-17 10:32",
-  "ket_thuc": "",
+  "ket_thuc": "2026-11-17 11:51",
   "gio": "10:51",
   "lenh": "mweapz9z",
   "treo": "",
@@ -21,20 +21,6 @@
   "treo_ngay": "",
   "lenh_gio_treo": "",
   "nhan_vat": [
-   {
-    "ten": "Đá Lâm",
-    "luc": "10:14",
-    "loi": [
-     "hảo cảm: failed",
-     "lỗi che_to (doi_acc: bắt buộc nhưng không thấy 'nghe_nghiep.pn): failed",
-     "dừng (doi_acc: bắt buộc nhưng không thấy 'nghe_nghiep.png' sau 10s): failed"
-    ],
-    "treo": null,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": false
-   },
    {
     "ten": "THẠCH Khả",
     "luc": "10:51",
@@ -78,6 +64,16 @@
    {
     "ten": "Khoáng Doãn",
     "luc": "11:39",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "Đá Lâm",
+    "luc": "11:51",
     "loi": [],
     "treo": 8,
     "treo_lai": null,
