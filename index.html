@@ -156,7 +156,7 @@ const luuGioTreo = async (acc, bat, gio) => {
 };
 let daMoi = {};     // lệnh loại đá vừa gửi, chưa thấy trong lenh.json
 const luuDa = async (acc, da) => {
-  const d = await ghiLenh((d, id) => (d.da ||= {})[acc] = { da, id }, `${acc} chế tơ bằng đá ${da === "vang" ? "vàng" : "trắng tím"}`);
+  const d = await ghiLenh((d, id) => (d.da ||= {})[acc] = { da, id }, `${acc} chế tơ bằng ${{vang: "đá vàng", tuyet: "Dung Tuyết Thạch"}[da] || "đá trắng tím"}`);
   daMoi[acc] = d.da[acc];
 };
 // chưa có token -> ô nhập token ngay trong `box` (iPhone mở link trong Zalo/Messenger: prompt() bị chặn); có rồi -> tiep()
@@ -350,7 +350,7 @@ const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), l
       const cho = l && t.lenh_da !== l.id;
       const box = document.createElement("div"); box.className = "hen";
       const sel = document.createElement("select");
-      for (const [v, chu] of [["trang", "Đá trắng tím"], ["vang", "Đá vàng"]]) {
+      for (const [v, chu] of [["trang", "Đá trắng tím"], ["vang", "Đá vàng"], ["tuyet", "Dung Tuyết Thạch"]]) {
         const o = document.createElement("option"); o.value = v; o.textContent = chu; sel.appendChild(o);
       }
       sel.value = cho ? l.da : (t.da || "trang");
@@ -362,7 +362,7 @@ const tai = (ep = false) => laySha().then(s => Promise.all([lay("xu.json", s), l
         try { await luuDa(acc, sel.value); cu = ""; tai(true); }
         catch (e) { tx.textContent = "✗ " + e.message; sel.value = truoc; sel.disabled = false; }
       });
-      sel.title = "Cả acc mua + chế tơ bằng loại đá này (đá đắt thì chỉ chế bằng đá có sẵn, không tự đổi loại)";
+      sel.title = "Cả acc mua + chế tơ bằng loại đá này (vàng: đá đắt thì chỉ chế bằng đá có sẵn; tuyết thạch: đá đắt -> chuyển đá trắng tím)";
       box.append("Chế tơ bằng: ", sel, tx);
       det.appendChild(box);
     }
