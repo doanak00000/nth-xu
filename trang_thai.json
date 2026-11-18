@@ -725,7 +725,7 @@
   "ket_thuc": "2026-11-18 18:51",
   "gio": "23:00",
   "lenh": "mwm5pa71",
-  "treo": "running:[1] LD",
+  "treo": "",
   "lenh_treo": "mwm5h35c",
   "da": "tuyet",
   "lenh_da": "mwkyd40b",
@@ -789,8 +789,8 @@
     "luc": "18:51",
     "loi": [],
     "treo": 3,
-    "treo_lai": null,
-    "treo_lai_luc": "",
+    "treo_lai": 4,
+    "treo_lai_luc": "23:36",
     "het_to": false,
     "ke_day": true
    }
