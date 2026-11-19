@@ -405,7 +405,7 @@
  },
  "khadoan1011": {
   "st": "chay",
-  "nv": 3,
+  "nv": 4,
   "may": "[1] LD",
   "bat_dau": "2026-11-19 18:08",
   "ket_thuc": "",
@@ -443,6 +443,16 @@
    {
     "ten": "MyC00KKK",
     "luc": "18:26",
+    "loi": [],
+    "treo": 1,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "Myoftu",
+    "luc": "18:31",
     "loi": [],
     "treo": 1,
     "treo_lai": null,
