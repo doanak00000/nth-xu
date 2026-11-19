@@ -484,7 +484,7 @@
  },
  "mytre1608": {
   "st": "chay",
-  "nv": 5,
+  "nv": 6,
   "may": "[1] LD",
   "bat_dau": "2026-11-19 19:50",
   "ket_thuc": "",
@@ -547,6 +547,16 @@
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "Enzo",
+    "luc": "21:00",
+    "loi": [],
+    "treo": 5,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
     "ke_day": false
    }
   ]
