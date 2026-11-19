@@ -641,11 +641,11 @@
   ]
  },
  "myxinh1011": {
-  "st": "chay",
+  "st": "loi",
   "nv": 4,
-  "may": "[1] LD",
+  "may": "",
   "bat_dau": "2026-11-19 22:23",
-  "ket_thuc": "",
+  "ket_thuc": "2026-11-19 23:21",
   "gio": "22:36",
   "lenh": "mw67mfh1",
   "treo": "",
@@ -692,6 +692,19 @@
     "luc": "23:12",
     "loi": [],
     "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "TùHy TháiHậu",
+    "luc": "23:21",
+    "loi": [
+     "lỗi che_to (không mở được bảng Hoạt động): failed",
+     "dừng (không mở được bảng Hoạt động): failed"
+    ],
+    "treo": null,
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": false,
