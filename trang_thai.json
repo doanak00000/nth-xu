@@ -325,11 +325,11 @@
   ]
  },
  "doanmy1608": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[1] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-11-19 17:05",
-  "ket_thuc": "",
+  "ket_thuc": "2026-11-19 18:06",
   "gio": "17:17",
   "lenh": "mwk30ttc",
   "treo": "",
@@ -386,6 +386,16 @@
     "luc": "17:57",
     "loi": [],
     "treo": 6,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "Stylist Mỹ",
+    "luc": "18:06",
+    "loi": [],
+    "treo": 4,
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": true,
