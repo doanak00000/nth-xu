@@ -244,11 +244,11 @@
   ]
  },
  "doangia1011": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[1] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-11-19 14:35",
-  "ket_thuc": "",
+  "ket_thuc": "2026-11-19 15:32",
   "gio": "14:45",
   "lenh": "mwceczgb",
   "treo": "",
@@ -303,6 +303,16 @@
    {
     "ten": "DoRy",
     "luc": "15:20",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "Nemo",
+    "luc": "15:32",
     "loi": [],
     "treo": 8,
     "treo_lai": null,
