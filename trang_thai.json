@@ -139,13 +139,9 @@
    },
    {
     "ten": "FI Smy",
-    "luc": "17:08",
-    "loi": [
-     "hảo cảm: failed",
-     "mốc: 0/4",
-     "nghề nghiệp: failed"
-    ],
-    "treo": 8,
+    "luc": "17:10",
+    "loi": [],
+    "treo": null,
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": false,
