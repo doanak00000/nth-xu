@@ -1,7 +1,7 @@
 {
  "_tool": {
-  "chay": false,
-  "che_do": "",
+  "chay": true,
+  "che_do": "thuong",
   "lenh_start": ""
  },
  "mylu1108": {
@@ -59,11 +59,11 @@
   "nhan_vat": []
  },
  "doangia1011": {
-  "st": "",
+  "st": "chay",
   "nv": 0,
-  "may": "",
-  "bat_dau": "2026-11-20 14:46",
-  "ket_thuc": "2026-11-20 15:24",
+  "may": "[1] LD",
+  "bat_dau": "2026-11-20 15:25",
+  "ket_thuc": "",
   "gio": "15:03",
   "lenh": "mwceczgb",
   "treo": "",
