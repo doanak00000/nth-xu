@@ -501,11 +501,11 @@
  },
  "maianh0000001": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[1] LD",
   "bat_dau": "2026-11-20 23:45",
   "ket_thuc": "",
-  "gio": "23:10",
+  "gio": "00:03",
   "lenh": "mwm5pa71",
   "treo": "",
   "lenh_treo": "mwm5h35c",
@@ -515,7 +515,18 @@
   "treo_gio": false,
   "treo_ngay": "",
   "lenh_gio_treo": "",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "TriểuHân",
+    "luc": "23:53",
+    "loi": [],
+    "treo": 2,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   }
+  ]
  },
  "khadoan1011": {
   "st": "",
