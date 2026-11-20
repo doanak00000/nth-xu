@@ -42,7 +42,7 @@
  },
  "doangia1011": {
   "st": "chay",
-  "nv": 2,
+  "nv": 1,
   "may": "[1] LD",
   "bat_dau": "2026-11-20 14:46",
   "ket_thuc": "",
@@ -71,12 +71,14 @@
    },
    {
     "ten": "MARLIN",
-    "luc": "15:21",
-    "loi": [],
-    "treo": 5,
+    "luc": "15:24",
+    "loi": [
+     "dừng (doi_acc: không thấy màn chọn nhân vật): failed"
+    ],
+    "treo": null,
     "treo_lai": null,
     "treo_lai_luc": "",
-    "het_to": true,
+    "het_to": false,
     "ke_day": false
    }
   ]
