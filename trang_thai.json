@@ -1,87 +1,8 @@
 {
  "_tool": {
-  "chay": true,
-  "che_do": "thuong",
+  "chay": false,
+  "che_do": "",
   "lenh_start": ""
- },
- "maianh0000001": {
-  "st": "xong",
-  "nv": 6,
-  "may": "",
-  "bat_dau": "2026-11-21 09:35",
-  "ket_thuc": "2026-11-21 10:21",
-  "gio": "09:54",
-  "lenh": "mwprz5kp",
-  "treo": "",
-  "lenh_treo": "mwm5h35c",
-  "da": "tuyet",
-  "lenh_da": "mwkyd40b",
-  "gio_treo": "",
-  "treo_gio": false,
-  "treo_ngay": "",
-  "lenh_gio_treo": "",
-  "nhan_vat": [
-   {
-    "ten": "TriểuHân",
-    "luc": "09:44",
-    "loi": [],
-    "treo": 1,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": true,
-    "ke_day": false
-   },
-   {
-    "ten": "LaiXuân",
-    "luc": "09:51",
-    "loi": [],
-    "treo": 1,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": true,
-    "ke_day": false
-   },
-   {
-    "ten": "LộcXuânNam",
-    "luc": "09:59",
-    "loi": [],
-    "treo": 0,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": true
-   },
-   {
-    "ten": "ThanhVững",
-    "luc": "10:07",
-    "loi": [],
-    "treo": 1,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": true,
-    "ke_day": false
-   },
-   {
-    "ten": "HưToàn",
-    "luc": "10:14",
-    "loi": [],
-    "treo": 0,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": true
-   },
-   {
-    "ten": "DiêmBảoKỳ",
-    "luc": "10:21",
-    "loi": [],
-    "treo": 0,
-    "treo_lai": null,
-    "treo_lai_luc": "",
-    "het_to": false,
-    "ke_day": true
-   }
-  ]
  },
  "mylu1108": {
   "st": "xong",
@@ -159,6 +80,85 @@
     "treo_lai_luc": "",
     "het_to": true,
     "ke_day": false
+   }
+  ]
+ },
+ "maianh0000001": {
+  "st": "xong",
+  "nv": 6,
+  "may": "",
+  "bat_dau": "2026-11-21 09:35",
+  "ket_thuc": "2026-11-21 10:21",
+  "gio": "09:54",
+  "lenh": "mwprz5kp",
+  "treo": "",
+  "lenh_treo": "mwm5h35c",
+  "da": "tuyet",
+  "lenh_da": "mwkyd40b",
+  "gio_treo": "",
+  "treo_gio": false,
+  "treo_ngay": "",
+  "lenh_gio_treo": "",
+  "nhan_vat": [
+   {
+    "ten": "TriểuHân",
+    "luc": "09:44",
+    "loi": [],
+    "treo": 1,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "LaiXuân",
+    "luc": "09:51",
+    "loi": [],
+    "treo": 1,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "LộcXuânNam",
+    "luc": "09:59",
+    "loi": [],
+    "treo": 0,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": true
+   },
+   {
+    "ten": "ThanhVững",
+    "luc": "10:07",
+    "loi": [],
+    "treo": 1,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "HưToàn",
+    "luc": "10:14",
+    "loi": [],
+    "treo": 0,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": true
+   },
+   {
+    "ten": "DiêmBảoKỳ",
+    "luc": "10:21",
+    "loi": [],
+    "treo": 0,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": true
    }
   ]
  },
