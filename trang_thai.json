@@ -479,11 +479,11 @@
   ]
  },
  "doangia1608": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[1] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-11-21 19:53",
-  "ket_thuc": "",
+  "ket_thuc": "2026-11-21 21:06",
   "gio": "20:14",
   "lenh": "mwp78sek",
   "treo": "",
@@ -540,6 +540,16 @@
     "luc": "20:54",
     "loi": [],
     "treo": 7,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "TràChiHy",
+    "luc": "21:06",
+    "loi": [],
+    "treo": 6,
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": true,
