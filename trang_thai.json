@@ -103,7 +103,7 @@
  },
  "khadoan1011": {
   "st": "chay",
-  "nv": 1,
+  "nv": 2,
   "may": "[1] LD",
   "bat_dau": "2026-11-22 10:28",
   "ket_thuc": "",
@@ -121,6 +121,16 @@
    {
     "ten": "Kim TrùCa",
     "luc": "10:35",
+    "loi": [],
+    "treo": 1,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "Tiểu Trù",
+    "luc": "10:41",
     "loi": [],
     "treo": 1,
     "treo_lai": null,
