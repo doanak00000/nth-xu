@@ -176,7 +176,7 @@
   "lenh_da": "",
   "gio_treo": "13:11",
   "treo_gio": true,
-  "treo_ngay": "running:[0] LD",
+  "treo_ngay": "2026-11-22",
   "lenh_gio_treo": "mwrfsebj",
   "nhan_vat": [
    {
@@ -224,8 +224,8 @@
     "luc": "11:00",
     "loi": [],
     "treo": 1,
-    "treo_lai": null,
-    "treo_lai_luc": "",
+    "treo_lai": 6,
+    "treo_lai_luc": "13:52",
     "het_to": true,
     "ke_day": false
    },
