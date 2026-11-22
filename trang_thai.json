@@ -5,11 +5,11 @@
   "lenh_start": ""
  },
  "mylu1108": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[1] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-11-22 09:44",
-  "ket_thuc": "",
+  "ket_thuc": "2026-11-22 10:26",
   "gio": "10:01",
   "lenh": "mwp77ky3",
   "treo": "",
@@ -66,6 +66,16 @@
     "luc": "10:19",
     "loi": [],
     "treo": 1,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "DoctorM",
+    "luc": "10:26",
+    "loi": [],
+    "treo": 2,
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": true,
