@@ -102,11 +102,11 @@
   "nhan_vat": []
  },
  "khadoan1011": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[1] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-11-22 10:28",
-  "ket_thuc": "",
+  "ket_thuc": "2026-11-22 11:06",
   "gio": "10:45",
   "lenh": "mwr93zhb",
   "treo": "",
@@ -161,6 +161,16 @@
    {
     "ten": "MyC00KKK",
     "luc": "11:00",
+    "loi": [],
+    "treo": 1,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "Myoftu",
+    "luc": "11:06",
     "loi": [],
     "treo": 1,
     "treo_lai": null,
