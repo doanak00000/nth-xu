@@ -657,11 +657,11 @@
   "nhan_vat": []
  },
  "myxinh1011": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[1] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-11-22 23:26",
-  "ket_thuc": "",
+  "ket_thuc": "2026-11-23 00:07",
   "gio": "23:44",
   "lenh": "mw67mfh1",
   "treo": "",
@@ -716,6 +716,16 @@
    {
     "ten": "TùHy TháiHậu",
     "luc": "00:01",
+    "loi": [],
+    "treo": 1,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "Hoàngg Hậu",
+    "luc": "00:07",
     "loi": [],
     "treo": 1,
     "treo_lai": null,
