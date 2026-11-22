@@ -243,7 +243,7 @@
  },
  "doangia1011": {
   "st": "chay",
-  "nv": 2,
+  "nv": 3,
   "may": "[1] LD",
   "bat_dau": "2026-11-22 15:59",
   "ket_thuc": "",
@@ -275,6 +275,16 @@
      "lỗi find_tap (find_tap: bắt buộc nhưng không thấy 'thanh_nhai_th): failed"
     ],
     "treo": 4,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "MARLIN",
+    "luc": "16:28",
+    "loi": [],
+    "treo": 2,
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": true,
