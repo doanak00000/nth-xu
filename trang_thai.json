@@ -1,7 +1,7 @@
 {
  "_tool": {
-  "chay": true,
-  "che_do": "thuong",
+  "chay": false,
+  "che_do": "",
   "lenh_start": ""
  },
  "mylu1108": {
@@ -657,11 +657,11 @@
   "nhan_vat": []
  },
  "myxinh1011": {
-  "st": "",
+  "st": "chay",
   "nv": 0,
-  "may": "",
-  "bat_dau": "2026-11-21 23:37",
-  "ket_thuc": "2026-11-22 00:37",
+  "may": "[1] LD",
+  "bat_dau": "2026-11-22 23:26",
+  "ket_thuc": "",
   "gio": "23:15",
   "lenh": "mw67mfh1",
   "treo": "",
