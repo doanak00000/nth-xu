@@ -1,25 +1,25 @@
 {
  "_tool": {
-  "chay": false,
-  "che_do": "",
+  "chay": true,
+  "che_do": "thuong",
   "lenh_start": ""
  },
- "khadoan1608": {
+ "myxinh1011": {
   "st": "",
   "nv": 0,
   "may": "",
-  "bat_dau": "2026-11-22 23:02",
-  "ket_thuc": "2026-11-22 23:08",
-  "gio": "22:53",
-  "lenh": "mwm5q2el",
+  "bat_dau": "2026-11-22 23:26",
+  "ket_thuc": "2026-11-23 00:07",
+  "gio": "08:35",
+  "lenh": "mwsll840",
   "treo": "",
-  "lenh_treo": "mwm5n7iu",
+  "lenh_treo": "mvz0hyln",
   "da": "tuyet",
-  "lenh_da": "mwkydelj",
+  "lenh_da": "mwkydj6f",
   "gio_treo": "",
   "treo_gio": false,
-  "treo_ngay": "2026-11-12",
-  "lenh_gio_treo": "mwd8i3xh",
+  "treo_ngay": "",
+  "lenh_gio_treo": "",
   "nhan_vat": []
  },
  "mylu1108": {
@@ -166,22 +166,22 @@
   "lenh_gio_treo": "",
   "nhan_vat": []
  },
- "myxinh1011": {
+ "khadoan1608": {
   "st": "",
   "nv": 0,
   "may": "",
-  "bat_dau": "2026-11-22 23:26",
-  "ket_thuc": "2026-11-23 00:07",
-  "gio": "08:35",
-  "lenh": "mwsll840",
+  "bat_dau": "2026-11-22 23:02",
+  "ket_thuc": "2026-11-22 23:08",
+  "gio": "22:53",
+  "lenh": "mwm5q2el",
   "treo": "",
-  "lenh_treo": "mvz0hyln",
+  "lenh_treo": "mwm5n7iu",
   "da": "tuyet",
-  "lenh_da": "mwkydj6f",
+  "lenh_da": "mwkydelj",
   "gio_treo": "",
   "treo_gio": false,
-  "treo_ngay": "",
-  "lenh_gio_treo": "",
+  "treo_ngay": "2026-11-12",
+  "lenh_gio_treo": "mwd8i3xh",
   "nhan_vat": []
  }
 }
