@@ -573,7 +573,7 @@
  },
  "doangia1608": {
   "st": "chay",
-  "nv": 2,
+  "nv": 3,
   "may": "[1] LD",
   "bat_dau": "2026-11-24 21:22",
   "ket_thuc": "",
@@ -603,6 +603,16 @@
     "luc": "21:49",
     "loi": [],
     "treo": 7,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "TràChiHy",
+    "luc": "22:00",
+    "loi": [],
+    "treo": 6,
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": true,
