@@ -573,11 +573,11 @@
  },
  "doangia1608": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[1] LD",
   "bat_dau": "2026-11-24 21:22",
   "ket_thuc": "",
-  "gio": "21:07",
+  "gio": "21:43",
   "lenh": "mwp78sek",
   "treo": "",
   "lenh_treo": "mvp8o9yg",
@@ -587,7 +587,18 @@
   "treo_gio": false,
   "treo_ngay": "2026-11-16",
   "lenh_gio_treo": "mwitq1e2",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "Miêu My",
+    "luc": "21:33",
+    "loi": [],
+    "treo": 5,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   }
+  ]
  },
  "mytre1608": {
   "st": "",
