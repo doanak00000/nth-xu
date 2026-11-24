@@ -163,11 +163,11 @@
   ]
  },
  "khadoan1011": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[1] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-11-24 11:15",
-  "ket_thuc": "",
+  "ket_thuc": "2026-11-24 12:23",
   "gio": "11:38",
   "lenh": "mwslzbl7",
   "treo": "",
@@ -227,6 +227,16 @@
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "MyC00KKK",
+    "luc": "12:23",
+    "loi": [],
+    "treo": 7,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
     "ke_day": false
    }
   ]
