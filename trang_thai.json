@@ -572,11 +572,11 @@
   ]
  },
  "doangia1608": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[1] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-11-24 21:22",
-  "ket_thuc": "",
+  "ket_thuc": "2026-11-24 22:33",
   "gio": "21:43",
   "lenh": "mwp78sek",
   "treo": "",
@@ -633,6 +633,16 @@
     "luc": "22:21",
     "loi": [],
     "treo": 4,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "NhiếpUyển",
+    "luc": "22:33",
+    "loi": [],
+    "treo": 6,
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": true,
