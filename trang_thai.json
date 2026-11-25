@@ -245,11 +245,11 @@
  },
  "khadoan1011": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[1] LD",
   "bat_dau": "2026-11-25 12:01",
   "ket_thuc": "",
-  "gio": "11:38",
+  "gio": "12:24",
   "lenh": "mwslzbl7",
   "treo": "",
   "lenh_treo": "",
@@ -259,7 +259,18 @@
   "treo_gio": false,
   "treo_ngay": "2026-11-22",
   "lenh_gio_treo": "mwrm0osx",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "Kim TrùCa",
+    "luc": "12:14",
+    "loi": [],
+    "treo": 8,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": false,
+    "ke_day": false
+   }
+  ]
  },
  "maianh0000001": {
   "st": "",
