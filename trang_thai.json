@@ -324,11 +324,11 @@
  },
  "maianh0000001": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[1] LD",
   "bat_dau": "2026-11-25 13:08",
   "ket_thuc": "",
-  "gio": "12:43",
+  "gio": "13:27",
   "lenh": "mwr98gl3",
   "treo": "",
   "lenh_treo": "mwm5h35c",
@@ -338,7 +338,18 @@
   "treo_gio": false,
   "treo_ngay": "",
   "lenh_gio_treo": "mwq0iwcj",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "TriểuHân",
+    "luc": "13:17",
+    "loi": [],
+    "treo": 4,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   }
+  ]
  },
  "doangia1011": {
   "st": "",
