@@ -85,7 +85,7 @@
  },
  "myxinh1011": {
   "st": "chay",
-  "nv": 1,
+  "nv": 2,
   "may": "[1] LD",
   "bat_dau": "2026-11-26 10:04",
   "ket_thuc": "",
@@ -105,6 +105,16 @@
     "luc": "10:13",
     "loi": [],
     "treo": 5,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "Võ Tắcc Thiên",
+    "luc": "10:22",
+    "loi": [],
+    "treo": 4,
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": true,
