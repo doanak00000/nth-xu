@@ -323,11 +323,11 @@
   ]
  },
  "maianh0000001": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[1] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-11-27 13:50",
-  "ket_thuc": "",
+  "ket_thuc": "2026-11-27 14:52",
   "gio": "14:07",
   "lenh": "mwr98gl3",
   "treo": "",
@@ -384,6 +384,16 @@
     "luc": "14:41",
     "loi": [],
     "treo": 4,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "HưToàn",
+    "luc": "14:52",
+    "loi": [],
+    "treo": 6,
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": true,
