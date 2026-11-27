@@ -245,7 +245,7 @@
  },
  "khadoan1011": {
   "st": "chay",
-  "nv": 1,
+  "nv": 2,
   "may": "[1] LD",
   "bat_dau": "2026-11-27 12:45",
   "ket_thuc": "",
@@ -268,6 +268,16 @@
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": false,
+    "ke_day": false
+   },
+   {
+    "ten": "Tiểu Trù",
+    "luc": "13:10",
+    "loi": [],
+    "treo": 7,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
     "ke_day": false
    }
   ]
