@@ -488,7 +488,7 @@
  },
  "doangia1011": {
   "st": "chay",
-  "nv": 4,
+  "nv": 5,
   "may": "[1] LD",
   "bat_dau": "2026-11-28 18:32",
   "ket_thuc": "",
@@ -538,6 +538,16 @@
     "luc": "19:11",
     "loi": [],
     "treo": 5,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "Dolia Babie",
+    "luc": "19:19",
+    "loi": [],
+    "treo": 2,
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": true,
