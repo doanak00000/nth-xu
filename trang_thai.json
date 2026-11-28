@@ -249,11 +249,11 @@
  },
  "mylu1108": {
   "st": "chay",
-  "nv": 0,
+  "nv": 1,
   "may": "[1] LD",
   "bat_dau": "2026-11-28 12:18",
   "ket_thuc": "",
-  "gio": "11:45",
+  "gio": "12:36",
   "lenh": "mwslijhc",
   "treo": "",
   "lenh_treo": "",
@@ -263,7 +263,18 @@
   "treo_gio": false,
   "treo_ngay": "2026-11-22",
   "lenh_gio_treo": "mwrm0hl0",
-  "nhan_vat": []
+  "nhan_vat": [
+   {
+    "ten": "BệuBảnhBao",
+    "luc": "12:28",
+    "loi": [],
+    "treo": 5,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   }
+  ]
  },
  "khadoan1011": {
   "st": "",
