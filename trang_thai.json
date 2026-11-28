@@ -1,8 +1,26 @@
 {
  "_tool": {
-  "chay": false,
-  "che_do": "",
+  "chay": true,
+  "che_do": "thuong",
   "lenh_start": ""
+ },
+ "mytre1608": {
+  "st": "",
+  "nv": 0,
+  "may": "",
+  "bat_dau": "2026-11-27 23:42",
+  "ket_thuc": "",
+  "gio": "00:00",
+  "lenh": "mwk2x8v6",
+  "treo": "",
+  "lenh_treo": "mwk3rhfh",
+  "da": "tuyet",
+  "lenh_da": "mwkyd9rd",
+  "gio_treo": "",
+  "treo_gio": false,
+  "treo_ngay": "",
+  "lenh_gio_treo": "",
+  "nhan_vat": []
  },
  "khadoan1608": {
   "st": "",
@@ -164,24 +182,6 @@
   "treo_gio": false,
   "treo_ngay": "2026-11-16",
   "lenh_gio_treo": "mwitq1e2",
-  "nhan_vat": []
- },
- "mytre1608": {
-  "st": "",
-  "nv": 0,
-  "may": "",
-  "bat_dau": "2026-11-27 23:42",
-  "ket_thuc": "",
-  "gio": "00:00",
-  "lenh": "mwk2x8v6",
-  "treo": "",
-  "lenh_treo": "mwk3rhfh",
-  "da": "tuyet",
-  "lenh_da": "mwkyd9rd",
-  "gio_treo": "",
-  "treo_gio": false,
-  "treo_ngay": "",
-  "lenh_gio_treo": "",
   "nhan_vat": []
  }
 }
