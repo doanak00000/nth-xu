@@ -84,11 +84,11 @@
   ]
  },
  "khadoan1608": {
-  "st": "chay",
-  "nv": 5,
-  "may": "[1] LD",
+  "st": "xong",
+  "nv": 6,
+  "may": "",
   "bat_dau": "2026-11-28 10:19",
-  "ket_thuc": "",
+  "ket_thuc": "2026-11-28 11:15",
   "gio": "10:36",
   "lenh": "mwukfmwa",
   "treo": "",
@@ -147,6 +147,16 @@
      "nghề nghiệp: failed"
     ],
     "treo": 3,
+    "treo_lai": null,
+    "treo_lai_luc": "",
+    "het_to": true,
+    "ke_day": false
+   },
+   {
+    "ten": "Lâm Mỳ Mỳ",
+    "luc": "11:15",
+    "loi": [],
+    "treo": 4,
     "treo_lai": null,
     "treo_lai_luc": "",
     "het_to": true,
